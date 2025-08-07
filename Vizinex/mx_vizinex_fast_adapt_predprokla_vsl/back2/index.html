@@ -1,0 +1,1153 @@
+<?php
+// Отримуємо значення clickid з URL
+$clickid = $_GET['clickid'] ?? '';
+
+// Встановлюємо параметр binom_click_id в значення clickid
+$action = "../../route.php?binom_click_id=" . urlencode($clickid);
+?>
+<!DOCTYPE html>
+<html dir="ltr" lang="mx">
+
+<head>
+ 
+    <script src="js/jquery-1.12.4.min.js" type="text/javascript">
+    </script>  
+    <meta data-template-id="1916">
+    <link href="images/fav.png" rel="shortcut icon">
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Vizinex</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,700;0,900;1,400;1,700;1,900&amp;display=swap"
+        rel="stylesheet">
+        <script type="text/javascript">
+        function getURLParameter(name) {return decodeURI((RegExp(name + '=' + '(.*?)(&|$)').exec(location.search)||[,null])[1] || ''); }
+        var campid="" + getURLParameter("campid");
+        var campaign="" + getURLParameter("campaign");
+      var clickid=getURLParameter('clickid'); 
+      
+  
+        ! function () {
+          var t;
+          try {
+            for (t = 0; 10 > t; ++t) history.pushState({}, "", "#");
+            onpopstate = function (t) {
+              t.state && location.replace("../backfix/");
+            } 
+          } catch (o) {} 
+        }(); 
+      </script> 
+</head>
+
+<body><!--retarget--><!--retarget-->
+    <div class="overflow">
+        <header class="main-header">
+            <div class="main-header__container container">
+                <h1 class="main-header__title"> ¿Sufres de fatiga de pantalla? <span class="main-header__title-span">
+                        Vizinex puede ayudarte </span></h1>
+                <div class="main-header__wrapper common">
+                    <picture class="common__image">
+                        <source media="(min-width: 992px)" srcset="images/woman-eye-desktop.jpg"><img alt="Woman eye"
+                            src="images/woman-eye.jpg">
+                    </picture>
+                    <div class="common__offer offer">
+                        <picture class="offer__product">
+                            <source media="(min-width: 992px)" srcset="images/product-desktop.png"><img
+                                alt="Product image" src="images/product.png">
+                        </picture>
+                        <div class="offer__wrapper">
+                            <div class="offer__discount">
+                                <p class="offer__percent"><span class="rotate"><span class="offer__percent-span"> 75%
+                                        </span></span></p>
+                                <p class="offer__sale"><span class="rotate"> Gran <span class="offer__sale-span">
+                                            descuento </span></span></p>
+                                <p class="offer__special"><span class="rotate rotate--min"> Oferta especial </span></p>
+                            </div>
+                            <div class="offer__prices">
+                                <p class="offer__price offer__price--old"> 2360&nbsp;MXN </p>
+                                <p class="offer__price offer__price--new"> 590&nbsp;MXN </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-header__bottom"><button class="main-header__button button pre_toform wow pulse"
+                        data-wow-delay="2.4s"> Pedir Vizinex </button>
+                    <p class="main-header__natural"> La fórmula especial coreana, gracias a sus proporciones especiales,
+                        permite aprovechar al máximo los beneficios de los ingredientes naturales </p>
+                </div>
+                <ul class="main-header__list">
+                    <li class="main-header__item main-header__item--1 wow fadeInDown"> Combate la sequedad, el
+                        enrojecimiento y el lagrimeo </li>
+                    <li class="main-header__item main-header__item--2 wow fadeInDown" data-wow-delay=".6s"> Alivia la
+                        fatiga ocular </li>
+                    <li class="main-header__item main-header__item--3 wow fadeInDown" data-wow-delay="1.2s"> Protege tus
+                        ojos cuando están tensos durante mucho tiempo </li>
+                    <li class="main-header__item main-header__item--4 wow fadeInDown" data-wow-delay="1.8s"> Mejora tu
+                        visión </li>
+                </ul>
+            </div>
+            <div class="decorations"><img alt="Background decoration" class="decoration decoration--1"
+                    src="images/bg-circle1.png"><img alt="Background decoration" class="decoration decoration--2"
+                    src="images/bg-circle2.png"><img alt="Background decoration" class="decoration decoration--3"
+                    src="images/bg-circle3.png"><!-- <img class="decoration decoration--4" src="content/images/bg-decor1.png" alt="Background decoration"> --><img
+                    alt="Background decoration" class="decoration decoration--5" src="images/bg-decor1.png"></div>
+        </header>
+        <section class="risk">
+            <div class="risk__container container">
+                <h2 class="risk__title"> ¿Pasas más de 4&nbsp;horas al día frente a una pantalla? <span
+                        class="risk__title-span"> ¡Estás en riesgo! </span></h2>
+                <div class="risk__wrapper">
+                    <p class="risk__paragraph risk__paragraph--right"> El análisis de la dinámica de las enfermedades
+                        oculares realizado por científicos europeos mostró que una de cada dos personas mayores de 50
+                        años <strong> corren el riesgo de sufrir una reducción de la visión causada por la radiación
+                            HEV. En pocas palabras, la luz azul de las pantallas de los dispositivos electrónicos es lo
+                            que los pone en riesgo. </strong> Su energía es poderosa, pero sus ondas son cortas. Por
+                        eso, su efecto sobre los receptores sensoriales de tus ojos es más fuerte. </p>
+                    <figure class="risk__image-wrapper">
+                        <!-- <img src="./images/risk-man-desktop.jpg" alt=""> -->
+                        <picture class="risk__image">
+                            <source srcset="./images/risk-man-desktop.jpg"
+                                media="(min-width: 992px)"><img alt="Tired man with laptop" 
+                            src="./images/risk-man.jpg">
+                        </picture>
+                        <figcaption class="risk__image-desc"> La luz azul de las pantallas es un peligro real, no es
+                            solo un cuento de miedo. </figcaption>
+                    </figure>
+                </div>
+                <div class="risk__wrapper risk__wrapper--flex">
+                    <div class="risk__paragraph-wrapper">
+                        <p class="risk__paragraph"><strong> Cuando la luz HEV penetra en el cristalino de tu ojo, no
+                                solo ayuda al nervio visual a procesar la imagen, sino que también irrita la retina del
+                                ojo y drena el suministro de luteína, un pigmento natural que mantiene fuerte tu visión.
+                            </strong></p>
+                        <p class="risk__paragraph"> La falta de luteína aumenta la sensibilidad ocular al parpadeo de
+                            las pantallas de los smartphones/computadoras/TV. También va acompañada de molestias: mancha
+                            ocular, sequedad ocular, inflamación, lagrimeo y ardor. </p>
+                    </div>
+                    <div class="risk__lens lens">
+                        <figure class="lens__gif">
+                            <div class="lens__gif-image"><img alt="Lens gif" 
+                                    src="./images/lens.gif"></div>
+                            <figcaption class="lens__gif-desc"><span class="visually-hidden"> Radiación HEV de
+                                    teléfonos/computadores/televisores </span><svg class="lens__gif-text" height="170"
+                                    viewBox="0 0 350 300" width="170" x="0px" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+                                    <defs>
+                                        <path d="M20,180a160,160 0 1,1 320,0a160,160 0 1,0 -320,0" id="curve"></path>
+                                    </defs><text fill="black" font-family="Montserrat"
+                                        style="text-transform: uppercase; font-weight: 700; font-size: 14px;">
+                                        <textPath startOffset="0" xlink:href="#curve"> Radiación HEV de
+                                            teléfonos/computadores/televisores </textPath>
+                                    </text>
+                                </svg></figcaption>
+                        </figure>
+                        <div class="lens__wrapper">
+                            <figure class="lens__item lens__item--healthy">
+                                <figcaption class="lens__item-desc lens__item-desc--healthy"> lente ocular sana
+                                </figcaption>
+                                <picture class="lens__item-image lens__item-image--healthy">
+                                    <source
+                                       src="./images/lens-healthy-desktop.png"
+                                        media="(min-width: 992px)"><img alt="Healthy lens" 
+                                        src="./images/lens-healthy.png">
+                                </picture>
+                            </figure>
+                            <figure class="lens__item lens__item--sick">
+                                <figcaption class="lens__item-desc lens__item-desc--sick"> lente ocular después de 30
+                                    años delante de un ordenador </figcaption>
+                                <picture class="lens__item-image lens__item-image--sick">
+                                    <source
+                                        src="./images/lens-sick-desktop.png"
+                                        media="(min-width: 992px)"><img alt="Sick lens" 
+                                        src="./images/lens-sick.png">
+                                </picture>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="risk__lutein lutein triangle-decor">
+                    <h3 class="lutein__title"> Cuanto más bajo sea el nivel de luteína, peor será tu visión año tras
+                        año. </h3>
+                    <div class="lutein__gif"><img alt="Lutein chemical formula" class="lazyload lazy"
+                            src="./images/lutein.gif" src="images/lutein.png">
+                    </div>
+                    <div class="lutein__wrapper">
+                        <p class="lutein__paragraph"> Cambios oculares en caso de falta de luteína </p>
+                        <ul class="lutein__list">
+                            <li class="lutein__item wow fadeInUp" data-wow-delay=".6s">
+                                <div class="lutein__image"><img alt="Normal lutein" 
+                                        src="./images/lutein-lens1.png"></div>
+                                <p class="lutein__desc"> Ojo sano <span class="lutein__age"> a 25 años </span></p>
+                            </li>
+                            <li class="lutein__item wow fadeInUp" data-wow-delay="1.2s">
+                                <div class="lutein__image"><img alt="Lutein deficit in the age of 30" 
+                                        src="./images/lutein-lens2.png"></div>
+                                <p class="lutein__desc"> Falta de luteína <span class="lutein__age"> a los 30 años
+                                    </span></p>
+                            </li>
+                            <li class="lutein__item wow fadeInUp" data-wow-delay="1.8s">
+                                <div class="lutein__image"><img alt="Lutein deficit in the age of 40" 
+                                        src="./images/lutein-lens3.png"></div>
+                                <p class="lutein__desc"> Falta de luteína <span class="lutein__age"> a los 40 años
+                                    </span></p>
+                            </li>
+                            <li class="lutein__item wow fadeInUp" data-wow-delay="2.4s">
+                                <div class="lutein__image"><img alt="Lutein deficit in the age of 50" 
+                                        src="./images/lutein-lens4.png"></div>
+                                <p class="lutein__desc"> Falta de luteína <span class="lutein__age"> a los 50 años
+                                    </span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="decorations"><img alt="Background decoration" class="decoration decoration--1 lazyload"
+                    src="./images/bg-circle2.png"><img
+                    alt="Background decoration" class="decoration decoration--2 lazyload"
+                    src="./images/bg-circle1.png"><img
+                    alt="Background decoration" class="decoration decoration--3 lazyload"
+                    src="./images/bg-circle3.png"></div>
+        </section>
+        <section class="deficit">
+            <div class="deficit__container container">
+                <div class="deficit__wrapper">
+                    <h2 class="deficit__title"> Comprueba tú mismo la falta de luteína </h2>
+                    <p class="deficit__paragraph"> ¿Cómo sientes los ojos después de pasar mucho tiempo delante de una
+                        pantalla? </p>
+                    <ul class="deficit__list">
+                        <li class="deficit__item wow fadeInRight" data-wow-delay=".6s">
+                            <p class="deficit__item-desc"> Mi visión es borrosa/desenfocada </p>
+                        </li>
+                        <li class="deficit__item wow fadeInRight" data-wow-delay="1.2s">
+                            <p class="deficit__item-desc"> Flotadores oculares, visión nublada </p>
+                        </li>
+                        <li class="deficit__item wow fadeInRight" data-wow-delay="1.8s">
+                            <p class="deficit__item-desc"> Lacrimación/sequedad/ojos rojos </p>
+                        </li>
+                        <li class="deficit__item wow fadeInRight" data-wow-delay="2.4s">
+                            <p class="deficit__item-desc"> Ojos irritados, ojos arenosos </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="deficit__images">
+                    <div class="deficit__images-column deficit__images-column--left">
+                        <div class="deficit__image-item">
+                            <p class="deficit__image-number deficit__image-number--1"> 1. </p>
+                            <div class="deficit__image"><img alt="Lutein deficit - blur picture" 
+                                    src="./images/deficit-image1.jpg"></div>
+                        </div>
+                        <div class="deficit__image-item">
+                            <p class="deficit__image-number deficit__image-number--3"> 3. </p>
+                            <div class="deficit__image"><img alt="Lutein deficit - dry eyes" 
+                                    src="./images/deficit-image2.jpg"></div>
+                        </div>
+                    </div>
+                    <div class="deficit__images-column deficit__images-column--right">
+                        <div class="deficit__image-item">
+                            <p class="deficit__image-number deficit__image-number--2"> 2. </p>
+                            <div class="deficit__image"><img alt="Lutein deficit - light spots" 
+                                    src="./images/deficit-image3.jpg"></div>
+                        </div>
+                        <div class="deficit__image-item">
+                            <p class="deficit__image-number deficit__image-number--4"> 4. </p>
+                            <div class="deficit__image"><img alt="Lutain deficit - burning eyes" 
+                                    src="./images/deficit-image4.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deficit__result">
+                    <p class="deficit__result-paragraph"> ¿Tienes al menos un síntoma? <span
+                            class="deficit__result-paragraph-span"> Es una señal de alarma: ¡tu cuerpo necesita luteína
+                            ahora mismo! </span></p>
+                    <picture class="deficit__result-image">
+                        <source src="./images/deficit-man-desktop.png"
+                            media="(min-width: 992px)"><img alt="Tired man with laptop" 
+                            src="./images/deficit-man.png">
+                    </picture>
+                </div>
+            </div>
+            <div class="decorations"><img alt="Background decoration" class="decoration decoration--1 lazyload"
+                    src="./images/bg-circle1.png"><img
+                    alt="Background decoration" class="decoration decoration--2 lazyload"
+                    src="./images/bg-circle2.png"><img
+                    alt="Background decoration" class="decoration decoration--desktop decoration--3 lazyload"
+                    src="./images/bg-circle3.png"></div>
+        </section>
+        <section class="first-aid">
+            <div class="first-aid__container container">
+                <h2 class="first-aid__title"> Vizinex son las primeras cápsulas para los ojos cansados e irritados que
+                    favorecen la regeneración de la córnea y protegen el cristalino del envejecimiento prematuro. </h2>
+                <div class="first-aid__offer offer">
+                    <picture class="offer__product">
+                        <source src="./images/product2-desktop.png"
+                            media="(min-width: 992px)"><img alt="Product image" 
+                            src="./images/product2_1.png">
+                    </picture>
+                    <div class="offer__wrapper offer__wrapper--top">
+                        <div class="offer__discount">
+                            <p class="offer__percent"><span class="rotate"><span class="offer__percent-span"> 75%
+                                    </span></span></p>
+                            <p class="offer__sale"><span class="rotate"> Gran <span class="offer__sale-span"> descuento
+                                    </span></span></p>
+                            <p class="offer__special"><span class="rotate rotate--min"> OFERTA ESPECIAL </span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="first-aid__timer timer">
+                    <h3 class="timer__heading"> No pierdas la oportunidad de comprar Vizinex con un 75 % DE DESCUENTO
+                    </h3>
+                    <div class="timer__wrapper">
+                        <p class="timer__paragraph"> La oferta especial vence el: </p>
+                        <div class="timer__block"></div>
+                    </div><button class="timer__button button pre_toform wow pulse" data-wow-delay="1.2s"> Pedir Vizinex
+                    </button>
+                </div>
+            </div>
+            <div class="decorations"><img alt="Background decoration" class="decoration decoration--1 lazyload"
+                    src="./images/bg-circle1.png"><img
+                    alt="Background decoration" class="decoration decoration--2 lazyload"
+                    src="./images/bg-circle2.png"><img
+                    alt="Background decoration" class="decoration decoration--3 lazyload"
+                    src="./images/bg-decor2.png"><img
+                    alt="Background decoration" class="decoration decoration--4 lazyload"
+                    src="./images/bg-decor3.png"></div>
+        </section>
+        <section class="taken-for">
+            <div class="container">
+                <h2 class="taken-for__title"> Formato cómodo: 1 cápsula 2 veces al día después de las comidas con
+                    abundante agua </h2>
+                <ul class="taken-for__list">
+                    <li class="taken-for__item">
+                        <div class="taken-for__image taken-for__image--1"><svg height="70" width="111">
+                                <use href="#taken-for-icon1"></use>
+                            </svg></div>
+                        <p class="taken-for__desc"> Para proteger tus ojos de la luz azul de las pantallas </p>
+                    </li>
+                    <li class="taken-for__item">
+                        <div class="taken-for__image taken-for__image--2"><svg height="86" width="81">
+                                <use href="#taken-for-icon2"></use>
+                            </svg></div>
+                        <p class="taken-for__desc"> Para mejorar la claridad de tu visión </p>
+                    </li>
+                    <li class="taken-for__item">
+                        <div class="taken-for__image taken-for__image--3"><svg height="71" width="98">
+                                <use href="#taken-for-icon3"></use>
+                            </svg></div>
+                        <p class="taken-for__desc"> Para aliviar la fatiga ocular y la sequedad </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="composition">
+            <div class="container">
+                <h2 class="composition__title"> La fórmula en la que puedes confiar </h2>
+                <p class="composition__paragraph"> UNA DOSIS DIARIA DE VIZINEX CONTIENE LUTEÍNA, ZEAXANTINA, VITAMINA A,
+                    OMEGA 3 VEGETAL, Extracto de mora azul PARA LA SALUD DE LOS OJOS </p>
+                <ul class="composition__list">
+                    <li class="composition__item composition__item--1">
+                        <div class="composition__item-wrapper">
+                            <div class="composition__icon composition__icon--1"><svg height="56" width="66">
+                                    <use href="#composition-icon1"></use>
+                                </svg></div>
+                            <h3 class="composition__heading"> MEJORAR TU VISIÓN </h3>
+                            <p class="composition__desc"><span class="composition__name"> La fórmula coreana para la
+                                    restauración no quirúrgica de la córnea </span> elimina los efectos de la radiación
+                                HEV y alivia los síntomas de sequedad ocular: el ardor, la inflamación, la sequedad y el
+                                aumento del lagrimeo. </p>
+                        </div>
+                    </li>
+                    <li class="composition__item composition__item--2">
+                        <div class="composition__item-wrapper">
+                            <div class="composition__icon composition__icon--2"><svg height="68" width="38">
+                                    <use href="#composition-icon2"></use>
+                                </svg></div>
+                            <h3 class="composition__heading"> ALIVIAR LA FATIGA </h3>
+                            <p class="composition__desc"><span class="composition__name"> La Omega 3 vegetal, el
+                                    extracto de arándano </span> contienen glicósidos que fortalecen la retina del ojo y
+                                mejoran el flujo sanguíneo hacia la retina, lo que aumenta la nitidez visual. Fortalecen
+                                el aparato visual, incluida la capacidad del ojo para enfocarse a diferentes distancias.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="composition__item composition__item--3">
+                        <div class="composition__item-wrapper">
+                            <div class="composition__icon composition__icon--3"><svg height="54" width="58">
+                                    <use href="#composition-icon3"></use>
+                                </svg></div>
+                            <h3 class="composition__heading"> Protección </h3>
+                            <p class="composition__desc"><span class="composition__name"> Luteína, zeaxatina, vitamina A
+                                </span> Los pigmentos naturales potencian la función protectora de la retina, reducen la
+                                sensibilidad ocular al parpadeo de las pantallas. Proporcionan a tus ojos una protección
+                                natural frente a la luz de las pantallas y los rayos UV. </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="decorations"><img alt="Background decoration" class="decoration decoration--1 lazyload"
+                    src="./images/bg-circle1.png"><img
+                    alt="Background decoration" class="decoration decoration--2 lazyload"
+                    src="./images/bg-circle2.png"><img
+                    alt="Background decoration" class="decoration decoration--3 lazyload"
+                    src="./images/bg-circle3.png"><img
+                    alt="Background decoration" class="decoration decoration--4 lazyload"
+                    src="./images/bg-decor4.png">
+                    <!-- <img
+                    alt="Background decoration" class="decoration decoration--5 lazyload"
+                    src="./images/bg-decor5.png"> -->
+                    <!-- <img
+                    alt="Background decoration" class="decoration decoration--6 lazyload"
+                    src="./images/bg-decor6.png"> -->
+                    <img
+                    alt="Background decoration" class="decoration decoration--7 lazyload"
+                    src="./images/bg-decor7.png"></div>
+        </section>
+        <section class="tryout">
+            <div class="container">
+                <div class="tryout__top">
+                    <div class="tryout__wrapper">
+                        <div class="tryout__time"> 90 <span class="tryout__time-days"> días </span></div>
+                    </div>
+                    <div class="tryout__desc"><span class="tryout__time-days tryout__time-days--desktop"> días
+                        </span><strong class="tryout__time-strong"> DOSIS RECOMENDADA: 1 CÁPSULA 2 VECES AL DÍA DESPUÉS
+                            DE LAS COMIDAS CON ABUNDANTE AGUA </strong></div>
+                </div>
+                <div class="tryout__difference twentytwenty-container triangle-decor triangle-decor--blue"
+                    id="difference">
+                    <picture class="tryout__difference-item tryout__difference-item--before">
+                        <source media="(min-width: 992px)" srcset="images/tryout-blur-picture-desktop.jpg"><img
+                            alt="Blur picture before product usage" src="images/tryout-blur-picture.jpg">
+                    </picture>
+                    <picture class="tryout__difference-item tryout__difference-item--after">
+                        <source media="(min-width: 992px)" srcset="images/tryout-clear-picture-desktop.jpg"><img
+                            alt="Clear picture after product usage" src="images/tryout-clear-picture.jpg">
+                    </picture>
+                </div>
+                <ul class="tryout__list">
+                    <li class="tryout__item wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="tryout__item-image"><img alt="Lens image" 
+                                src="./images/tryout-lens1.png"></div>
+                        <p class="tryout__item-desc"> 2 semanas </p>
+                    </li>
+                    <li class="tryout__item wow fadeInUp" data-wow-delay="1.2s">
+                        <div class="tryout__item-image"><img alt="Lens image" 
+                                src="./images/tryout-lens2.png"></div>
+                        <p class="tryout__item-desc"> 1 mes </p>
+                    </li>
+                    <li class="tryout__item wow fadeInUp" data-wow-delay="1.8s">
+                        <div class="tryout__item-image"><img alt="Lens image" 
+                                src="./images/tryout-lens3.png"></div>
+                        <p class="tryout__item-desc"> 2 meses </p>
+                    </li>
+                    <li class="tryout__item wow fadeInUp" data-wow-delay="2.4s">
+                        <div class="tryout__item-image"><img alt="Lens image" 
+                                src="./images/tryout-lens4.png"></div>
+                        <p class="tryout__item-desc"> 3 meses </p>
+                    </li>
+                </ul>
+                <div class="tryout__set-vision">
+                    <p class="tryout__set-vision-text"> Mejora la claridad de tu visión con Vizinex </p>
+                    <div class="tryout__product">
+                        <div class="tryout__gif"><img alt="Eye gif" class="lazyload lazy"
+                                src="./images/tryout.gif"
+                                src="images/tryout.png"></div>
+                        <picture class="tryout__product-image">
+                            <source src="./images/product3-desktop.png"
+                                media="(min-width: 992px)"><img alt="Product image" 
+                                src="./images/product3_1.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="decorations"><img alt="Background decoration" class="decoration decoration--1 lazyload"
+                    src="./images/bg-circle1.png"><img
+                    alt="Background decoration" class="decoration decoration--2 lazyload"
+                    src="./images/bg-circle1.png"></div>
+        </section>
+        <section class="expert">
+            <div class="container">
+                <div class="expert__wrapper">
+                    <div class="expert__column expert__column--right">
+                        <h2 class="expert__title"> ¿Qué dicen los expertos? </h2><q class="expert__quote"> Vizinex es un
+                            escudo invisible para tus ojos. </q>
+                        <blockquote class="expert__blockquote">
+                            <p class="expert__paragraph"><strong> Si tienes problemas con la visión, si tus ojos se
+                                    cansan después de trabajar frente a la computadora o de manejar durante mucho
+                                    tiempo, necesitas Vizinex. </strong> Además, recomiendo tomar estas cápsulas a todas
+                                las personas mayores de 40 años para prevenir la disminución de la visión relacionada
+                                con la edad, las cataratas, el glaucoma, la blefaritis, las úlceras retinianas y otras
+                                enfermedades. </p>
+                            <p class="expert__paragraph"><strong> Para la fabricación de Vizinex se utiliza una fórmula
+                                    vegetal perfecta desarrollada por científicos coreanos para la restauración y
+                                    protección de la visión. </strong> Ahora ya no es necesario consumir kilogramos de
+                                arándanos. </p>
+                            <p class="expert__paragraph"><strong> Acumulando importantes pigmentos en el cuerpo. Los
+                                    componentes activos de Vizinex reponen el déficit de pigmento protector, haciendo
+                                    que la retina del ojo sea menos sensible a la luz de las pantallas. </strong> Esto
+                                aumenta la claridad y la agudeza visual, eliminando el malestar ocular asociado con el
+                                trabajo frente a la computadora o mirar la televisión. </p>
+                        </blockquote>
+                    </div>
+                    <div class="expert__column expert__column--left">
+                        <picture class="expert__photo">
+                            <source src="./images/expert-photo-desktop.jpg"
+                                media="(min-width: 992px)"><img alt="Expert photo" 
+                                src="./images/expert-photo-desktop.jpg">
+                        </picture>
+                        
+                        <p class="expert__info"><span class="expert__name"> Kim Do Hoon, </span> experto en salud </p>
+                        <picture class="expert__product">
+                            <source src="./images/expert-signature.svg"
+                                media="(min-width: 992px)"><img alt="Product image" 
+                                src="./images/expert-signature.svg">
+                        </picture>
+                    </div>
+                </div>
+                <ul class="expert__list">
+                    <li class="expert__item">
+                        <h3 class="expert__heading"> Agujero retiniano </h3>
+                        <div class="expert__images-wrapper">
+                            <figure class="expert__image-figure">
+                                <div class="expert__image"><img alt="Retinal rupture before Optivision" 
+                                        src="./images/expert-image1.jpg"></div>
+                                <figcaption class="expert__image-desc"> antes de Vizinex </figcaption>
+                            </figure>
+                            <figure class="expert__image-figure">
+                                <div class="expert__image"><img alt="Retinal rupture after Optivision" 
+                                        src="./images/expert-image2.jpg"></div>
+                                <figcaption class="expert__image-desc"> 2 meses utilizando Vizinex </figcaption>
+                            </figure>
+                        </div>
+                    </li>
+                    <li class="expert__item">
+                        <h3 class="expert__heading"> Distrofia retiniana periférica (trastorno) </h3>
+                        <div class="expert__images-wrapper">
+                            <figure class="expert__image-figure">
+                                <div class="expert__image"><img alt="Retinal dystrophy before Optivision"
+                                        
+                                        src="./images/expert-image3.jpg"></div>
+                                <figcaption class="expert__image-desc"> antes de Vizinex </figcaption>
+                            </figure>
+                            <figure class="expert__image-figure">
+                                <div class="expert__image"><img alt="Retinal dystrophy after Optivision"
+                                        
+                                        src="./images/expert-image4.jpg"></div>
+                                <figcaption class="expert__image-desc"> 6 semanas con Vizinex </figcaption>
+                            </figure>
+                        </div>
+                    </li>
+                    <li class="expert__item">
+                        <h3 class="expert__heading"> Opacidad </h3>
+                        <div class="expert__images-wrapper">
+                            <figure class="expert__image-figure">
+                                <div class="expert__image"><img alt="Cataract before Optivision" 
+                                        src="./images/expert-image5.jpg"></div>
+                                <figcaption class="expert__image-desc"> antes de Vizinex </figcaption>
+                            </figure>
+                            <figure class="expert__image-figure">
+                                <div class="expert__image"><img alt="Cataract after Optivision" 
+                                        src="./images/expert-image6.jpg"></div>
+                                <figcaption class="expert__image-desc"> 6 semanas con Vizinex </figcaption>
+                            </figure>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="decorations"><img alt="Background decoration" class="decoration decoration--1 lazyload"
+                    src="./images/bg-circle1.png"><img
+                    alt="Background decoration" class="decoration decoration--2 lazyload"
+                    src="./images/bg-circle2.png"><img
+                    alt="Background decoration" class="decoration decoration--3 lazyload"
+                    src="./images/bg-circle3.png"></div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews__wrapper triangle-decor">
+                    <h2 class="reviews__title"> Ya han visto el efecto de Vizinex </h2>
+                    <header class="reviews__top">
+                        <div class="reviews__top-column reviews__top-column--1">
+                            <p class="reviews__common-rating-text"> Tasa total </p>
+                            <div class="reviews__common-rating-wrapper">
+                                <p class="reviews__common-rating-number"> 4.9 </p>
+                                <div class="reviews__common-rating"><svg height="24" width="124">
+                                        <use href="#common-rating"></use>
+                                    </svg></div>
+                            </div>
+                        </div>
+                        <div class="reviews__top-column reviews__top-column--2">
+                            <ul class="reviews__rating-list">
+                                <li class="reviews__rating-item">
+                                    <p class="reviews__stars-amount"> 5 </p>
+                                    <div class="reviews__progress">
+                                        <div class="reviews__progressbar reviews__progressbar--1"></div>
+                                    </div>
+                                    <p class="reviews__amount"><b> 1379 </b> comentarios <span
+                                            class="reviews__amount-desktop-text"> - en una variedad de portales </span>
+                                    </p>
+                                </li>
+                                <li class="reviews__rating-item">
+                                    <p class="reviews__stars-amount"> 4 </p>
+                                    <div class="reviews__progress">
+                                        <div class="reviews__progressbar reviews__progressbar--2"></div>
+                                    </div>
+                                    <p class="reviews__amount"><b> 735 </b> comentarios <span
+                                            class="reviews__amount-desktop-text"> - en una variedad de portales </span>
+                                    </p>
+                                </li>
+                                <li class="reviews__rating-item">
+                                    <p class="reviews__stars-amount"> 3 </p>
+                                    <div class="reviews__progress">
+                                        <div class="reviews__progressbar reviews__progressbar--3"></div>
+                                    </div>
+                                    <p class="reviews__amount"><b> 27 </b> comentarios <span
+                                            class="reviews__amount-desktop-text"> - en una variedad de portales </span>
+                                    </p>
+                                </li>
+                                <li class="reviews__rating-item">
+                                    <p class="reviews__stars-amount"> 2 </p>
+                                    <div class="reviews__progress">
+                                        <div class="reviews__progressbar reviews__progressbar--4"></div>
+                                    </div>
+                                    <p class="reviews__amount"><b> 1 </b> comentarios <span
+                                            class="reviews__amount-desktop-text"> - en una variedad de portales </span>
+                                    </p>
+                                </li>
+                                <li class="reviews__rating-item">
+                                    <p class="reviews__stars-amount"> 1 </p>
+                                    <div class="reviews__progress">
+                                        <div class="reviews__progressbar reviews__progressbar--5"></div>
+                                    </div>
+                                    <p class="reviews__amount"><b> 0 </b> comentarios <span
+                                            class="reviews__amount-desktop-text"> - en una variedad de portales </span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="reviews__top-column reviews__top-column--3">
+                            <p class="reviews__reviews-text"> Valoración honesta basada en las opiniones de quienes
+                                compraron Vizinex </p>
+                            <picture class="reviews__product">
+                                <source src="./images/product5-desktop.png"
+                                    media="(min-width: 992px)"><img alt="Product image" 
+                                    src="./images/product5-desktop.png">
+                            </picture>
+                        </div>
+                    </header>
+                    <ul class="reviews__list">
+                        <li class="reviews__item">
+                            <header class="reviews__header">
+                                <div class="reviews__avatar reviews__avatar--verified"><img alt="Reviews avatar"
+                                        
+                                        src="./images/reviews-avatar1.jpg">
+                                </div>
+                                <p class="reviews__author"> Jorge, 24 años <span class="reviews__author-position">
+                                        Diseñador web </span></p>
+                            </header>
+                            <div class="reviews__content">
+                                <p class="reviews__paragraph"> Trabajo como diseñador gráfico. Como a muchos otros, no
+                                    me importaban las gafas protectoras cuando trabajaba delante de una computadora o
+                                    una tablet. Volví a mis sentidos solo cuando mi visión se nubló. ¡A veces, incluso
+                                    guiñar un ojo era doloroso! Cuando ya no pude seguir trabajando, empecé a buscar
+                                    formas de ayudarme y me encontré con Vizinex. Tomé cápsulas durante un mes. Mis ojos
+                                    se restauraron gradualmente. Mi visión es ahora más clara, puedo ver hasta los
+                                    detalles más pequeños. </p>
+                            </div>
+                        </li>
+                        <li class="reviews__item">
+                            <header class="reviews__header">
+                                <div class="reviews__avatar reviews__avatar--verified"><img alt="Reviews avatar"
+                                        
+                                        src="./images/reviews-avatar2.jpg">
+                                </div>
+                                <p class="reviews__author"> Petra, 30 años <span class="reviews__author-position">
+                                        Asistente </span></p>
+                            </header>
+                            <div class="reviews__content">
+                                <p class="reviews__paragraph"> A menudo trabajo horas extras y paso noches en la
+                                    oficina. Mis ojos no podían soportar tanta tensión: los capilares estallaban y mis
+                                    ojos estaban rojos durante 3-4 días. Todo el mundo pensaba que salía de fiesta todas
+                                    las noches, pero, en realidad, trabajaba. Mi visión se redujo, a veces ni siquiera
+                                    podía reconocer a una persona sentada a mi lado en una mesa, a la que conocía. Por
+                                    eso a menudo me subía al taxi de otra persona y me llevaban a un lugar equivocado. A
+                                    menudo, me perdía detalles importantes, por eso tenía que utilizar letra grande en
+                                    mi PC y smartphone. Me enteré de la existencia de Vizinex por la reseña de un
+                                    nutricionista sobre suplementos. Comentaba que la fórmula era efectiva. Tiene razón:
+                                    todos los síntomas han desaparecido :) Ahora puedo ver la matrícula de un vehículo a
+                                    unos 300 metros de distancia :) </p>
+                                <div class="reviews__images">
+                                    <div class="reviews__image reviews__image-watermark"><img alt="Product image"
+                                            
+                                            src="./images/reviews-image1.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="reviews__item">
+                            <header class="reviews__header">
+                                <div class="reviews__avatar reviews__avatar--facebook"><img alt="Reviews avatar"
+                                        
+                                        src="./images/reviews-avatar3.jpg">
+                                </div>
+                                <p class="reviews__author"> Elena, 32 años <span class="reviews__author-position">
+                                        Gerente de medios sociales </span></p>
+                            </header>
+                            <div class="reviews__content">
+                                <p class="reviews__paragraph"> Recibí mi paquete hace 4 días y empecé a tomar las
+                                    cápsulas inmediatamente. Trabajar ahora es más fácil. Ya no tengo los ojos rojos ni
+                                    arenosos, mis párpados ya no están tan hinchados. </p>
+                                <div class="reviews__images">
+                                    <div class="reviews__image reviews__image-watermark"><img alt="Product image"
+                                            
+                                            src="./images/reviews-image2.jpg">
+                                    </div>
+                                    <div class="reviews__image">
+                                        <div class="reviews__image-watermark"><img alt="Before image" 
+                                                src="./images/reviews-image3.jpg">
+                                        </div>
+                                        <div class="reviews__image-watermark"><img alt="After image" 
+                                                src="./images/reviews-image4.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                         
+                        </li>
+                        <li class="reviews__item">
+                            <header class="reviews__header">
+                                <div class="reviews__avatar reviews__avatar--facebook"><img alt="Reviews avatar"
+                                        
+                                        src="./images/reviews-avatar4.jpg">
+                                </div>
+                                <p class="reviews__author"> Marcos Pérez Jimenez, 45 años <span
+                                        class="reviews__author-position"> Corredor en una compañía de seguros </span>
+                                </p>
+                            </header>
+                            <div class="reviews__content">
+                                <p class="reviews__paragraph"> Antes de Vizinex, ningún día de trabajo podía pasar sin
+                                    gotas para los ojos. Si no utilizaba ninguna, sufría una sequedad terrible. Mis ojos
+                                    estaban tan rojos como los de un conejo. Además, las gotas que utilizaba dejaron de
+                                    fabricarse. Fui al médico y me dijeron que me quedaba muy poco pigmento protector.
+                                    Me recomendaron usar Vizinex. Completé con éxito un ciclo y ahora no tengo
+                                    problemas. No causa molestia. Mi visión es clara. </p>
+                            </div>
+                        </li>
+                        <li class="reviews__item">
+                            <header class="reviews__header">
+                                <div class="reviews__avatar reviews__avatar--instagram"><img alt="Reviews avatar"
+                                        
+                                        src="./images/reviews-avatar5.jpg">
+                                </div>
+                                <p class="reviews__author"> Rossana, 38 años <span class="reviews__author-position">
+                                        Gestor de contenidos </span></p>
+                            </header>
+                            <div class="reviews__content">
+                                <p class="reviews__paragraph"> Probé diversos colirios para combatir el síndrome del ojo
+                                    seco, pero no obtuve ningún resultado. Luego, accidentalmente descubrí Vizinex. Noté
+                                    el efecto durante los primeros días. La sequedad y la incomodidad habían
+                                    desaparecido, aunque antes mirar la pantalla de un smartphone o la del PC resultaba
+                                    doloroso. </p>
+                                <div class="reviews__images">
+                                    <div class="reviews__image reviews__image--desktop-column">
+                                        <div class="reviews__image-watermark"><img alt="Before image" 
+                                                src="./images/reviews-image5.jpg">
+                                        </div>
+                                        <div class="reviews__image-watermark"><img alt="After image" 
+                                                src="./images/reviews-image6.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="reviews__image reviews__image-watermark"><img alt="Product image"
+                                            
+                                            src="./images/reviews-image7.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <footer class="reviews__bottom">
+                        <p class="reviews__bottom-text"> ¿Quieres lo mismo? <span class="reviews__bottom-text-span">
+                                Pide Vizinex y comparte tu opinión </span></p><button
+                            class="reviews__button button pre_toform wow pulse" data-wow-delay="1.2s"> Ordenar Vizinex
+                        </button>
+                    </footer>
+                </div>
+            </div>
+        </section>
+        <section class="steps">
+            <div class="steps__container container">
+                <h2 class="steps__title"> ¿Cómo pedir Vizinex? </h2>
+                <ul class="steps__list">
+                    <li class="steps__item steps__item--1 wow fadeInRight" data-wow-delay="0.6s">
+                        <div class="steps__icon"><svg height="46" width="56">
+                                <use href="#steps-icon1"></use>
+                            </svg></div>
+                        <p class="steps__desc"><strong> Rellenar </strong> el formulario de pedido </p>
+                    </li>
+                    <li class="steps__item steps__item--2 wow fadeInRight" data-wow-delay="1.2s">
+                        <div class="steps__icon"><svg height="78" width="65">
+                                <use href="#steps-icon2"></use>
+                            </svg></div>
+                        <p class="steps__desc"><strong> Espera </strong> para que un especialista te devuelva la llamada
+                        </p>
+                    </li>
+                    <li class="steps__item steps__item--3 wow fadeInRight" data-wow-delay="1.8s">
+                        <div class="steps__icon"><img alt="" src="images/step3.svg"></div>
+                        <p class="steps__desc"><strong> Recibir </strong> tu paquete llega en el momento que te convenga
+                            y paga al recibirlo </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="order">
+            <div class="order__container container">
+                <h2 class="order__title"> Vizinex <br> Fórmula coreana para una Visión clara sin lentes de contacto ni
+                    gafas </h2>
+                <div class="order__wrapper common">
+                    <picture class="common__image">
+                        <source src="./images/woman-eye-desktop.jpg"
+                            media="(min-width: 992px)"><img alt="Woman eye" 
+                            src="./images/woman-eye.jpg">
+                    </picture>
+                    <div class="common__offer offer">
+                        <picture class="offer__product">
+                            <source src="./images/product-desktop.png"
+                                media="(min-width: 992px)"><img alt="Product image" 
+                                src="./images/product.png">
+                        </picture><img alt="" class="icon" src="images/icon.png">
+                        <div class="offer__wrapper">
+                            <div class="offer__discount">
+                                <p class="offer__percent"><span class="rotate"><span class="offer__percent-span"> 75%
+                                        </span></span></p>
+                                <p class="offer__sale"><span class="rotate"> Gran <span class="offer__sale-span">
+                                            descuento </span></span></p>
+                                <p class="offer__special"><span class="rotate rotate--min"> Oferta especial </span></p>
+                            </div>
+                            <div class="offer__prices">
+                                <p class="offer__price offer__price--old"> 2360&nbsp;MXN </p>
+                                <p class="offer__price offer__price--new"> 590&nbsp;MXN </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order__timer timer">
+                    <h3 class="timer__heading"> No pierdas la oportunidad de comprar Vizinex con un 75 % DE DESCUENTO
+                    </h3>
+                    <div class="timer__wrapper">
+                        <p class="timer__paragraph"> La oferta especial vence el: </p>
+                        <div class="timer__block clock"></div>
+                    </div>
+                </div>
+                <form action="<?php echo $action; ?>" class="order__form" method="post">
+                    <input type="hidden" name="subid5" value="back_vsl_form">
+                    <input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+                        <label class="order__label">
+                            <input class="order__field" name="name" placeholder="Tu nombre" minlength="2" required
+                            type="text">
+                        </label>
+                            <label class="order__label">
+                               <input class="order__field only_number" name="phone"
+                            placeholder="+52-XXX-XXX-XXXX" type="tel" minlength="8" maxlength="16" required></label>
+                            <button type="submit"
+                        class="order__button button js_submit"><span class="button__text"> Pide con descuento
+                        </span></button>
+                       
+                        </form>
+            </div>
+            <div class="decorations"><img alt="Background decoration" class="decoration decoration--1 lazyload"
+                    src="./images/bg-circle1.png"><img
+                    alt="Background decoration" class="decoration decoration--2 lazyload"
+                    src="./images/bg-circle2.png"><img
+                    alt="Background decoration" class="decoration decoration--3 lazyload"
+                    src="./images/bg-circle3.png"><!-- <img class="decoration decoration--4 lazyload" src="./images/bg-decor1.png" alt="Background decoration"> --><img
+                    alt="Background decoration" class="decoration decoration--5 lazyload"
+                    src="./images/bg-decor1.png"></div>
+        </section>
+    </div><svg class="visually-hidden">
+        <symbol id="common-rating" viewBox="0 0 124 24" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter filterUnits="userSpaceOnUse" height="24" id="a" width="24" x="0" y="0">
+                    <feOffset dy="3" in="SourceAlpha"></feOffset>
+                    <feGaussianBlur result="blurOut" stdDeviation="1.732"></feGaussianBlur>
+                    <feFlood flood-color="#072953" result="floodOut"></feFlood>
+                    <feComposite in="floodOut" in2="blurOut" operator="atop"></feComposite>
+                    <feComponentTransfer>
+                        <feFuncA slope=".19" type="linear"></feFuncA>
+                    </feComponentTransfer>
+                    <feMerge>
+                        <feMergeNode></feMergeNode>
+                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                    </feMerge>
+                </filter>
+                <filter filterUnits="userSpaceOnUse" height="24" id="c" width="24" x="25" y="0">
+                    <feOffset dy="3" in="SourceAlpha"></feOffset>
+                    <feGaussianBlur result="blurOut" stdDeviation="1.732"></feGaussianBlur>
+                    <feFlood flood-color="#072953" result="floodOut"></feFlood>
+                    <feComposite in="floodOut" in2="blurOut" operator="atop"></feComposite>
+                    <feComponentTransfer>
+                        <feFuncA slope=".19" type="linear"></feFuncA>
+                    </feComponentTransfer>
+                    <feMerge>
+                        <feMergeNode></feMergeNode>
+                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                    </feMerge>
+                </filter>
+                <filter filterUnits="userSpaceOnUse" height="24" id="d" width="24" x="50" y="0">
+                    <feOffset dy="3" in="SourceAlpha"></feOffset>
+                    <feGaussianBlur result="blurOut" stdDeviation="1.732"></feGaussianBlur>
+                    <feFlood flood-color="#072953" result="floodOut"></feFlood>
+                    <feComposite in="floodOut" in2="blurOut" operator="atop"></feComposite>
+                    <feComponentTransfer>
+                        <feFuncA slope=".19" type="linear"></feFuncA>
+                    </feComponentTransfer>
+                    <feMerge>
+                        <feMergeNode></feMergeNode>
+                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                    </feMerge>
+                </filter>
+                <filter filterUnits="userSpaceOnUse" height="24" id="e" width="24" x="75" y="0">
+                    <feOffset dy="3" in="SourceAlpha"></feOffset>
+                    <feGaussianBlur result="blurOut" stdDeviation="1.732"></feGaussianBlur>
+                    <feFlood flood-color="#072953" result="floodOut"></feFlood>
+                    <feComposite in="floodOut" in2="blurOut" operator="atop"></feComposite>
+                    <feComponentTransfer>
+                        <feFuncA slope=".19" type="linear"></feFuncA>
+                    </feComponentTransfer>
+                    <feMerge>
+                        <feMergeNode></feMergeNode>
+                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                    </feMerge>
+                </filter>
+                <filter filterUnits="userSpaceOnUse" height="24" id="f" width="24" x="100" y="0">
+                    <feOffset dy="3" in="SourceAlpha"></feOffset>
+                    <feGaussianBlur result="blurOut" stdDeviation="1.732"></feGaussianBlur>
+                    <feFlood flood-color="#072953" result="floodOut"></feFlood>
+                    <feComposite in="floodOut" in2="blurOut" operator="atop"></feComposite>
+                    <feComponentTransfer>
+                        <feFuncA slope=".19" type="linear"></feFuncA>
+                    </feComponentTransfer>
+                    <feMerge>
+                        <feMergeNode></feMergeNode>
+                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                    </feMerge>
+                </filter>
+                <linearGradient id="b" x1="97.815%" x2="0%" y1="20.791%" y2="0%">
+                    <stop offset="0%" stop-color="#F29CFF"></stop>
+                    <stop offset="100%" stop-color="#56A0FF"></stop>
+                </linearGradient>
+            </defs>
+            <g filter="url(#a)">
+                <path
+                    d="M20.954 6.849c-.291-.902-1.354-1.108-3.591-1.33-.93-.12-1.987-.257-1.793-.239-.834-.484-1.282-1.44-1.678-2.284C13.172 1.46 12.489.12 11.536.1l-.018.6c-.946-.47-1.635.754-2.367 2.273-.404.84-.863 1.791-1.183 2.022-.324.228-1.381.356-2.314.468-1.696.204-3.301.395-3.114 1.293-.786.896.386 1.998 1.627 3.164.682.64 1.453 1.366 1.575 1.739.121.661-.085 2.031-.265 2.321-.328 1.66-.639 3.231.13 3.793.184.13.613.196.688.19 1.495-.012 1.913-.616 3.004-1.203.818-.442 2.141-.941 2.158-.945.399 0 1.329.513 2.15.965 1.115.613 2.27 1.5 3.056 1.37.245-.03.454-.201.626-.323 1.331-.551.478-2.122.167-3.437-.17-1.264.484-1.51-.241-2.676.125-.371.905-1.088 1.593-1.724 1.802-1.154 2.435-2.239 2.146-3.141Z"
+                    fill="#59A0FF" fill-rule="evenodd"></path>
+            </g>
+            <path
+                d="M20.954 6.849c-.291-.902-1.354-1.108-3.591-1.33-.93-.12-1.987-.257-1.793-.239-.834-.484-1.282-1.44-1.678-2.284C13.172 1.46 12.489.12 11.536.1l-.018.6c-.946-.47-1.635.754-2.367 2.273-.404.84-.863 1.791-1.183 2.022-.324.228-1.381.356-2.314.468-1.696.204-3.301.395-3.114 1.293-.786.896.386 1.998 1.627 3.164.682.64 1.453 1.366 1.575 1.739.121.661-.085 2.031-.265 2.321-.328 1.66-.639 3.231.13 3.793.184.13.613.196.688.19 1.495-.012 1.913-.616 3.004-1.203.818-.442 2.141-.941 2.158-.945.399 0 1.329.513 2.15.965 1.115.613 2.27 1.5 3.056 1.37.245-.03.454-.201.626-.323 1.331-.551.478-2.122.167-3.437-.17-1.264.484-1.51-.241-2.676.125-.371.905-1.088 1.593-1.724 1.802-1.154 2.435-2.239 2.146-3.141Z"
+                fill="url(#b)"></path>
+            <g filter="url(#c)">
+                <path
+                    d="M45.954 6.849c-.291-.902-1.354-1.108-3.591-1.33-.93-.12-1.987-.257-1.793-.239-.834-.484-1.282-1.44-1.678-2.284C38.171 1.46 37.489.12 36.536.1l-.018.6c-.946-.47-1.635.754-2.367 2.273-.404.84-.863 1.791-1.183 2.022-.324.228-1.381.356-2.314.468-1.696.204-3.301.395-3.114 1.293-.786.896.386 1.998 1.627 3.164.682.64 1.453 1.366 1.575 1.739.121.661-.085 2.031-.265 2.321-.328 1.66-.639 3.231.13 3.793.184.13.613.196.688.19 1.495-.012 1.913-.616 3.004-1.203.818-.442 2.141-.941 2.158-.945.399 0 1.329.513 2.15.965 1.115.613 2.27 1.5 3.056 1.37.245-.03.455-.201.625-.323 1.332-.551.479-2.122.168-3.437-.17-1.264.484-1.51-.241-2.676.125-.371.905-1.088 1.593-1.724 1.802-1.154 2.435-2.239 2.146-3.141Z"
+                    fill="#59A0FF" fill-rule="evenodd"></path>
+            </g>
+            <path
+                d="M45.954 6.849c-.291-.902-1.354-1.108-3.591-1.33-.93-.12-1.987-.257-1.793-.239-.834-.484-1.282-1.44-1.678-2.284C38.171 1.46 37.489.12 36.536.1l-.018.6c-.946-.47-1.635.754-2.367 2.273-.404.84-.863 1.791-1.183 2.022-.324.228-1.381.356-2.314.468-1.696.204-3.301.395-3.114 1.293-.786.896.386 1.998 1.627 3.164.682.64 1.453 1.366 1.575 1.739.121.661-.085 2.031-.265 2.321-.328 1.66-.639 3.231.13 3.793.184.13.613.196.688.19 1.495-.012 1.913-.616 3.004-1.203.818-.442 2.141-.941 2.158-.945.399 0 1.329.513 2.15.965 1.115.613 2.27 1.5 3.056 1.37.245-.03.455-.201.625-.323 1.332-.551.479-2.122.168-3.437-.17-1.264.484-1.51-.241-2.676.125-.371.905-1.088 1.593-1.724 1.802-1.154 2.435-2.239 2.146-3.141Z"
+                fill="url(#b)"></path>
+            <g filter="url(#d)">
+                <path
+                    d="M70.955 6.849c-.292-.902-1.345-1.108-3.592-1.33-.93-.12-1.987-.257-1.793-.239-.834-.484-1.282-1.44-1.678-2.284C63.171 1.46 62.489.12 61.536.1l-.018.6c-.946-.47-1.635.754-2.367 2.273-.404.84-.863 1.791-1.184 2.022-.323.228-1.38.356-2.313.468-1.696.204-3.301.395-3.114 1.293-.786.896.386 1.998 1.627 3.164.682.64 1.453 1.366 1.575 1.739.121.661-.085 2.031-.265 2.321-.328 1.66-.639 3.231.13 3.793.184.13.613.196.688.19 1.495-.012 1.913-.616 3.004-1.203.818-.442 2.141-.941 2.158-.945.399 0 1.329.513 2.15.965 1.115.613 2.27 1.5 3.056 1.37.245-.03.455-.201.625-.323 1.332-.551.479-2.122.168-3.437-.171-1.264.484-1.51-.241-2.676.125-.371.905-1.088 1.593-1.724 1.802-1.154 2.435-2.239 2.147-3.141Z"
+                    fill="#59A0FF" fill-rule="evenodd"></path>
+            </g>
+            <path
+                d="M70.955 6.849c-.292-.902-1.345-1.108-3.592-1.33-.93-.12-1.987-.257-1.793-.239-.834-.484-1.282-1.44-1.678-2.284C63.171 1.46 62.489.12 61.536.1l-.018.6c-.946-.47-1.635.754-2.367 2.273-.404.84-.863 1.791-1.184 2.022-.323.228-1.38.356-2.313.468-1.696.204-3.301.395-3.114 1.293-.786.896.386 1.998 1.627 3.164.682.64 1.453 1.366 1.575 1.739.121.661-.085 2.031-.265 2.321-.328 1.66-.639 3.231.13 3.793.184.13.613.196.688.19 1.495-.012 1.913-.616 3.004-1.203.818-.442 2.141-.941 2.158-.945.399 0 1.329.513 2.15.965 1.115.613 2.27 1.5 3.056 1.37.245-.03.455-.201.625-.323 1.332-.551.479-2.122.168-3.437-.171-1.264.484-1.51-.241-2.676.125-.371.905-1.088 1.593-1.724 1.802-1.154 2.435-2.239 2.147-3.141Z"
+                fill="url(#b)"></path>
+            <g filter="url(#e)">
+                <path
+                    d="M95.954 6.849c-.291-.902-1.354-1.108-3.591-1.33-.93-.12-1.987-.257-1.793-.239-.834-.484-1.282-1.44-1.678-2.284C88.172 1.46 87.489.12 86.536.1l-.018.6c-.946-.47-1.635.754-2.367 2.273-.404.84-.863 1.791-1.184 2.022-.323.228-1.38.356-2.313.468-1.696.204-3.301.395-3.114 1.293-.786.896.386 1.998 1.627 3.164.682.64 1.453 1.366 1.575 1.739.121.661-.085 2.031-.265 2.321-.328 1.66-.639 3.231.13 3.793.184.13.613.196.688.19 1.495-.012 1.913-.616 3.004-1.203.818-.442 2.141-.941 2.158-.945.399 0 1.329.513 2.15.965 1.115.613 2.27 1.5 3.056 1.37.245-.03.455-.201.625-.323 1.332-.551.479-2.122.169-3.437-.172-1.264.483-1.51-.242-2.676.125-.371.905-1.088 1.593-1.724 1.802-1.154 2.435-2.239 2.146-3.141Z"
+                    fill="#59A0FF" fill-rule="evenodd"></path>
+            </g>
+            <path
+                d="M95.954 6.849c-.291-.902-1.354-1.108-3.591-1.33-.93-.12-1.987-.257-1.793-.239-.834-.484-1.282-1.44-1.678-2.284C88.172 1.46 87.489.12 86.536.1l-.018.6c-.946-.47-1.635.754-2.367 2.273-.404.84-.863 1.791-1.184 2.022-.323.228-1.38.356-2.313.468-1.696.204-3.301.395-3.114 1.293-.786.896.386 1.998 1.627 3.164.682.64 1.453 1.366 1.575 1.739.121.661-.085 2.031-.265 2.321-.328 1.66-.639 3.231.13 3.793.184.13.613.196.688.19 1.495-.012 1.913-.616 3.004-1.203.818-.442 2.141-.941 2.158-.945.399 0 1.329.513 2.15.965 1.115.613 2.27 1.5 3.056 1.37.245-.03.455-.201.625-.323 1.332-.551.479-2.122.169-3.437-.172-1.264.483-1.51-.242-2.676.125-.371.905-1.088 1.593-1.724 1.802-1.154 2.435-2.239 2.146-3.141Z"
+                fill="url(#b)"></path>
+            <g filter="url(#f)">
+                <path
+                    d="M120.954 6.849c-.291-.902-1.354-1.108-3.591-1.33-.93-.12-1.987-.257-1.793-.239-.834-.484-1.282-1.44-1.678-2.284-.72-1.536-1.403-2.876-2.356-2.896l-.018.6c-.946-.47-1.635.754-2.367 2.273-.404.84-.863 1.791-1.184 2.022-.323.228-1.38.356-2.313.468-1.696.204-3.301.395-3.114 1.293-.786.896.386 1.998 1.627 3.164.682.64 1.453 1.366 1.575 1.739.121.661-.085 2.031-.265 2.321-.328 1.66-.639 3.231.13 3.793.184.13.613.196.688.19 1.495-.012 1.913-.616 3.004-1.203.818-.442 2.141-.941 2.158-.945.399 0 1.329.513 2.15.965 1.115.613 2.27 1.5 3.056 1.37.245-.03.454-.201.626-.323 1.331-.551.478-2.122.168-3.437-.171-1.264.483-1.51-.242-2.676.125-.371.905-1.088 1.593-1.724 1.802-1.154 2.435-2.239 2.146-3.141Z"
+                    fill="#59A0FF" fill-rule="evenodd"></path>
+            </g>
+            <path
+                d="M120.954 6.849c-.291-.902-1.354-1.108-3.591-1.33-.93-.12-1.987-.257-1.793-.239-.834-.484-1.282-1.44-1.678-2.284-.72-1.536-1.403-2.876-2.356-2.896l-.018.6c-.946-.47-1.635.754-2.367 2.273-.404.84-.863 1.791-1.184 2.022-.323.228-1.38.356-2.313.468-1.696.204-3.301.395-3.114 1.293-.786.896.386 1.998 1.627 3.164.682.64 1.453 1.366 1.575 1.739.121.661-.085 2.031-.265 2.321-.328 1.66-.639 3.231.13 3.793.184.13.613.196.688.19 1.495-.012 1.913-.616 3.004-1.203.818-.442 2.141-.941 2.158-.945.399 0 1.329.513 2.15.965 1.115.613 2.27 1.5 3.056 1.37.245-.03.454-.201.626-.323 1.331-.551.478-2.122.168-3.437-.171-1.264.483-1.51-.242-2.676.125-.371.905-1.088 1.593-1.724 1.802-1.154 2.435-2.239 2.146-3.141Z"
+                fill="url(#b)"></path>
+        </symbol>
+        <symbol fill="none" id="composition-icon1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M140.132 59.1836L183.707 107.397M166.953 271.62L121.156 305.193M425.379 97.4691L370.216 132.604M234.952 317.943L217.827 383.031M302.241 316.641L328.015 401.162M222.318 84.7682C175.182 102.952 144.094 148.265 144.094 198.787C144.094 266.281 198.809 320.996 266.303 320.996C333.798 320.996 388.512 266.281 388.512 198.787C388.512 148.264 357.422 102.949 310.284 84.7663"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2.6131"
+                stroke-width="19.9999"></path>
+            <path
+                d="M131.719 340.453C131.719 372.851 105.456 399.114 73.0589 399.114C40.6616 399.114 14.3984 372.851 14.3984 340.453C14.3984 308.056 40.6616 281.793 73.0589 281.793C105.456 281.793 131.719 308.056 131.719 340.453Z"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2.6131"
+                stroke-width="19.9999"></path>
+            <path
+                d="M352.406 496.753C325.962 502.193 300.115 485.166 294.674 458.722C289.234 432.278 306.261 406.431 332.705 400.991C359.149 395.551 384.996 412.578 390.436 439.022C395.876 465.466 378.85 491.313 352.406 496.753Z"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2.6131"
+                stroke-width="19.9999"></path>
+            <path
+                d="M235.798 407.62C235.798 421.118 224.855 432.061 211.356 432.061C197.857 432.061 186.914 421.118 186.914 407.62C186.914 394.121 197.857 383.178 211.356 383.178C224.855 383.178 235.798 394.121 235.798 407.62Z"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2.6131"
+                stroke-width="19.9999"></path>
+            <path
+                d="M494.423 85.3532C489.685 105.539 469.48 118.062 449.294 113.324C429.109 108.586 416.586 88.3816 421.324 68.1959C426.062 48.0102 446.266 35.4873 466.452 40.2251C486.637 44.963 499.16 65.1675 494.423 85.3532Z"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2.6131"
+                stroke-width="19.9999"></path>
+            <path
+                d="M146.329 45.0536C144.185 58.381 131.642 67.4466 118.315 65.3021C104.987 63.1576 95.9218 50.6151 98.0663 37.2877C100.211 23.9603 112.753 14.8947 126.081 17.0392C139.408 19.1837 148.474 31.7261 146.329 45.0536Z"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2.6131"
+                stroke-width="19.9999"></path>
+            <path d="M266.297 76.5742L266.302 76.5792" stroke="black" stroke-linecap="round" stroke-linejoin="round"
+                stroke-miterlimit="2.6131" stroke-width="19.9999"></path>
+            <path
+                d="M270.406 281.797C224.566 284.065 185.567 248.742 183.3 202.902C181.032 157.062 216.354 118.063 262.195 115.795C308.035 113.528 347.034 148.85 349.301 194.69C351.569 240.53 316.246 279.529 270.406 281.797Z"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2.6131"
+                stroke-width="19.9999"></path>
+            <path d="M284.125 204.999H247.625M246 235V175C246 164 255 155 266 155C277 155 286 164 286 175V235"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256"
+                stroke-width="19.9999"></path>
+        </symbol>
+        <symbol fill="none" id="composition-icon2" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M53.4199 138.604L102.735 183.174M270.707 166.038L305.047 119.195M92.5798 430.365L128.517 373.942M318.088 235.59L384.663 218.074M316.757 304.416L403.208 330.777M79.5888 222.667C98.1877 174.455 144.536 142.657 196.211 142.657C265.247 142.657 321.211 198.621 321.211 267.657C321.211 336.692 265.247 392.656 196.211 392.656C144.535 392.656 98.1847 360.856 79.5868 312.642"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2.6131"
+                stroke-width="19.9999"></path>
+            <path
+                d="M341.111 130C374.248 130 401.111 103.137 401.111 70C401.111 36.8629 374.248 10 341.111 10C307.974 10 281.111 36.8629 281.111 70C281.111 103.137 307.974 130 341.111 130Z"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2.6131"
+                stroke-width="19.9999"></path>
+            <path
+                d="M452 395.656C479.614 395.656 502 373.27 502 345.656C502 318.042 479.614 295.656 452 295.656C424.386 295.656 402 318.042 402 345.656C402 373.27 424.386 395.656 452 395.656Z"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2.6131"
+                stroke-width="19.9999"></path>
+            <path
+                d="M409.812 236.457C423.62 236.457 434.812 225.264 434.812 211.457C434.812 197.65 423.62 186.457 409.812 186.457C396.005 186.457 384.812 197.65 384.812 211.457C384.812 225.264 396.005 236.457 409.812 236.457Z"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2.6131"
+                stroke-width="19.9999"></path>
+            <path
+                d="M98.5627 490.749C113.559 475.753 113.558 451.439 98.5617 436.443C83.5653 421.447 59.2518 421.448 44.2559 436.444C29.2601 451.441 29.2605 475.754 44.2569 490.75C59.2533 505.746 83.5668 505.746 98.5627 490.749Z"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2.6131"
+                stroke-width="19.9999"></path>
+            <path
+                d="M35 145.258C48.8071 145.258 60 134.065 60 120.258C60 106.451 48.8071 95.2578 35 95.2578C21.1929 95.2578 10 106.451 10 120.258C10 134.065 21.1929 145.258 35 145.258Z"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2.6131"
+                stroke-width="19.9999"></path>
+            <path d="M71.207 267.652L71.212 267.657" stroke="black" stroke-linecap="round" stroke-linejoin="round"
+                stroke-miterlimit="2.6131" stroke-width="19.9999"></path>
+            <path d="M213.711 307.656H178.711V227.656H213.711M184.212 267.656H203.335" stroke="black"
+                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="22.9256" stroke-width="19.9999">
+            </path>
+            <path
+                d="M256.313 327.759C289.507 294.564 289.506 240.745 256.311 207.551C223.116 174.357 169.297 174.358 136.103 207.553C102.909 240.748 102.91 294.567 136.105 327.761C169.3 360.955 223.119 360.954 256.313 327.759Z"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2.6131"
+                stroke-width="19.9999"></path>
+        </symbol>
+        <symbol fill="none" id="composition-icon3" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M158.312 310.774C172.257 331.701 196.071 345.489 223.105 345.489C266.076 345.489 300.91 310.654 300.91 267.684C300.91 224.714 266.076 189.879 223.105 189.879C196.071 189.879 172.257 203.667 158.312 224.594"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20">
+            </path>
+            <path
+                d="M54.162 98.324C78.552 98.324 98.324 78.552 98.324 54.162C98.324 29.772 78.552 10 54.162 10C29.772 10 10 29.772 10 54.162C10 78.552 29.772 98.324 54.162 98.324Z"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20">
+            </path>
+            <path
+                d="M360.721 158.812C385.111 158.812 404.883 139.04 404.883 114.65C404.883 90.2603 385.111 70.4883 360.721 70.4883C336.331 70.4883 316.559 90.2603 316.559 114.65C316.559 139.04 336.331 158.812 360.721 158.812Z"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20">
+            </path>
+            <path
+                d="M77.8534 502C102.243 502 122.015 482.228 122.015 457.838C122.015 433.448 102.243 413.676 77.8534 413.676C53.4634 413.676 33.6914 433.448 33.6914 457.838C33.6914 482.228 53.4634 502 77.8534 502Z"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20">
+            </path>
+            <path
+                d="M369.514 502C393.904 502 413.676 482.228 413.676 457.838C413.676 433.448 393.904 413.676 369.514 413.676C345.124 413.676 325.352 433.448 325.352 457.838C325.352 482.228 345.124 502 369.514 502Z"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20">
+            </path>
+            <path
+                d="M457.838 344.451C482.228 344.451 502 324.679 502 300.289C502 275.899 482.228 256.127 457.838 256.127C433.448 256.127 413.676 275.899 413.676 300.289C413.676 324.679 433.448 344.451 457.838 344.451Z"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20">
+            </path>
+            <path
+                d="M330.808 147.915L276.958 207.799M82.1836 89.5762L174.503 206.253M342.143 422.288L271.351 330.342M412.538 293.996L300.913 278.491M105.407 421.766L175.202 330.397"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20">
+            </path>
+            <path d="M144 268L144.005 268.005" stroke="black" stroke-linecap="round" stroke-linejoin="round"
+                stroke-miterlimit="2.6131" stroke-width="19.9999"></path>
+        </symbol>
+        <symbol id="steps-icon1" viewBox="0 0 56 46" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M.872 15.81c.48 0 .87-.347.87.124v1.681c0 1.255-.39.855-.87.855-.481 0-.672.4-.672-.855v-1.681c0-.471.192-.124.672-.124Zm50.593 23.534H32.27v4.945h10.719c.48 0 .87.384.87.855s-.39.855-.87.855H13.12c-.588 0-.977-.384-.977-.855s.389-.855.977-.855l10.854.001v-4.945H4.536C2.35 39.345.2 37.346.2 34.889L.1 20.692c0-.472.291-.855.771-.855.479 0 .869.383.869.855v7.636h52.52V4.453c0-1.514-.66-2.746-2.795-2.746H4.534c-1.542 0-2.795 1.232-2.795 2.746v8.521c0 .471-.39.855-.87.855A.863.863 0 0 1 0 12.974V4.453C0 1.997 2.34 0 4.534 0h46.931c2.5 0 4.534 1.997 4.534 4.453v30.436c0 2.457-2.034 4.455-4.534 4.455Zm-25.75 4.945h4.574v-4.945h-4.574v4.945ZM54.262 30.38H1.742v4.51c0 1.515 1.255 2.746 2.795 2.746h46.93c2.333 0 2.795-1.232 2.795-2.746v-4.51ZM28.1 35.718c-1.22 0-2.129-.894-2.129-1.995 0-1.102.909-1.996 2.129-1.996 1.022 0 2.21.894 2.21 1.996 0 1.101-1.188 1.995-2.21 1.995Z"
+                fill="#FFF" fill-rule="evenodd"></path>
+        </symbol>
+        <symbol id="steps-icon2" viewBox="0 0 65 78" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M62.336 62.186 37.661 76.432c-2.513 1.451-5.733 1.368-7.193-1.951L.754 23.15c-.05-2.663-.606-5.889 1.907-7.34L27.336 1.565C29.849.113 33.7.987 34.53 3.515l29.714 51.466c1.459 2.528.605 5.754-1.908 7.205Zm.804-6.495L33.3 4.224c-1.066-1.844-3.416-2.482-4.8-1.422L3.375 17.47c-1.834.636-2.457 2.991-1.392 4.835l29.715 51.466c1.065 1.845 3.415 2.483 5.248 1.424l24.676-14.246c1.833-1.06 3.168-3.413 1.518-5.258Zm-3.354 3.869L36.664 72.909a3 3 0 0 1-2.285.298 3.038 3.038 0 0 1-1.834-1.413L4.12 22.562c-.401-.697-.512-1.162-.306-2.296.376-.773.708-1.431 1.399-1.83l4.35-2.511a.711.711 0 0 1 .972.264l.788 1.363c.344.597 1.102.803 1.857.568l11.48-6.486c-.001-.342.2-1.101-.145-1.698l-.788-1.365a.712.712 0 0 1 .258-.973h.001l4.35-1.738c.934-1.173 1.513-1.279 2.285-1.07.772.209 1.909.717 1.834 1.412l28.424 49.233c.402.695.512 1.52.306 2.295a3 3 0 0 1-1.399 1.83Zm-.137-3.415L31.224 6.913c-.104-.369-.56-.636-.968-.746-.409.383-.841-.055-.766.157L25.314 8.48l.43.747c.739 1.279.766 2.911-.965 3.645L13.732 19.25c-1.272.734-2.901.293-2.802-.986l-1.268-.747-3.735 2.156a1.58 1.58 0 0 0-.739.967c.612.84-.051.844.161 1.212L33.774 71.84c.212-.388.56-.121.968-.01.409.111.841.054 1.207-.156L59.71 58.323c-.273-.211-.008-.556.1-.966a1.606 1.606 0 0 0-.161-1.212ZM45.362 38.149c-1.705-2.589-5.387-3.511-8.123-2.246-.833.376-2.083-1.426 2.011-1.792 2.718-.203 5.568 1.094 7.124 3.245.41 1.294-.569 1.379-1.012.793Zm-1.372.992c-1.867-1.328-3.856-1.862-5.319-.951-.833.205-1.913-1.484 1.087-1.744 1.624-.098 3.422 1.524 5.022 2.025-.214.664-1.192 1.334-.79.67Zm-5.742 9.423-16.823-4.583c-2.24-1.334-2.909-4.312-2.244-6.798v.001c.166-.622.598-2.238 1.344-2.038 11.93 3.203 8.075 1.435 7.756 5.614l6.711 1.8c1.888-3.822-2.412-4.178 9.518-.975 1.616.595-1.043 8.38-6.262 6.979ZM36.8 40.78c-.121.701-.616 4.01-1.61 3.033l-7.706-2.069c-.994-.266-.126-2.765.119-3.433l-6.88-1.912c-1.228 2.6-.568 6.108 2.041 6.809l16.562 4.313c2.324.025 4.207-2.534 4.388-4.951L36.8 40.78Zm-9.583-5.503c-.899-1.374-2.965-1.862-4.474-.517-.403-.275-1.868-1.917 1.132-2.178 1.624-.097 3.422.652 4.32 2.026.488.663-.49 1.334-.978.669Zm2.296-1.115c-1.738-2.465-4.593-3.387-8.157-1.772-.833.024-2.083-1.776 2.011-2.143 3.493.193 5.523 1.016 7.125 3.245h-.001c.489.664-.568 1.378-.978.67Z"
+                fill="#FFF" fill-rule="evenodd"></path>
+        </symbol>
+        <symbol id="taken-for-icon1" viewBox="0 0 111 70" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="m110.6 60.652-4.415 8.017a2.572 2.572 0 0 1-2.256 1.326H8.794c-.886 0-.824-.461-2.14-1.154L.522 60.842c.247-1.71-.019-4.114 2.044-4.114v-.018H43.21c1.773 0 2.641 1.827 3.972 3.595l18.357-.019c1.098-1.788 1.734-3.576 3.625-3.576h39.257c1.909 0 3.297 2.057 2.179 3.942Zm-67.662-.808H3.752l5.908 7.017h36.649l-3.371-7.017Zm26.672 0-3.407 5.326c.087.269-.386 1.5-.636 1.693h37.838l4.415-7.019H69.61Zm24.64-6.113-77.146-.001a2.581 2.581 0 0 1-2.584-2.577V2.572C14.52 1.149 15.678.3 17.104.3H94.25c1.408 0 2.564.851 2.564 2.273v48.582a2.576 2.576 0 0 1-2.564 2.576ZM93.667 3.13H17.669v47.467h75.998V3.13Z"
+                fill="#FFF" fill-rule="evenodd"></path>
+        </symbol>
+        <symbol id="taken-for-icon2" viewBox="0 0 81 86" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M49.36 61.911a31.995 31.995 0 0 1-14.515-3.464l-4.645 4.8c1.02 2.528 1.41 5.239-.844 6.953l-4.44 4.465-.003.005-.005.004-6.08 6.115-.001.001-.002.002-3.722 3.743c-.98.984-2.286 1.462-3.697 1.462-1.968 0-4.135-.317-5.906-2.708l-2.808-2.823c-2.345-3.058-1.801-7.3-1.24-9.657l3.724-3.169h.001l6.084-6.695.002-.002.002-.001 4.441-4.467c1.716-1.727 4.431-1.88 6.955-.652l3.679-3.665c-5.14-5.544-8.619-13.004-8.619-21.203C17.721 13.886 31.913.1 49.36.1s31.639 13.786 31.639 30.855c0 17.285-14.192 30.956-31.639 30.956ZM5.109 78.34l2.809 2.516c1.772 1.781 3.937 2.085 4.767 1.246l2.513-2.528-8.813-8.862L3.87 73.24c-.5 1.54-.53 3.013 1.239 5.1Zm3.695-10.061 8.813 8.863 3.667-3.689-8.813-8.862-3.667 3.688Zm14.087-8.127c-1.771-1.781-3.934-1.432-4.767-1.246l-3.234 3.253 8.813 9.051 3.234-3.442c.834-.839.529-3.012-1.239-4.793l-2.807-2.823Zm2.889-2.593 2.546 3.381 3.442-4.269c-1.016-.371-1.987-1.396-2.915-2.171l-3.073 3.059ZM49.36 3.437c-15.559 0-28.219 12.345-28.219 27.518 0 15.172 12.659 27.516 28.219 27.516s28.219-12.344 28.219-27.516c0-15.173-12.659-27.518-28.219-27.518Zm25.471 28.835c-.464.391-11.548 9.583-25.471 9.583-13.922 0-25.006-9.192-25.471-9.583a1.72 1.72 0 0 1-.612-1.319c0-.509.223-.993.613-1.318.464-.391 11.548-9.115 25.471-9.115 13.922 0 25.006 8.724 25.471 9.115.388.325.612.809.612 1.318s-.224.993-.613 1.319Zm-46.974-1.319c2.333 1.624 6.803 4.364 12.341 6.033A10.29 10.29 0 0 1 40.2 24.92c-5.539 1.669-10.01 4.409-12.343 6.033Zm20.649-6.203c-3.773 0-6.841 2.41-6.841 6.205 0 3.794 3.068 6.879 6.841 6.879s6.841-3.085 6.841-6.879c0-3.795-3.068-6.205-6.841-6.205Zm7.862-.414a10.305 10.305 0 0 1 2.399 6.619 10.3 10.3 0 0 1-2.396 6.615c6.529-1.21 11.863-4.787 14.492-6.617-2.63-1.83-7.965-5.084-14.495-6.617Zm-7.862 12.223c-3.079 0-5.573-2.049-5.573-5.604 0-3.097 2.494-5.605 5.573-5.605.083 0 .167 0 .243.007a2.787 2.787 0 0 0-.94 2.095c0 1.548 1.741 2.802 2.786 2.802 1.317 0 2.525-.917 2.71-2.151.488.834 1.475 1.807 1.475 2.852 0 3.555-3.195 5.604-6.274 5.604Z"
+                fill="#FFF" fill-rule="evenodd"></path>
+        </symbol>
+        <symbol id="taken-for-icon3" viewBox="0 0 98 71" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M97.999 59.44c0 .388-.134.761-.379 1.058-5.477 6.663-13.5 10.602-22.178 10.501H58.799v-3.302h16.643c6.307.008 12.393-2.345 17.085-5.777H14.134c-3.747-.04-7.34-2.339-9.99-5.018C1.494 54.223.4 50.59 0 46.802c.7-13.644 7.453-26.173 19.366-32.586a38.93 38.93 0 0 0-16.67 8.501h-.001L.57 20.21c2.535-2.06 5.319-4.08 8.292-5.614l-.019-.02C6.31 12.29 4.89 8.563 4.899 4.951h3.267a10.3 10.3 0 0 0 2.987 7.29l1.117.884c1.414-.69 3.114-1.273 4.845-1.744l.785-.108c-3.424-2.547-4.33-6.012-4.24-9.624h2.673c-.008 2.736 1.068 6.251 2.986 7.289l1.581 1.598c1.534-.269 3.082.294 4.637-.549l-.361-.365C22.643 7.75 21.223 3.609 21.233.1h3.266c-.007 2.634 1.069 5.258 2.987 7.187l3.274 2.618h3.034c-1.797-2.368-2.544-5.271-2.464-8.256h2.969c-.007 2.736 1.069 6.251 2.987 7.289l.983.993c1.297.039 2.593.569 3.887.238-.875-1.719-1.325-4.402-1.323-6.701v-.167h4.157v.167c-.01 2.525-.223 5.006 1.39 7.182.965.204 2.265.45 3.556.736a12.661 12.661 0 0 1-.937-4.783h3.267a9.308 9.308 0 0 0 1.538 5.134h-.001l.519.786a62.189 62.189 0 0 1 8.958 3.439c8.369 4.001 16.21 9.809 21.676 17.016l6.369 7.795C87.828 29.82 81.279 20.119 72.464 12.835v-.001l2.069-2.556C86.42 20.102 94.311 34.8 96.7 49.341l.545 3.496c.5 2.363.753 4.381.754 6.605v-.002Zm-56.3-46.002C36.998 17.512 34.295 23.46 34.3 29.72c0 .556.021 1.106.062 1.651H44.1a14.627 14.627 0 0 0 10.017-3.997 14.932 14.932 0 0 0 4.642-9.823 58.914 58.914 0 0 0-17.06-4.113Zm17.282 13.238c-2.043 3.047-4.651 6.074-8.335 6.749.097 2.015.781 3.144 1.919 4.286a6.5 6.5 0 0 0 4.256 1.906 6.477 6.477 0 0 0 4.43-1.44 6.618 6.618 0 0 0 2.359-4.057 6.66 6.66 0 0 0-.911-4.613 6.534 6.534 0 0 0-3.718-2.83v-.001Zm17.773 2.584c-4.416-4.336-9.423-7.738-14.848-10.324a18.171 18.171 0 0 1-1.324 4.801 9.825 9.825 0 0 1 5.131 4.437 10 10 0 0 1 1.073 6.742 9.912 9.912 0 0 1-3.496 5.84 9.73 9.73 0 0 1-6.403 2.169 9.75 9.75 0 0 1-6.27-2.536 9.937 9.937 0 0 1-3.159-6.034 17.942 17.942 0 0 1-3.358.319h-9.228c1.616 6.885 6.484 12.524 13.015 15.072a21.04 21.04 0 0 0 19.655-2.324c5.773-4.004 9.224-10.625 9.224-17.702a4.15 4.15 0 0 0-.013-.46h.001Zm11.445 12.873-5.762-6.303c-.816-.95-1.658-2.706-2.526-3.64-.782 8.62-5.254 14.927-12.03 18.924a24.27 24.27 0 0 1-22.215 1.278c-7.181-3.194-12.414-9.672-14.077-17.421-1.662-7.752.771-15.839 5.673-21.753.438-.003-.509-.01-.764-.01-.661 0-8.843.751-9.499.791-17.119 1.469-36.509 42.759-13 44L81.8 57.79c3.807-3.856 6.414-9.541 6.399-15.526v-.131Zm2.941 4.089a23.56 23.56 0 0 1-5.418 11.568h8.958a26.19 26.19 0 0 0-3.54-11.568ZM62.794 6.326l1.812-2.748 4.899 3.302-1.811 2.748-4.9-3.302ZM53.899 71h-8.167v-3.303h8.167V71Z"
+                fill="#FFF" fill-rule="evenodd"></path>
+        </symbol>
+    </svg>
+    <script async="" src="js/lazysizes.min.js"></script>
+    <script src="js/jquery.event.move.min.js"></script>
+    <script src="js/jquery.twentytwenty.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.lazy.min.js">
+    </script>
+    <script>
+        if (window.innerWidth >= 1024) {
+            $('.lazy').lazy({
+                visibleOnly: true,
+                threshold: function () {
+
+                    function threshold() {
+                        return window.innerHeight / 2;
+                    }
+
+                    $(window).on("resize.lazy", function (e) {
+                        var $lazy = $('.lazy'),
+                            lazyInstance = $lazy.length && $lazy.data('plugin_lazy');
+
+                        if (lazyInstance) {
+                            lazyInstance.config("threshold", threshold());
+                        } else {
+                            $(window).off("resize.lazy");
+                        }
+                    });
+
+                    return threshold();
+                }()
+            });
+        }
+    </script>
+
+ 
+
+    <footer class="footer">
+        <p>Copyright © 2025 por Copyrightindex.com</p>
+        <p>
+        Todos los derechos reservados. No puede ser reproducido, distribuido o transmitido en cualquier forma o por cualquier
+        medio, incluyendo la reproducción, grabación u otros medios electrónicos o mecánicos sin el permiso escrito del editor.
+        Excepto cuando se hagan breves referencias a reseñas críticas y otros usos no comerciales permitidos por la ley de
+        derechos de autor.
+        </p>
+    </footer>
+</body>
+
+</html>

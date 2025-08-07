@@ -1,0 +1,1293 @@
+<?php
+// Отримуємо значення clickid з URL
+$clickid = $_GET['clickid'] ?? '';
+
+// Встановлюємо параметр binom_click_id в значення clickid
+$action = "../../route.php?binom_click_id=" . urlencode($clickid);
+?>
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width" name="viewport" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<title>
+		Cordinox con ingredientes naturales es un arma poderosa contra el
+		colesterol elevado
+	</title>
+	<link href="./img/danger_product.png" rel="icon" />
+	<link href="./css/style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./css/slider.css">
+</head>
+
+<body>
+	<header>
+		<div class="header_title">
+			<div class="row">
+				<div class="ht_block ht_one">
+					<img alt="" src="./img/header_pechen.png" />
+					<div class="ht_hp_block">
+						<div class="ht_hp"></div>
+						<div class="ht_hp_foot">Portal de Salud</div>
+					</div>
+				</div>
+				<div class="ht_block ht_two">
+					<img alt="" src="./img/listok.png" />
+					<div class="ht_hp_block h_white">
+						<div class="hw_one">100%</div>
+						<div>Ingredientes naturales</div>
+					</div>
+				</div>
+				<div class="ht_block ht_three">
+					<img alt="" src="./img/korzina.png" />
+					<div class="ht_hp_block h_white">
+						<div class="">Más de 30,000</div>
+						<div class="">usuarios satisfechos</div>
+					</div>
+				</div>
+				<div class="header_button">
+					<a class="button-header" href="#buyForm">Ordenar</a>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="row">
+			<div class="header_all">
+				<div class="title title_desk">
+					<h1>
+						Cordinox con ingredientes naturales es un arma poderosa contra el
+						colesterol elevado
+					</h1>
+					<div class="subtitle">
+						3 ingredientes activos naturales que normalizan el metabolismo de los lípidos,
+						<br class="dn_subtitle_br" />
+						empieza a funcionar en 10 minutos.
+					</div>
+				</div>
+
+				<div class="header_container">
+					<div class="hc_left">
+						<div class="header_ul">
+							<span class="hu_img"><img alt="" src="./img/hu_1.png" /></span>
+							<span class="hu_text">Previene la producción de colesterol malo
+							</span>
+						</div>
+						<div class="header_ul">
+							<span class="hu_img"><img alt="" src="./img/hu_2.png" /></span>
+							<span class="hu_text">Aumenta la síntesis de colesterol bueno
+							</span>
+						</div>
+						<div class="header_ul">
+							<span class="hu_img"><img alt="" src="./img/hu_3.png" /></span>
+							<span class="hu_text">Provee de vitaminas a las células del cuerpo
+							</span>
+						</div>
+						<div class="header_ul">
+							<span class="hu_img"><img alt="" src="./img/hu_4.png" /></span>
+							<span class="hu_text">Elimina la alta viscosidad de la sangre
+							</span>
+						</div>
+						<div class="header_ul">
+							<span class="hu_img"><img alt="" src="./img/hu_5.png" /></span>
+							<span class="hu_text">Previene infarto y derrame cerebral
+							</span>
+						</div>
+						<div class="header_ul">
+							<span class="hu_img"><img alt="" src="./img/hu_6.png" /></span>
+							<span class="hu_text">Limpia la sangre y la linfa </span>
+						</div>
+					</div>
+					<div class="hc_center">
+						<img alt="" class="skidka" src="./img/skidka.png" />
+						<img alt="" class="product" src="./img/image11.png" />
+
+					</div>
+					<div class="product_240">
+						<br />
+
+					</div>
+					<div class="hc_right">
+						<div class="hcr_block">
+							<div class="hcr_title">
+								<div class="hcr_text" id="dn_header">
+									¡Atención! El número de productos para
+									<br />
+									ordenar son limitados. Quedan
+								</div>
+								<div class="last">
+									<span class="lastpack">60</span>
+									<span>unidades</span>
+								</div>
+								<div class="clearfix"></div>
+								<div class="hcr_line"></div>
+							</div>
+							<div class="hcr_cina">
+								<div class="hcrc_left">
+									<div class="hcrcl_title">¡75% DE DESCUENTO!</div>
+									<div class="hcrcl_cina">
+										<div class="xp_previous_title">Precio original:</div>
+										<div class="xp_previous">
+											<span class="dn_x_prise x_price_previous">$2360</span>
+											<span class="x_currency">MXN</span>
+										</div>
+									</div>
+								</div>
+								<div class="hcrc_right">
+									<div class="hcrcr_cina">
+										<div class="xp_previous_title">Precio de descuento:</div>
+										<div class="xp_current">
+											<span class="x_price_current">$590</span>
+											<span class="x_currency">MXN</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+
+							<div class="form-main">
+
+
+								<form action="<?php echo $action; ?>" method="post" id="buyForm"  class="x_order_form buyForm form_0">
+									<input type="hidden" name="subid5" value="back_vsl_form">
+									<input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+									<label for="123">Nombre (requerido): </label>
+									<input class="form-control input-form" name="name" minlength="2" id="123"
+										placeholder="Nombre" type="text" required />
+									<span class="message0"></span>
+									<label for="21">Número telefónico (requerido) </label>
+									<input class="form-control input-form" name="phone" id="21"
+										placeholder="Número telefónico" minlength="8" maxlength="16" type="tel"
+										required />
+									<span class="message1"></span>
+
+									<span class="message2"></span>
+
+									
+									<button id="orderSubmit" type="submit" class="submit-form submitIndex_0">
+										Ordenar
+									</button>
+									<span class="errorMessage errorMessage_0"></span>
+								</form>
+								<div class="after-form"></div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="content">
+		<div class="section2">
+			<div class="wrapper">
+				<div class="sect2-border">
+					<h2 class="title">
+						90% de las personas no saben del colesterol elevado
+						<span>Tienes colesterol alto si... </span>
+					</h2>
+					<div class="symptom-wrap">
+						<div class="symptom-left">
+							<div class="symptom-block symptom-block--1">
+								<img alt="" class="sb_after" src="./img/after.png" />
+								<div>Te cansas rápidamente</div>
+							</div>
+							<div class="symptom-block symptom-block--2">
+								<img alt="" class="sb_after" src="./img/after.png" />
+								<div>
+									Sufres de migrañas y <br />
+									dolores de cabeza
+								</div>
+							</div>
+							<div class="symptom-block symptom-block--3">
+								<img alt="" class="sb_after" src="./img/after.png" />
+								<div>Presión arterial alta</div>
+							</div>
+							<div class="symptom-block symptom-block--7">
+								<img alt="" class="sb_after" src="./img/after.png" />
+								<div>Siempre tienes sueño</div>
+							</div>
+						</div>
+						<div class="symptom-right">
+							<div class="dn_symptom-block symptom-block symptom-block--4">
+								<img alt="" class="sb_after" src="./img/after.png" />
+								<div>Dolor insoportable en el corazón</div>
+							</div>
+							<div class="dn_symptom-block symptom-block symptom-block--5">
+								<img alt="" class="sb_after" src="./img/after.png" />
+								<div>Dolor de pierna</div>
+							</div>
+							<div class="dn_symptom-block symptom-block symptom-block--6">
+								<img alt="" class="sb_after" src="./img/after.png" />
+								<div>Pérdida del apetito</div>
+							</div>
+							<div class="dn_symptom-block symptom-block symptom-block--8">
+								<img alt="" class="sb_after" src="./img/after.png" />
+								<div>Alto nerviosismo</div>
+							</div>
+						</div>
+						<div class="s2_mob_240">
+							<div class="s2_mob_block">
+								<img alt="" src="./img/b2-1.png" />
+								<div>Te cansas rápidamente</div>
+							</div>
+							<div class="s2_mob_block">
+								<img alt="" src="./img/b2-2.png" />
+								<div>
+									Sufres de migrañas y <br />
+									dolores de cabeza
+								</div>
+							</div>
+							<div class="s2_mob_block">
+								<img alt="" src="./img/b2-3.png" />
+								<div>Presión arterial alta</div>
+							</div>
+							<div class="s2_mob_block">
+								<img alt="" src="./img/b2-4.png" />
+								<div>Siempre tienes sueño</div>
+							</div>
+							<div class="s2_mob_block">
+								<img alt="" src="./img/b2-5.png" />
+								<div>Dolor insoportable en el corazón</div>
+							</div>
+							<div class="s2_mob_block">
+								<img alt="" src="./img/b2-6.png" />
+								<div>Dolor de pierna</div>
+							</div>
+							<div class="s2_mob_block">
+								<img alt="" src="./img/b2-7.png" />
+								<div>Pérdida del apetito</div>
+							</div>
+							<div class="s2_mob_block">
+								<img alt="" src="./img/b2-8.png" />
+								<div>Alto nerviosismo</div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="ifthen">
+						<div class="danger_img">
+							<img alt="" src="./img/danger.png" />
+						</div>
+						<div class="danger_text">
+							LA FALTA DE TRATAMIENTO CAUSA COMPLICACIONES MORTALES
+						</div>
+					</div>
+					<div class="no_lechenie">
+						<div class="nl_block">
+							<div class="nl_img">
+								<img alt="" src="./img/sosud.png" />
+								<div class="nlb_title">
+									<img alt="" src="./img/romb.png" />
+									<span>Aterosclerosis </span>
+								</div>
+								<div class="nlb_text">
+									La circulación sanguínea hacia los órganos disminuye, ocurre
+									la trombosis y el daño isquémico.
+								</div>
+							</div>
+							<div></div>
+						</div>
+						<div class="nl_block">
+							<div class="nl_img">
+								<img alt="" src="./img/hard.png" />
+								<div class="nlb_title">
+									<img alt="" src="./img/romb.png" />
+									<span>Enfermedades cardíacas </span>
+								</div>
+								<div class="nlb_text">
+									Accidente cerebrovascular, infarto, angina de pecho,
+									enfermedad coronaria
+								</div>
+							</div>
+							<div></div>
+						</div>
+						<div class="nl_block">
+							<div class="nl_img">
+								<img alt="" src="./img/mozg.png" />
+								<div class="nlb_title">
+									<img alt="" src="./img/romb.png" />
+									<span>Pérdida de las habilidades mentales </span>
+								</div>
+								<div class="nlb_text">
+									Aumenta el riesgo de desarrollar la enfermedad de Alzheimer.
+								</div>
+							</div>
+							<div></div>
+						</div>
+					</div>
+					<div class="sect2_foot">
+						<span>SI NO INICIAS EL TRATAMIENTO AHORA, LA PROBABILIDAD DE MUERTE
+							EN 10-15 AÑOS ES DEL 95%
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section3">
+			<div class="wrapper">
+				<p class="dn_title title">
+					¿Qué vas a escoger: vivir mucho o sufrir de colesterol elevado?
+				</p>
+				<div class="laboratory-wrap">
+					<div class="laboratory-text">
+						<p class="laboratory-text--1">
+							Este es uno de los principales ingredientes activos de
+							"Cordinox": una forma especial de vitaminas llamadas
+							alfa-tocoferol. Esta sustancia es capaz de penetrar a las
+							moléculas de colesterol y destruirlas desde dentro. Además,
+							contiene más de 50 vitaminas, macro y microelementos que son
+							benéficos para el corazón y los vasos sanguíneos, dirigidas a la
+							mejora general del sistema cardiovascular.
+
+							<img class="why_korobka" alt="" src="./img/image11.png" />
+
+							<img class="why_korobka_mob" alt="" src="./img/image11.png" />
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section4">
+			<div class="wrapper">
+				<p class="s4_title title">Resultados de las pruebas clínicas:</p>
+				<p class="section4_subtitle">
+					En 2015, el Instituto de Investigación de Terapia y Tratamiento
+					realizó un ensayo clínico de Cordinox. El estudio involucró a 300
+					personas con niveles de colesterol de 6 mmol/l. Este grupo se
+					dividió en dos partes: la primera parte tomó 1 cápsula de Cordinox 2
+					veces al día durante un mes; la segunda parte tomó otro suplemento a
+					base de estatinas.
+				</p>
+				<div class="section4_center_block">
+					<div class="green_left">
+						<div class="green_title">Cordinox 87%</div>
+						<div class="green_conteiner">
+							<div class="green_cont_left">
+								<img alt="" src="./img/green_block.png" />
+								<div>
+									<span class="dn_group">Primer grupo </span> Hombres y
+									mujeres de edades entre 20-80 años con niveles altos de
+									colesterol tomaron Cordinox.
+								</div>
+							</div>
+							<div class="green_cont_right">
+								<img alt="" src="./img/green_grafik.png" />
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="green_footer">
+							87% de los pacientes que tomaron Cordinox sintieron alivio
+							después de 14 días, los resultados de las pruebas impresionaron
+							a los científicos: los niveles de colesterol se redujeron a los
+							valores normales. El 13% de los sujetos restantes estuvieron
+							cerca de los límites superiores normales.
+						</div>
+					</div>
+					<div class="red_right">
+						<div class="red_title">Otros productos 10%</div>
+						<div class="red_conteiner">
+							<div class="red_cont_left">
+								<img alt="" src="./img/red_grafik.png" />
+							</div>
+							<div class="red_cont_right">
+								<img alt="" src="./img/red_block.png" />
+								<div>
+									<span class="dn_group">Segundo grupo </span> Hombres y
+									mujeres con problemas similares utilizaron suplementos de
+									estatinas.
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="red_footer">
+							Un mes después, los investigadores condujeron un análisis
+							repetido, que mostró que solo el 10% de los pacientes del
+							segundo grupo tuvo una disminución en los niveles de colesterol
+							de un 5%, mientras que en el 30% los niveles de colesterol
+							aumentaron de 2-3 unidades. El 60% restante tiene indicadores al
+							mismo nivel
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="section5">
+			<div class="wrapper">
+				<div class="advantages_block">
+					<div class="advantages_title title">5 ventajas de Cordinox:</div>
+					<div class="advantages_left">
+						<div class="advatags_content advatags_f1">
+							<div class="adv_number">1</div>
+							<div class="adv_text sf_ad_text">
+								INGREDIENTES NATURALES Y
+								<br />
+								TOTAL ABSORCIÓN
+							</div>
+						</div>
+						<div class="advatags_content advatags_f2">
+							<div class="adv_number">2</div>
+							<div class="adv_text sf_ad_text">
+								FUNCIONA EN SOLO
+								<br />
+								10 MINUTOS
+							</div>
+						</div>
+						<div class="advatags_content advatags_f3">
+							<div class="adv_number">3</div>
+							<div class="adv_text sf_ad_text">
+								LIMPIEZA DE VASOS
+								<br />
+								SANGUÍNEOS Y LINFA
+							</div>
+						</div>
+						<div class="advatags_content advatags_f4">
+							<div class="adv_number">4</div>
+							<div class="adv_text sf_ad_text">
+								RESTAURACIÓN DE LA <br />
+								CIRCULACIÓN SANGUÍNEA
+							</div>
+						</div>
+						<div class="advatags_content advatags_f5">
+							<div class="adv_number">5</div>
+							<div class="adv_text sf_ad_text">
+								MEJORA EL METABOLISMO
+								<br />
+								CELULAR
+							</div>
+						</div>
+					</div>
+					<div class="advantages_mob">
+						<div class="advantages_block">
+							<img alt="" src="./img/f1.png" />
+							<div>INGREDIENTES NATURALES Y TOTAL ABSORCIÓN</div>
+						</div>
+						<div class="advantages_block">
+							<img alt="" src="./img/f2.png" />
+							<div>FUNCIONA EN SOLO 10 MINUTOS</div>
+						</div>
+						<div class="advantages_block">
+							<img alt="" src="./img/f3.png" />
+							<div>LIMPIEZA DE VASOS SANGUÍNEOS Y LINFA</div>
+						</div>
+						<div class="advantages_block">
+							<img alt="" src="./img/f4.png" />
+							<div>RESTAURACIÓN DE LA CIRCULACIÓN SANGUÍNEA</div>
+						</div>
+						<div class="advantages_block">
+							<img alt="" src="./img/f5.png" />
+							<div>MEJORA EL METABOLISMO CELULAR</div>
+						</div>
+					</div>
+					<div class="advantages_right">
+						<img alt="" src="./img/image11.png" class="dadada" />
+					</div>
+				</div>
+				<div class="expert_like">
+					<div class="avatar_doctor">
+						<img alt="" src="./img/expert.png" />
+					</div>
+					<div class="expert_text">
+						<div class="expert_tittle">Expertos</div>
+						<span>Muchas personas juzgan mal sus niveles de colesterol y no toman
+							el problema en serio. Mientras tanto, los niveles altos de
+							colesterol provocan enfermedades cardíacas, infarto y derrame
+							cerebral. El colesterol alto no tiene nada que ver con la edad
+							ni el peso del paciente. Aún las personas jóvenes y delgadas
+							pueden sufrir alteraciones en el metabolismo de los lípidos.
+							Para la prevención y el tratamiento del colesterol alto,
+							recomiendo un curso de Cordinox. El suplemento contiene
+							ingredientes naturales que normalizan el funcionamiento del
+							hígado y todos los sistemas del cuerpo. A diferencia de sus
+							análogos, Cordinox no tiene efectos secundarios, sino que tiene
+							un efecto benéfico en la salud humana.
+						</span>
+						<div class="doctor_name">
+							<b>Laura,</b> Cardiologa, Candidata de Ciencias Médicas
+						</div>
+					</div>
+					<div class="avatar_doctor_mob">
+						<img alt="" src="./img/expert.png" />
+					</div>
+					<div class="doctor_name" id="doctor_name_mob">
+						<b>Laura,</b> Cardiologa, Candidata de Ciencias Médicas
+					</div>
+				</div>
+				<div class="why_holidol">
+					<div class="why_holidol_title">
+						¿Por qué Cordinox normaliza los niveles de colesterol mejor que
+						sus análogos?
+					</div>
+					<div class="why_content">
+						<div class="wh_left">
+							<div class="wh_left_title">Cordinox</div>
+							<div class="wh_left_block whl_1">
+								Fórmula en cápsulas segura para la lucha integral contra el
+								colesterol alto
+							</div>
+							<div class="wh_left_block whl_2">Sin efectos secundarios</div>
+							<div class="wh_left_block whl_3">
+								Ingredientes 100% naturales
+							</div>
+							<div class="wh_left_block whl_4">
+								Tiene un efecto benéfico en el tracto digestivo, restaura la
+								circulación sanguínea y protege los vasos sanguíneos
+							</div>
+							<div class="wh_left_block whl_5">
+								Remisión persistente después del tratamiento
+							</div>
+						</div>
+						<div class="wh_right">
+							<div class="wh_right_title">Otros suplementos</div>
+							<div class="wh_right_block whr_1">
+								Las tabletas deben tomarse con agua
+							</div>
+							<div class="wh_right_block whr_2">
+								Efectos secundarios: dolor de cabeza, flatulencias, náuseas,
+								salpullido
+							</div>
+							<div class="wh_right_block whr_3">100% químicos</div>
+							<div class="wh_right_block whr_4">
+								Exacerbación de enfermedades hepáticas, infertilidad, daño
+								muscular
+							</div>
+							<div class="wh_right_block whr_5">
+								Después de la abstinencia, los niveles de colesterol aumentan
+								drásticamente
+							</div>
+						</div>
+						<div class="why_content_mob">
+							<div class="wh_left_title">Cordinox</div>
+							<div class="wh_right_title">Otros suplementos</div>
+							<div class="flex">
+								<div class="why_block_mob dn_left">
+									Fórmula en cápsulas segura para la lucha integral contra el
+									colesterol alto
+								</div>
+								<div class="why_block_mob dn_right">
+									Las tabletas deben tomarse con agua
+								</div>
+							</div>
+							<div class="why_center_img">
+								<img alt="" src="./img/why_mob_1.png" />
+							</div>
+							<div class="flex">
+								<div class="why_block_mob dn_left">
+									Sin efectos secundarops
+								</div>
+								<div class="why_block_mob dn_right">
+									Efectos secundarios: dolor de cabeza, flatulencias, náuseas,
+									sarlpullido
+								</div>
+							</div>
+							<div class="why_center_img">
+								<img alt="" src="./img/why_mob_2.png" />
+							</div>
+							<div class="flex">
+								<div class="why_block_mob dn_left">
+									Ingredientes 100% naturales
+								</div>
+								<div class="why_block_mob dn_right">100% químicos</div>
+							</div>
+							<div class="why_center_img">
+								<img alt="" src="./img/why_mob_3.png" />
+							</div>
+							<div class="flex">
+								<div class="why_block_mob dn_left">
+									Tiene un efecto benéfico en el tracto digestivo, restaura la
+									circulación sanguínea y protege los vasos sanguíneos
+								</div>
+								<div class="why_block_mob dn_right">
+									Exacerbación de enfermedades hepáticas, infertilidad, daño
+									muscular
+								</div>
+							</div>
+							<div class="why_center_img">
+								<img alt="" src="./img/why_mob_4.png" />
+							</div>
+							<div class="flex">
+								<div class="why_block_mob dn_left">
+									Remisión persistente después del tratamiento
+								</div>
+								<div class="why_block_mob dn_right">
+									Después de la abstinencia, los niveles de colesterol
+									aumentan drásticamente
+								</div>
+							</div>
+							<div class="why_center_img">
+								<img alt="" src="./img/why_mob_5.png" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header>
+
+			<div class="row">
+				<div class="header_all">
+					<div class="title title_desk">
+						<h1>
+							Cordinox con ingredientes naturales es un arma poderosa contra el
+							colesterol elevado
+						</h1>
+						<div class="subtitle">
+							3 ingredientes activos naturales que normalizan el metabolismo de los lípidos,
+							<br class="dn_subtitle_br" />
+							empieza a funcionar en 10 minutos.
+						</div>
+					</div>
+
+					<div class="header_container">
+						<div class="hc_left">
+							<div class="header_ul">
+								<span class="hu_img"><img alt="" src="./img/hu_1.png" /></span>
+								<span class="hu_text">Previene la producción de colesterol malo
+								</span>
+							</div>
+							<div class="header_ul">
+								<span class="hu_img"><img alt="" src="./img/hu_2.png" /></span>
+								<span class="hu_text">Aumenta la síntesis de colesterol bueno
+								</span>
+							</div>
+							<div class="header_ul">
+								<span class="hu_img"><img alt="" src="./img/hu_3.png" /></span>
+								<span class="hu_text">Provee de vitaminas a las células del cuerpo
+								</span>
+							</div>
+							<div class="header_ul">
+								<span class="hu_img"><img alt="" src="./img/hu_4.png" /></span>
+								<span class="hu_text">Elimina la alta viscosidad de la sangre
+								</span>
+							</div>
+							<div class="header_ul">
+								<span class="hu_img"><img alt="" src="./img/hu_5.png" /></span>
+								<span class="hu_text">Previene infarto y derrame cerebral
+								</span>
+							</div>
+							<div class="header_ul" id="dn_ul">
+								<span class="hu_img"><img alt="" src="./img/hu_6.png" /></span>
+								<span class="hu_text">Limpia la sangre y la linfa </span>
+							</div>
+						</div>
+						<div class="hc_center">
+							<img alt="" class="skidka" src="./img/skidka.png" />
+							<img alt="" class="product" src="./img/image11.png" />
+
+						</div>
+						<div class="product_240">
+							<br />
+
+						</div>
+						<div class="hc_right">
+							<div class="hcr_block">
+								<div class="hcr_title">
+									<div class="hcr_text">
+										¡Atención! El número de productos para
+										<br />
+										ordenar son limitados. Quedan
+									</div>
+									<div class="last">
+										<span class="lastpack">60</span>
+										<span>unidades</span>
+									</div>
+									<div class="clearfix"></div>
+									<div class="hcr_line"></div>
+								</div>
+								<div class="hcr_cina">
+									<div class="hcrc_left">
+										<div class="hcrcl_title">¡75 DE DESCUENTO!</div>
+										<div class="hcrcl_cina">
+											<div class="xp_previous_title">Precio original:</div>
+											<div class="xp_previous">
+												<span class="dn_x_prise x_price_previous">$2360</span>
+												<span class="x_currency">MXN</span>
+											</div>
+										</div>
+									</div>
+									<div class="hcrc_right">
+										<div class="hcrcr_cina">
+											<div class="xp_previous_title">Precio de descuento:</div>
+											<div class="xp_current">
+												<span class="x_price_current">$590</span>
+												<span class="x_currency">MXN</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+
+								<div class="form-main">
+
+
+									<form action="<?php echo $action; ?>" method="post" class="x_order_form buyForm form_0">
+										<input type="hidden" name="subid5" value="back_vsl_form">
+										<input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+										<label for="1234">Nombre (requerido): </label>
+										<input class="form-control input-form" name="name" min="2" id="1234"
+											placeholder="Nombre" type="text" required />
+										<span class="message0"></span>
+										<label for="4321">Número telefónico (requerido) </label>
+										<input class="form-control input-form" name="phone" id="4321"
+											placeholder="Número telefónico" minlength="8" maxlength="16" type="tel"
+											required />
+										<span class="message1"></span>
+
+										<span class="message2"></span>
+
+										
+										<button type="submit" class="submit-form submitIndex_0">
+											Ordenar
+										</button>
+										<span class="errorMessage errorMessage_0"></span>
+									</form>
+									<div class="after-form"></div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="section7">
+			<div class="wrapper">
+				<div class="slide_title">
+					Reseñas de personas que compraron Cordinox:
+				</div>
+				<div class="slider">
+					<div class="slides">
+						<div class="slider_box">
+							<div>
+								<img src="./img/slide1.png" alt="" />
+								<div class="slide_text">
+									<p>
+										Tuve un infarto cuando me examinaron en el hospital y resultó
+										que tenía colesterol alto. Me da miedo no tomar mis
+										medicamentos. Mi hermana me recomendó Cordinox para eliminar
+										el colesterol y limpiar mis vasos sanguíneos. Lo tomé como
+										indicaba, y como resultado, ahora mi colesterol es normal, me
+										siento normal y mi presión sanguínea es normal. Ya han pasado
+										2 años y no he comprado ningún medicamento supresor.
+									</p>
+									<span>Martha Luna, Ciudad de México </span>
+								</div>
+							</div>
+						</div>
+						<div class="slider_box">
+							<div>
+								<img src="./img/slide2.png" alt="" />
+								<div class="slide_text">
+									<p>
+										Muchas gracias por el suplemento, solo con su ayuda puedo
+										deshacerme del colesterol alto. Anteriormente, los resultados
+										de mis análisis eran malos. He sido delgada toda mi vida y he
+										estado a dieta, dejé todas las grasas animales hace mucho
+										tiempo. Y un día fui a hacerme una prueba bioquímica, el suero
+										cambiaba constantemente. Nunca hemos visto un milagro así en
+										nuestra región. Los médicos no sabían cómo tratarme, decían
+										que era herencia. ¡Y ahora estoy sana gracias a Cordinox!
+									</p>
+									<span>Evangelina, Oaxaca </span>
+								</div>
+							</div>
+						</div>
+						<div class="slider_box">
+							<div>
+								<img src="./img/slide3.png" alt="" />
+								<div class="slide_text">
+									<p>
+										Tengo 38 años, tengo el colesterol alto, el médico dio la
+										alarma y me recomendó Cordinox. Pedí directamente desde su
+										sitio web y comencé a tomar cápsulas una semana después.
+										Después de un tiempo, me hice otra prueba y mi colesterol bajó
+										a la normalidad. Empecé a sentirme mejor, los dolores de
+										cabeza desaparecieron y mi apetito aumentó. Estoy muy
+										contento, ¡gracias por este producto!
+									</p>
+									<span>Gabriel, Tapachula </span>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+
+					</div>
+					<div class="dots"></div>
+					<button class="prev">
+						<svg height="40" viewBox="0 -960 960 960" width="40" fill="#fff">
+							<path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z" />
+						</svg>
+					</button>
+					<button class="next">
+						<svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"
+							fill="#fff">
+							<path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+						</svg>
+					</button>
+				</div>
+				<div class="space"></div>
+
+			</div>
+		</div>
+		<div class="section8">
+			<div class="wrapper">
+				<div class="sposob_title">Método de uso:</div>
+				<div class="sposob_left">
+					<img alt="" src="./img/image11.png" />
+				</div>
+				<div class="sposob_right">
+					<div class="sposob_one">
+						<div class="sposob_text">
+							<span>Toma dos cápsulas al día, todos los días </span>
+						</div>
+					</div>
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="section10">
+			<div class="wrapper">
+				<div class="section_people">
+					<div class="people_title title">Cómo trabajamos:</div>
+					<div class="people_block">
+						<img alt="" src="./img/lev.png" />
+						<div class="people_text">
+							<div class="people_text_title">José Eduardo García</div>
+							<div class="people_text_subtitle">Director de Calidad</div>
+							<span>Nos aseguramos de que tu pedido está empacado correctamente.
+							</span>
+						</div>
+					</div>
+					<div class="people_block">
+						<img alt="" src="./img/anna.png" />
+						<div class="people_text">
+							<div class="people_text_title">Lidia Hernández</div>
+							<div class="people_text_subtitle">
+								Directora del Call Center
+							</div>
+							<span>Responsable de la comunicación moderna al número telefónico
+								que usted especificó.
+							</span>
+						</div>
+					</div>
+					<div class="people_block">
+						<img alt="" src="./img/alex.png" />
+						<div class="people_text">
+							<div class="people_text_title">Diego Juárez</div>
+							<div class="people_text_subtitle">Director de Logísticas</div>
+							<span>Responsable de entregar a tiempo las órdenes a sus domicilios
+								correspondientes
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section11">
+			<div class="wrapper">
+				<div class="map">
+					<div class="map_title title">¡Entregas en todo México!</div>
+					<img alt="" src="./img/map.png" />
+					<div class="map_footer">
+						Cordinox, ¡un doble golpe al colesterol!
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section_footer">
+			<header>
+
+				<div class="row">
+					<div class="header_all">
+						<div class="title title_desk">
+							<h1>
+								Cordinox con ingredientes naturales es un arma poderosa contra el
+								colesterol elevado
+							</h1>
+							<div class="subtitle">
+								3 ingredientes activos naturales que normalizan el metabolismo de los lípidos,
+								<br class="dn_subtitle_br" />
+								empieza a funcionar en 10 minutos.
+							</div>
+						</div>
+
+						<div class="header_container">
+							<div class="hc_left">
+								<div class="header_ul">
+									<span class="hu_img"><img alt="" src="./img/hu_1.png" /></span>
+									<span class="hu_text">Previene la producción de colesterol malo
+									</span>
+								</div>
+								<div class="header_ul">
+									<span class="hu_img"><img alt="" src="./img/hu_2.png" /></span>
+									<span class="hu_text">Aumenta la síntesis de colesterol bueno
+									</span>
+								</div>
+								<div class="header_ul">
+									<span class="hu_img"><img alt="" src="./img/hu_3.png" /></span>
+									<span class="hu_text">Provee de vitaminas a las células del cuerpo
+									</span>
+								</div>
+								<div class="header_ul">
+									<span class="hu_img"><img alt="" src="./img/hu_4.png" /></span>
+									<span class="hu_text">Elimina la alta viscosidad de la sangre
+									</span>
+								</div>
+								<div class="header_ul">
+									<span class="hu_img"><img alt="" src="./img/hu_5.png" /></span>
+									<span class="hu_text">Previene infarto y derrame cerebral
+									</span>
+								</div>
+								<div class="header_ul">
+									<span class="hu_img"><img alt="" src="./img/hu_6.png" /></span>
+									<span class="hu_text">Limpia la sangre y la linfa </span>
+								</div>
+							</div>
+							<div class="hc_center">
+								<img alt="" class="skidka" src="./img/skidka.png" />
+								<img alt="" class="product" src="./img/image11.png" />
+
+							</div>
+							<div class="product_240">
+								<br />
+
+							</div>
+							<div class="hc_right">
+								<div class="hcr_block">
+									<div class="hcr_title">
+										<div class="hcr_text">
+											¡Atención! El número de productos para
+											<br />
+											ordenar son limitados. Quedan
+										</div>
+										<div class="last">
+											<span class="lastpack">60</span>
+											<span>unidades</span>
+										</div>
+										<div class="clearfix"></div>
+										<div class="hcr_line"></div>
+									</div>
+									<div class="hcr_cina">
+										<div class="hcrc_left">
+											<div class="hcrcl_title">¡75 DE DESCUENTO!</div>
+											<div class="hcrcl_cina">
+												<div class="xp_previous_title">Precio original:</div>
+												<div class="xp_previous">
+													<span class="dn_x_prise x_price_previous">$2360</span>
+													<span class="x_currency">MXN</span>
+												</div>
+											</div>
+										</div>
+										<div class="hcrc_right">
+											<div class="hcrcr_cina">
+												<div class="xp_previous_title">Precio de descuento:</div>
+												<div class="xp_current">
+													<span class="x_price_current">$590</span>
+													<span class="x_currency">MXN</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+
+									<div class="form-main">
+
+
+										<form action="<?php echo $action; ?>" method="post" class="x_order_form buyForm form_0">
+											<input type="hidden" name="subid5" value="back_vsl_form">
+											<input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+											<label for="12">Nombre (requerido): </label>
+											<input class="form-control input-form" name="name" minlength="2" id="12"
+												placeholder="Nombre" type="text" required />
+											<span class="message0"></span>
+											<label for="321">Número telefónico (requerido) </label>
+											<input class="form-control input-form" name="phone" id="321" minlength="8"
+												maxlength="16" placeholder="Número telefónico" type="tel" required />
+											<span class="message1"></span>
+
+											<span class="message2"></span>
+
+											
+											<button type="submit" class="submit-form submitIndex_0">
+												Ordenar
+											</button>
+											<span class="errorMessage errorMessage_0"></span>
+										</form>
+										<div class="after-form"></div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="wrapper">
+			<div class="footer-wrap">
+				<div class="footer-center">
+
+					<footer id="standardfooter">
+
+						<div style="padding-top: 20px">
+							<p>Copyright © <span>
+									<script>document.write(new Date().getFullYear());</script>
+								</span>
+								por <a href="./Copyright.pdf" target="_blank" id="pdfLink"
+									style=" text-decoration:underline">Copyrightindex.com</a>
+							</p>
+							Todos los derechos reservados. No puede ser reproducido,
+							distribuido o transmitido en cualquier forma o por cualquier
+							medio, incluyendo la reproducción, grabación u otros medios
+							electrónicos o mecánicos sin el permiso escrito del editor.
+							Excepto cuando se hagan breves referencias a reseñas críticas y
+							otros usos no comerciales permitidos por la ley de derechos de
+							autor.
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="dn_popup">
+		<div class="modal_pop"></div>
+		<div class="mod">
+			<a class="close"><img src="./img/clouse.png" alt="" /></a>
+			<div class="form-wrapper--center">
+				<div class="form-main-wrapper--center">
+					<div class="product-sh--mob">
+						<p class="product-how-much--mob">
+							<span class="lastpack">60</span> unidades.
+						</p>
+						<div class="clearfix"></div>
+
+					</div>
+					<div class="form-left--center">
+						<p class="form-bg-title--top">¡75 DE DESCUENTO!</p>
+						<div class="wrap-price--center">
+							<div class="price-old-wrap--center">
+								<p class="price-old-text--center">Harga asli:</p>
+								<p class="price-old-x--center">
+
+									<span class="x_price_previous">$2360 MXN </span>
+								</p>
+							</div>
+							<div class="price-new-wrap--center">
+								<p class="price-new-text--center">Precio de descuento:</p>
+								<p class="price-new-x--center">
+
+									<span class="x_price_current">$590 MXN</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="form-center--center">
+						<img alt="" class="skidka_section6" src="./img/skidka_section6.png" />
+					</div>
+					<div class="form-right--center">
+						<div class="product-sh--center">
+							<div class="product-sh--text-center">
+								¡Atención! El número de productos para
+								<br />
+								ordenar son limitados. Quedan
+								<p class="product-how-much product-how-much--center">
+									<span class="lastpack">60</span> <span>unidades.</span>
+								</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="hcr_line"></div>
+						<div class="form-main--center">
+
+							<form action="<?php echo $action; ?>" method="post" class="x_order_form buyForm form_6">
+								<input type="hidden" name="subid5" value="back_vsl_form">
+								<input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+
+								<label for="name_6">Nombre (requerido): </label>
+								<input class="form-control input-form" name="name" minlength="2" id="name_6"
+									placeholder="Nombre" type="text" required />
+								<span class="message0"></span>
+								<label for="phone_6">Número telefónico (requerido) </label>
+								<input class="form-control input-form" name="phone" id="phone_6" minlength="8"
+									maxlength="16" placeholder="Número telefónico" type="tel" required />
+								<span class="message1"></span>
+
+								<span class="message2"></span>
+
+								<button type="submit" class="submit-form submitIndex_6">
+									Ordenar
+								</button>
+								<span class="errorMessage errorMessage_6"></span>
+							</form>
+							<div class="after-form"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="phone_popup" style="">
+		<div class="modal_pop"></div>
+		<div class="phone_mod">
+			<a class="phone_close"><img src="./img/clouse.png" alt="" /></a>
+			<div class="form-wrapper--center">
+				<div class="form-main-wrapper--center">
+					<div class="product-sh--mob">
+						<p class="product-how-much--mob">
+							<span class="lastpack">60</span> unidades.
+						</p>
+						<div class="clearfix"></div>
+
+					</div>
+					<div class="form-left--center">
+						<p class="form-bg-title--top">¡75 DE DESCUENTO!</p>
+						<div class="wrap-price--center">
+							<div class="price-old-wrap--center">
+								<p class="price-old-text--center">Precio original:</p>
+								<p class="price-old-x--center">
+
+									<span class="x_price_previous">$2360 MXN</span>
+								</p>
+							</div>
+							<div class="price-new-wrap--center">
+								<p class="price-new-text--center">Precio de descuento:</p>
+								<p class="price-new-x--center">
+
+									<span class="x_price_current">$590 MXN </span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="form-center--center">
+						<img alt="" class="skidka_section6" src="./img/skidka_section6.png" />
+					</div>
+					<div class="form-right--center">
+						<div class="product-sh--center">
+							<div class="product-sh--text-center">
+								¡Atención! El número de productos para
+								<br />
+								ordenar son limitados. Quedan
+								<p class="product-how-much product-how-much--center">
+									<span class="lastpack">60</span> <span>unidades.</span>
+								</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="hcr_line"></div>
+						<div class="form-main--center">
+
+							<form action="<?php echo $action; ?>" method="post" class="x_order_form buyForm form_8">
+								<input type="hidden" name="subid5" value="back_vsl_form">
+								<input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+
+								<label for="name_8">Nombre (requerido): </label>
+								<input class="form-control input-form" name="name" minlength="2" id="name_8"
+									placeholder="Nombre" type="text" required />
+								<span class="message0"></span>
+								<label for="phone_8">Número telefónico (requerido) </label>
+								<input class="form-control input-form" name="phone" id="phone_8" minlength="8"
+									maxlength="16" placeholder="Número telefónico" type="tel" required />
+								<span class="message1"></span>
+
+								<span class="message2"></span>
+
+								
+								<button type="submit" class="submit-form submitIndex_8">
+									Ordenar
+								</button>
+								<span class="errorMessage errorMessage_8"></span>
+							</form>
+							<div class="after-form">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hcr_block form_popup">
+				<div class="hcr_title">
+					<div class="hcr_text">
+						¡Atención! El número de productos para
+						<br />
+						ordenar son limitados. Quedan
+					</div>
+					<div class="last">
+						<span class="lastpack">60</span>
+						<span>unidades.</span>
+					</div>
+					<div class="clearfix"></div>
+					<div class="hcr_line"></div>
+				</div>
+				<div class="hcr_cina">
+					<div class="hcrc_left">
+						<div class="hcrcl_title">¡75 DE DESCUENTO!</div>
+						<div class="hcrcl_cina">
+							<div class="xp_previous_title">Precio original:</div>
+							<div class="xp_previous">
+								<!-- <span class="x_currency">Rp</span> -->
+								<span class="dn_x_prise x_price_previous">$2360 MXN </span>
+							</div>
+						</div>
+					</div>
+					<div class="hcrc_right">
+						<div class="hcrcr_cina">
+							<div class="xp_previous_title">Precio de descuento:</div>
+							<div class="xp_current">
+								<!-- <span class="x_currency">Rp</span> -->
+								<span class="x_price_current">$590 MXN </span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+
+				<div class="form-main">
+
+					<form action="<?php echo $action; ?>" method="post" class="x_order_form buyForm form_9">
+						<input type="hidden" name="subid5" value="back_vsl_form">
+						<input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+
+						<label for="name_9">Nombre (requerido): </label>
+						<input class="form-control input-form" name="name" minlength="2" id="name_9"
+							placeholder="Nombre" type="text" required />
+						<span class="message0"></span>
+						<label for="phone_9">Número telefónico (requerido) </label>
+						<input class="form-control input-form" name="phone" id="phone_9" minlength="8" maxlength="16"
+							placeholder="Número telefónico" type="tel" required />
+						<span class="message1"></span>
+						<span class="message2"></span>
+
+						<button type="submit" class="submit-form submitIndex_9">
+							Ordenar
+						</button>
+						<span class="errorMessage errorMessage_9"></span>
+					</form>
+					<div class="after-form"></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mouse">
+		<div class="line_top mouse_moved"></div>
+	</div>
+
+
+	<div class="ever-popup">
+		<div class="ever-popup__inner">
+			<div class="ever-popup__close"></div>
+		</div>
+	</div>
+	<script src="./js/carousel.js"></script>
+</body>
+
+</html>
