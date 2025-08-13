@@ -1,0 +1,141 @@
+.slider {
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider_box {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.slider_box img {
+    width: 20%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 46%;
+    transform: translateY(-50%);
+    background-color: rgba(51, 51, 51, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:active,
+.next:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.slider_section {
+    height: initial;
+    padding-top: 0;
+}
+
+.slider_box strong {
+    font-size: 18px;
+}
+
+
+.slider_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slider_box p {
+    font-size: 16px;
+}
+
+.slider_box a:hover {
+    background-color: rgb(165, 255, 225);
+    box-shadow: 2px 2px 5px gray;
+}
+
+
+
+@media (max-width: 550px) {
+   
+
+    .box {
+        flex-direction: column;
+
+    }
+
+    button {
+        margin-top: 20px;
+    }
+
+    input {
+        margin-right: 0;
+        height: 30px;
+        max-width: 300px;
+
+    }
+
+    .info label {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .info {
+        margin-top: 20px;
+    }
+
+    .info input {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .visibity {
+        height: 100%;
+    }
+
+    .slider_box {
+        padding: 0;
+    }
+}

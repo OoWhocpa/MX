@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="224" viewBox="0 0 320 224" role="img" aria-labelledby="title desc">
+  <title>YouTube Play Button (White Triangle)</title>
+  <desc>Red rounded rectangle with a white play triangle, scalable vector graphic.</desc>
+  <rect x="0" y="0" width="320" height="224" rx="36" ry="36" fill="#FF0000"/>
+  <!-- White play triangle -->
+  <polygon points="128,64 128,160 208,112" fill="#FFFFFF"/>
+</svg>
