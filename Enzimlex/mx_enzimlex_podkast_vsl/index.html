@@ -1,0 +1,778 @@
+<?php include("../q.php"); ?>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>LA ÚNICA FORMA DE ELIMINAR LOS PARÁSITOS PARA SIEMPRE SIN DIETAS NI MEDICAMENTOS! VEA ESTE VIDEO HASTA EL FINAL</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./images/product.png" type="image/x-icon">
+  <script src="./js/back.js"></script>
+  <script src="./js/dateMx.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      window.vitBack(window.location.href, true);
+    });
+  </script>
+</head>
+
+<body>
+
+
+  <h1 class="main_title">
+    LA ÚNICA FORMA DE ELIMINAR LOS PARÁSITOS 
+    <span class="highlight">
+      PARA SIEMPRE SIN DIETAS NI MEDICAMENTOS! VEA ESTE VIDEO HASTA EL FINAL </span> 
+  </h1>
+  <div id="container_video">
+    <div id="play" onclick="playVideo()">
+      <div>
+        <h4>El video ya ha comenzado</h4>
+        <h4>¡Haga clic para escuchar!</h4>
+      </div>
+    </div>
+    <div class="spinner-container">
+      <div class="spinner-sub-container">
+        <div class="spinner"></div>
+      </div>
+    </div>
+    <video id="video" autoplay="autoplay" muted="" playsinline="" webkit-playsinline="" poster="./images/poster.png">
+      <source src="https://pub-bbcd86335e924092a9d274baed5a5a09.r2.dev/5xe/7776.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div id="progress-container" style="width: 100%; background-color: white; height: 10px; margin-top: 20px;">
+    <div id="progress-bar" style="width: 0%; height: 100%; background-color: red;"></div>
+  </div>
+
+  <p class="sound"><img height="20" src="./images/sound.png" alt=""> (Asegúrate de tener el sonido activado. Este video puede tardar 10 segundos en cargarse.)</p>
+  <div id="order">
+    <div class="terbatas">
+      <p>¡Apresúrate, la oferta es limitada!</p>
+      <img src="./images/BlPE.gif" alt="">
+    </div>
+    <div class="diet-section">
+      <form class="diet-container" action="<?php getRoutelink(); ?>" method="post">
+
+        <img src="./images/product.png" class="product" alt="">
+        <h2 class="form_title text-center">¡TERMINA PRONTO! Sólo <del>$2,360 MXN</del> <span class="green-text">$590 MXN</span>
+        </h2>
+        <a class="main-btn" rel="nofollow">
+          Obtén un 75% de descuento
+
+          <span>¡Sí, quiero deshacerme de la diabetes!</span>
+          <img src="./images/small-days.png" alt="">
+        </a>
+        <div class="clearfix hide">
+          <input type="hidden" name="subid5" value="main_vsl_form">
+          <input type="hidden" id="clickId" name="click_id" value="<?php print $_SESSION['binom_click_id']; ?>">
+          <span class="label">Ingresar tu nombre: </span>
+
+          <input name="name" type="text" required minlength="2" placeholder="Ingresar tu nombre" class="input">
+
+          <span class="label">Ingresar tu número de teléfono </span>
+          <input name="phone" type="tel" required minlength="8" maxlength="16"
+            placeholder="Ingresar tu número de teléfono" class="input">
+
+          <button type="submit" class="btn_form">
+            ¡Ordenar ahora!
+          </button>
+        </div>
+        <div class="diet-text">
+          <h5>DISPONIBLE EN TODO MÉXICO</h5>
+          <div class="box-img">
+            <div class="box">
+              <img src="./images/1.png" alt="">
+            </div>
+            <div class="box">
+
+              <img src="./images/2.png" alt="">
+            </div>
+            <div class="box">
+
+              <img src="./images/3.png" alt="">
+            </div>
+            <div class="box">
+              <img src="./images/4.png" alt="">
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="block_tv">
+    <p>COMO SE PRESENTA EN</p>
+    <div class="tv_icons">
+      <img src="./images/img1.png" alt="" />
+      <img src="./images/img2.png" alt="" />
+      <img src="./images/img3.png" alt="" />
+    </div>
+  </div>
+
+<div class="comments" id="comment-component-text">
+  <div id="comment_num" class="">Comentarios:</div>
+  <div class="comment">
+    <img class="comment__image" src="./images/1.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">José</h2>
+      <div class="comment__text">
+        Nunca pensé que los parásitos pudieran ser tan peligrosos y silenciosos. Este video me ayudó a aprender datos
+        muy
+        útiles.
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">12</span>
+          Me gusta
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          No me gusta
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("mx", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/2.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">María</h2>
+      <div class="comment__text">
+        Me sorprendió mucho descubrir que los parásitos pueden vivir en el cerebro y los pulmones. Ahora creo que es
+        esencial
+        cuidar nuestra salud más seriamente.
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">15</span>
+          Me gusta
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          No me gusta
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("mx", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/3.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">Carlos</h2>
+      <div class="comment__text">
+        Es aterrador pensar que los parásitos pueden vivir en nuestro cuerpo durante años sin que lo sepamos.
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">13</span>
+          Me gusta
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          No me gusta
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("mx", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/4.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">Antonio</h2>
+      <div class="comment__text">
+        El video es muy interesante. Me gustó cómo presentan la información de manera científica, y confío en la opinión
+        del
+        médico.
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">5</span>
+          Me gusta
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          No me gusta
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("mx", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/5.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">Miguel</h2>
+      <div class="comment__text">
+        Nunca imaginé que existieran tantas enfermedades causadas por parásitos. Fui a hacerme un chequeo inmediatamente
+        después
+        de ver los síntomas.
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">5</span>
+          Me gusta
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          No me gusta
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("mx", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/6.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">Isabel</h2>
+      <div class="comment__text">
+        Normalmente no veo videos de este tipo, pero este me hizo reflexionar. Aprendí muchas cosas sobre los parásitos
+        que no
+        sabía antes.
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">5</span>
+          Me gusta
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          No me gusta
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("mx", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/7.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">Luis</h2>
+      <div class="comment__text">
+        No puedo creer que los parásitos puedan afectar tanto nuestra salud. Este video fue muy informativo.
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">10</span>
+          Me gusta
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          No me gusta
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("mx", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/8.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">Sebastián</h2>
+      <div class="comment__text">
+        Al principio pensé que era una exageración, pero la información y los hechos presentados en el video muestran
+        que es
+        real.
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">12</span>
+          Me gusta
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          No me gusta
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("mx", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/9.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">Fernando</h2>
+      <div class="comment__text">
+        Ahora tengo que reconsiderar cómo cuido mi salud. Nunca pensé que los parásitos pudieran ser la causa de tantos
+        problemas.
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">16</span>
+          Me gusta
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          No me gusta
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("mx", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/10.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">Natalia</h2>
+      <div class="comment__text">
+        La mayoría de las personas, incluyéndome, no tienen idea de cuánto daño pueden causar los parásitos. Este video
+        fue una
+        verdadera revelación.
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">16</span>
+          Me gusta
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          No me gusta
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("mx", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/11.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">Javier</h2>
+      <div class="comment__text">
+        Enzimlex me ha funcionado muy bien. Me siento mucho mejor, y mis problemas digestivos desaparecieron en unas
+        pocas
+        semanas.
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">16</span>
+          Me gusta
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          No me gusta
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("mx", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/12.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">Diego</h2>
+      <div class="comment__text">
+        Lo probé y vi resultados en el tercer día. Ahora duermo mejor y me siento menos cansado. Este producto realmente
+        funciona.
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">6</span>
+          Me gusta
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          No me gusta
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("mx", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/13.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">Sofía</h2>
+      <div class="comment__text">
+        Al principio tenía dudas sobre el producto, pero después de usar Enzimlex, noté una mejora significativa en mi
+        salud.
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">6</span>
+          Me gusta
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          No me gusta
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("mx", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/14.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">Andrés</h2>
+      <div class="comment__text">
+        Después de tomar Enzimlex, los problemas de mi piel comenzaron a desaparecer poco a poco. He recuperado mi
+        energía y
+        vitalidad.
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">16</span>
+          Me gusta
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          No me gusta
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("mx", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/15.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">Fernando</h2>
+      <div class="comment__text">
+        Nunca pensé que mi salud pudiera mejorar tanto. Me siento ligero y lleno de energía.
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">17</span>
+          Me gusta
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          No me gusta
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("mx", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/16.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">Mariana</h2>
+      <div class="comment__text">
+        Antes siempre me sentía cansada, pero desde que empecé a tomar Enzimlex, los síntomas han mejorado muchísimo.
+        Realmente
+        funciona.
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">17</span>
+          Me gusta
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          No me gusta
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("mx", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/17.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">Sebastián</h2>
+      <div class="comment__text">
+        Pensé que solo estaba cansado y agotado, pero al probar Enzimlex me di cuenta de que los parásitos eran la
+        causa.
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">17</span>
+          Me gusta
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          No me gusta
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("mx", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/18.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">Miguel</h2>
+      <div class="comment__text">
+        Enzimlex solucionó problemas de salud que había tenido durante años. Los resultados fueron claros en menos de un
+        mes.
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">17</span>
+          Me gusta
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          No me gusta
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("mx", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/19.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">Ricardo</h2>
+      <div class="comment__text">
+        Este producto vale cada centavo. Desde que lo tomo, tengo más energía y desaparecieron los síntomas molestos.
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">17</span>
+          Me gusta
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          No me gusta
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("mx", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/20.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">Luis</h2>
+      <div class="comment__text">
+        Enzimlex ha cambiado mi vida. Ahora me siento más saludable y, además, ¡me veo más joven! Muchas gracias.
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">17</span>
+          Me gusta
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          No me gusta
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("mx", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+
+  <div class="literarure">
+    <div class="literarure-box">
+      <img src="./images/image16.png" alt="">
+      <img src="./images/image20.png" alt="">
+      <img src="./images/image23.png" alt="">
+      <img style="height: 40px;" src="./images/image9.png" alt="">
+    </div>
+  <ol>
+    <li><a href="https://doi.org/10.1016/j.parint.2021.102256" target="_blank"><b>Tang, C., Zhang, Z., Liu, J., et al.
+          (2021). <i>Helminth infections and their impacts on human health.</i> Parasitology International, 82,
+          102256.</b> </a></li>
+    <li><a href="https://www.cdc.gov/parasites" target="_blank"><b>Centers for Disease Control and Prevention (CDC).
+          (2019). <i>Parasites – Epidemiology & Risk Factors.</i> CDC.gov.</b></a></li>
+    <li><a href="https://www.who.int/neglected_diseases" target="_blank"><b>World Health Organization (WHO). (2020).
+          <i>The Control of Neglected Tropical Diseases: Helminth Infections.</i> WHO.int.</b></a></li>
+    <li><a href="https://doi.org/10.1186/s13071-016-1362-3" target="_blank"><b>Müller, J., Hemphill, A. (2016).
+          <i>Antiparasitic Drugs: Mechanisms of Action and Resistance.</i> Parasites & Vectors, 9, 123.</b></a></li>
+    <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10059851/" target="_blank"><b>Katz, N., Chaves, A., Pellegrino,
+          J. (2020). <i>Parasites in Developing Countries: Health and Economic Impact.</i> Lancet Infectious Diseases, 16,
+          1420-1429.</b></a></li>
+    <li><a href="https://www.harvard.edu/research/parasites-immune-response" target="_blank"><b>Harvard University.
+          (2022). <i>Parasites and Immune Response: Harvard Research Highlights New Links Between Parasites and Chronic
+            Diseases.</i></b></a></li>
+    <li><a href="https://www.nih.gov/news-events/research-briefs/impact-parasitic-infections-global-health"
+        target="_blank"><b>National Institutes of Health (NIH). (2021). <i>Impact of Parasitic Infections on Global
+            Health.</i></b></a></li>
+    <li><a href="https://www.hopkinsmedicine.org/research/parasitology-treatment" target="_blank"><b>Johns Hopkins
+          University. (2020). <i>Parasitology Research: Breakthroughs in Parasite Treatment.</i></b></a></li>
+    <li><a href="https://med.stanford.edu/news/all-news/2022/parasite-disease-treatments.html" target="_blank"><b>Stanford
+          University. (2022). <i>New Discoveries in Parasitic Disease Treatments.</i></b></a></li>
+  </ol>
+  </div>
+
+  <footer>
+    <div class="footer-box">
+
+      <p>Copyright © 2025 por Copyrightindex.com</p>
+
+      <p>Todos los derechos reservados. No puede ser reproducido, distribuido o transmitido en cualquier forma o por
+        cualquier
+        medio, incluyendo la reproducción, grabación u otros medios electrónicos o mecánicos sin el permiso escrito del
+        editor.
+        Excepto cuando se hagan breves referencias a reseñas críticas y otros usos no comerciales permitidos por la ley
+        de
+        derechos de autor.</p>
+    </div>
+
+  </footer>
+  <script src="./js/video.js"></script>
+  <script src="./js/coments.js"></script>
+</body>
+
+</html>
