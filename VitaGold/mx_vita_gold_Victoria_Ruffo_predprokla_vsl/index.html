@@ -1,0 +1,994 @@
+<?php include("../q.php"); ?>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Rejuvenecimiento de la piel en 7 días: ¡Un método casero sencillo que las corporaciones cosméticas quieren
+    ocultar!
+  </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./images/product.png" type="image/x-icon">
+  <script src="./js/back.js"></script>
+  <script src="./js/dateMx.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      window.vitBack(window.location.href, true);
+    });
+  </script>
+</head>
+
+<body>
+  <div class="pr_body">
+    <div class="pr_container">
+      <div class="pr_content">
+        <h1>Sólo las estrellas conocen este secreto: cómo Victoria Ruffo devuelve la juventud a su piel sin cirugías ni
+          inyecciones</h1>
+        <h5>Autora: Mariana López</h5>
+        <h4>Ya tiene 61 años… pero parece de máximo 40.
+          Y no es Photoshop ni interminables inyecciones.</h4>
+        <img src="./images/image1.jpg" alt="">
+        <p>
+          <b>Victoria Ruffo</b>, la reina de las telenovelas mexicanas, ha sido durante décadas la consentida del
+          público.
+        </p>
+        <p>
+          Pero la propia actriz admite que hace unos años el espejo empezó a traerle decepciones.
+        </p>
+        <p> «Veía nuevas arrugas cada semana. El maquillaje ya no lograba ocultar el cansancio, y mi piel se volvía
+          opaca y sin
+          vida», — confiesa Victoria.
+        </p>
+        <img src="./images/image2.jpg" alt="">
+        <p>Todo cambió después de una visita a su viejo amigo, un dermatólogo de la Ciudad de México, el doctor Ramírez.
+        </p>
+        <p>Él le explicó que el problema no era la edad, sino que las células de la piel habían dejado de regenerarse.
+        </p>
+        <p>Todas las cremas y sueros de las tiendas actúan solo en la superficie y resultan convenientes para la
+          industria, pues no
+          necesitan resolver el problema de raíz.</p>
+        <p>El doctor le compartió un ritual de 15 segundos, basado en una combinación de ingredientes poco comunes:</p>
+
+        <ul>
+          <li><b>Extracto de semilla de uva</b> — restaura el colágeno y la firmeza de la piel.</li>
+          <li><b>Jugo de cáscara de granada</b> — unifica el tono y aporta luminosidad.</li>
+          <li><b>Bakuchiol</b> — la alternativa natural al retinol, suaviza las arrugas sin causar irritación.</li>
+        </ul>
+
+        <img  src="./images/image3.jpg" alt="">
+        <h3><b>A la semana ya noté los cambios.</b></h3>
+        <p>Al mes, mis amigas me preguntaban si me había hecho un lifting facial.
+          Pero en realidad solo era este ritual», — comparte Victoria.</p>
+        <p>Resultado</p>
+        <p>Hoy Victoria asegura que su piel se ha “reprogramado”:</p>
+        <p>las arrugas se redujeron, el tono de su rostro luce más fresco y la confianza volvió a su vida.</p>
+        <img  src="./images/image4.jpg" alt="">
+        <p>Este método ya ha ayudado a decenas de miles de mujeres en México a verse más jóvenes sin inyecciones ni
+          cirugías.</p>
+        <p>Cómo probarlo tú misma</p>
+        <p>«Comparto este secreto porque me cansé de escuchar: “Eso es Photoshop”. No. Es una activación natural de la
+          piel,
+          disponible para todas», — dice Victoria.</p>
+        <p>El doctor Ramírez grabó un breve video donde explica con detalle este método.
+          Míralo antes de que lo eliminen.</p>
+      </div>
+      <div class="pr_coments">
+        <div class="pr_coment">
+          <h3>¡Me siento 20 años más joven!</h3>
+          <p>«Mi rostro no se veía tan bien desde hacía muchos años — la piel se volvió firme, como en mi juventud. No
+            se trata solo
+            de la apariencia, sino de la sensación. Mirarme al espejo y verme casi 20 años más joven fue un verdadero
+            impacto.»</p>
+          <span><b>— Bella, 54 años</b></span>
+        </div>
+        <div class="pr_empty_comm"></div>
+        <div class="pr_coment">
+          <h3>Increíble</h3>
+          <p>«La verdad, no esperaba mucho — ya había probado cientos de productos. Pero en solo unos días noté la
+            diferencia: mi
+            piel se volvió más firme y las pequeñas arrugas desaparecieron. ¡Lástima no haberlo sabido antes!»</p>
+          <span><b>— Margo, 58 años</b></span>
+        </div>
+
+      </div>
+
+    </div>
+    <button class="pr_btn">Ver el video</button>
+  </div>
+  <div class="basic_body d-none">
+    <h1 class="main_title">
+      Rejuvenecimiento de la piel en 7 días:
+      <span class="highlight">
+        ¡Un método casero sencillo que las corporaciones cosméticas quieren
+        ocultar! </span>
+    </h1>
+    <div id="container_video">
+      <div id="play" onclick="playVideo()">
+        <div>
+          <h4>El video ya ha comenzado</h4>
+          <h4>¡Haga clic para escuchar!</h4>
+        </div>
+      </div>
+      <div class="spinner-container">
+        <div class="spinner-sub-container">
+          <div class="spinner"></div>
+        </div>
+      </div>
+      <video id="video" autoplay="autoplay" muted="" playsinline="" webkit-playsinline="" poster="./images/poster.png">
+        <source src="https://pub-c10a5630c2954c51bcbb48669fbd0b36.r2.dev/22dl/LGJKF.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div id="progress-container" style="width: 100%; background-color: white; height: 10px; margin-top: 20px;">
+      <div id="progress-bar" style="width: 0%; height: 100%; background-color: red;"></div>
+    </div>
+
+    <p class="sound"><img height="20" src="./images/sound.png" alt=""> (Asegúrate de tener el sonido activado. Este
+      video puede tardar 10 segundos en cargarse.)</p>
+    <div id="order">
+      <div class="terbatas">
+        <p>¡Apresúrate, la oferta es limitada!</p>
+        <img src="./images/BlPE.gif" alt="">
+      </div>
+      <div class="diet-section">
+        <form class="diet-container" action="<?php getRoutelink(); ?>" method="post">
+
+          <img src="./images/product.png" class="product" alt="">
+          <h2 class="form_title text-center">¡TERMINA PRONTO! Sólo <del>$1580 MXN</del> <span class="green-text">$790
+              MXN</span>
+          </h2>
+          <a class="main-btn" rel="nofollow">
+            Obtén un 50% de descuento
+
+            <span>¡Sí, quiero una piel perfecta!</span>
+            <img src="./images/small-days.png" alt="">
+          </a>
+          <div class="clearfix hide">
+            <input type="hidden" name="subid5" value="main_vsl_form">
+            <input type="hidden" id="clickId" name="click_id" value="<?php print $_SESSION['binom_click_id']; ?>">
+            <span class="label">Ingresar tu nombre: </span>
+
+            <input name="name" type="text" required minlength="2" placeholder="Ingresar tu nombre" class="input">
+
+            <span class="label">Ingresar tu número de teléfono </span>
+            <input name="phone" type="tel" required minlength="8" maxlength="16"
+              placeholder="Ingresar tu número de teléfono" class="input">
+
+            <button type="submit" class="btn_form">
+              ¡Ordenar ahora!
+            </button>
+          </div>
+          <div class="diet-text">
+            <h5>DISPONIBLE EN TODO MÉXICO</h5>
+            <div class="box-img">
+              <div class="box">
+                <img src="./images/1.png" alt="">
+              </div>
+              <div class="box">
+
+                <img src="./images/2.png" alt="">
+              </div>
+              <div class="box">
+
+                <img src="./images/3.png" alt="">
+              </div>
+              <div class="box">
+                <img src="./images/4.png" alt="">
+              </div>
+
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="block_tv">
+      <p>COMO SE PRESENTA EN</p>
+      <div class="tv_icons">
+        <img src="./images/img1.png" alt="" />
+        <img src="./images/img2.png" alt="" />
+        <img src="./images/img3.png" alt="" />
+      </div>
+    </div>
+
+    <div class="comments" id="comment-component-text">
+      <div id="comment_num" class="">DISCUSIÓN:</div>
+      <div class="comment">
+        <img class="comment__image" src="./images/1.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">María</h2>
+          <div class="comment__text">
+            ¡Muy informativo! Siempre estuve buscando un método natural para el rejuvenecimiento, y este video
+            finalmente
+            respondió
+            a todas mis preguntas.
+
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">12</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/2.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Sofía</h2>
+          <div class="comment__text">
+            ¡Cada mujer debería ver este video! Nunca imaginé que se pudieran obtener resultados así sin cirugía.
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">15</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/3.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Fernanda</h2>
+          <div class="comment__text">
+            ¡Gracias por este video tan útil! Estoy lista para actuar ahora mismo y recuperar mi juventud.
+
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">13</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/4.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Guadalupe</h2>
+          <div class="comment__text">
+            Era escéptica, pero las historias de las mujeres me impresionaron. Este video es un verdadero descubrimiento
+            para todas.
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">5</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/5.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Luz</h2>
+          <div class="comment__text">
+            ¡Increíble cuánta información útil aprendí sobre el cuidado de la piel! Debo mostrarle este video a mi amiga
+            de
+            inmediato.
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">5</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/6.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Carla</h2>
+          <div class="comment__text">
+            Es la primera vez que escucho sobre este método. Este video es una salvación para quienes quieren conservar
+            su
+            juventud.
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">5</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/7.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Ana</h2>
+          <div class="comment__text">
+            Gracias por contarnos la verdad que nos han ocultado. Ahora sé exactamente lo que necesito para
+            rejuvenecerme.
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">10</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/8.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Rosa</h2>
+          <div class="comment__text">
+            Ahora entiendo por qué las cremas comunes no me funcionaban. Este video cambió completamente mi enfoque
+            hacia
+            el cuidado
+            de la piel.
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">12</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/9.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Martha</h2>
+          <div class="comment__text">
+            ¡Información muy valiosa! Ahora estoy segura de que puedo lograr resultados sin procedimientos costosos.
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">16</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/10.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Elena</h2>
+          <div class="comment__text">
+            Después de ver este video, me di cuenta de que estaba equivocada al confiar en cremas químicas. ¡El método
+            natural es la
+            solución!
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">16</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/11.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Marisol</h2>
+          <div class="comment__text">
+            ¡Vita Gold cambió mi vida! Mi piel se volvió firme y radiante después de solo una semana de uso.
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">16</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/12.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Lucía</h2>
+          <div class="comment__text">
+            ¡Este sérum hace maravillas! Llevo usando Vita Gold un mes y mi piel luce 10 años más joven.
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">6</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/13.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Andrea</h2>
+          <div class="comment__text">
+            He probado muchos productos, pero ninguno me ayudó como Vita Gold. Las arrugas desaparecieron y mi piel se
+            ve
+            saludable.
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">6</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/14.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Patricia</h2>
+          <div class="comment__text">
+            ¡Vita Gold me devolvió la juventud! Los resultados son visibles después de solo unas aplicaciones. ¡Estoy
+            encantada!
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">16</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/15.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Verónica</h2>
+          <div class="comment__text">
+            ¡Producto sorprendente! Mi piel está suave y hasta mis compañeras de trabajo me preguntan qué estoy
+            haciendo.
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">17</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/16.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Adriana</h2>
+          <div class="comment__text">
+            Vita Gold es lo mejor que he probado. Mi piel se volvió firme y las arrugas desaparecieron.
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">17</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/17.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Cecilia</h2>
+          <div class="comment__text">
+            Mi mamá usó Vita Gold y el resultado fue impresionante. Su piel cambió en muy poco tiempo.
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">17</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/18.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Lorena</h2>
+          <div class="comment__text">
+            Este sérum es un verdadero tesoro. Mi piel luce joven y saludable, ¡parezco 10 años más joven!
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">17</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/19.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Gabriela</h2>
+          <div class="comment__text">
+            ¡No esperaba que un sérum fuera tan efectivo! Vita Gold es pura magia.
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">17</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/20.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Isabel</h2>
+          <div class="comment__text">
+            Después de usar Vita Gold, literalmente no reconozco mi piel. Las arrugas desaparecieron y me veo fresca y
+            renovada.
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">17</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/21.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Andrea</h2>
+          <div class="comment__text">
+            ¡Este suero hace a mi piel brillar!Es tan suave y brillante, ¡y luce 10 años más joven! Me encanta usarlo
+            solo
+            o con
+            maquillaje
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">17</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/22.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Tania</h2>
+          <div class="comment__text">
+            ¡Simplemente me encanta! Mi piel se siente suave y las líneas finas parecen que desaparecen. Mi familia me
+            ha
+            dado
+            muchos halagos. ¡Gracias por el mejor producto!
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">17</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/23.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Andrea</h2>
+          <div class="comment__text">
+            Estoy feliz de ver cómo mi piel responde a Vita Gold. Tengo 70 años y tengo una piel hermosa y luminosa.
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">17</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="comment">
+        <img class="comment__image" src="./images/24.jpg" alt=" " />
+        <div class="comment__content">
+          <h2 class="comment__name">Karen</h2>
+          <div class="comment__text">
+            Mi piel no se había visto así de sana desde hace mucho tiempo. Hasta mi esposo me dijo que me veo muy bien
+            últimamente.
+            Cancelé de inmediato mis suscripciones a otros hidratantes faciales.
+            <br />
+          </div>
+          <p class="comment__details">
+            <button class="comments__like">
+              <img src="./images/like-btn.svg" alt="" />
+              <span class="likes">17</span>
+              Me gusta
+            </button>
+            <button class="comments__dislike">
+              <img src="./images/dislike-btn.svg" alt="" />
+              <span class="dislikes">0</span>
+              No me gusta
+            </button>
+            <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+            </a>
+            <span class="comment__time">
+              <script>
+
+                dtime("mx", 0, 0, 0, true, true, true);
+              </script>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="literarure">
+      <div class="literarure-box">
+        <img src="./images/image16.png" alt="">
+        <img src="./images/image20.png" alt="">
+        <img src="./images/image23.png" alt="">
+      </div>
+      <ol>
+        <li><a href="https://www.health.harvard.edu" target="_blank">Harvard Health Publishing. <b>"Skin Care and
+              Repair:
+              The Science Behind Rejuvenation Treatments."</b> Harvard Medical School.</a></li>
+        <li><a
+            href="https://www.hopkinsmedicine.org/health/wellness-and-prevention/cosmetic-procedures/how-facial-rejuvenation-procedures-can-improve-aging-skin"
+            target="_blank">Johns Hopkins Medicine. <b>"The Role of Collagen in Skin Health and Rejuvenation."</b> Johns
+            Hopkins University.</a></li>
+        <li><a href="https://med.stanford.edu" target="_blank">Stanford Dermatology. <b>"Advances in Anti-Aging
+              Treatments: From Retinoids to Natural Alternatives." </b>Stanford University School of Medicine.</a></li>
+        <li><a href="https://www.nia.nih.gov" target="_blank">National Institute on Aging. <b>"Understanding Skin Aging:
+              Key Factors and Emerging Solutions."</b> National Institutes of Health (NIH).</a></li>
+        <li><a href="https://www.aad.org" target="_blank">American Academy of Dermatology (AAD). <b>"Evidence-Based
+              Recommendations for Anti-Aging Skin Care."</b></a></li>
+        <li><a href="https://www.wjgnet.com" target="_blank">World Journal of Dermatology. <b>"The Role of Aloe Vera and
+              Plant-Based Extracts in Anti-Aging Therapies."</b></a></li>
+      </ol>
+    </div>
+
+    <footer>
+      <div class="footer-box">
+
+        <p>Copyright © 2025 por Copyrightindex.com</p>
+
+        <p>Todos los derechos reservados. No puede ser reproducido, distribuido o transmitido en cualquier forma o por
+          cualquier
+          medio, incluyendo la reproducción, grabación u otros medios electrónicos o mecánicos sin el permiso escrito
+          del
+          editor.
+          Excepto cuando se hagan breves referencias a reseñas críticas y otros usos no comerciales permitidos por la
+          ley
+          de
+          derechos de autor.</p>
+      </div>
+
+    </footer>
+  </div>
+  <script src="./js/video.js"></script>
+  <script src="./js/coments.js"></script>
+</body>
+
+</html>
