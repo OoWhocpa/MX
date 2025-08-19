@@ -1,0 +1,2391 @@
+<?php
+// Отримуємо значення clickid з URL
+$clickid = $_GET['clickid'] ?? '';
+
+// Встановлюємо параметр binom_click_id в значення clickid
+$action = "../../route.php?binom_click_id=" . urlencode($clickid);
+?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
+		<meta charset="utf-8" />
+		<meta content="Vita Gold" name="product" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<title>Vita Gold</title>
+		<link href="css/slick.css" rel="stylesheet" />
+		<link href="css/slick-theme.css" rel="stylesheet" />
+		<link href="css/animate.css" rel="stylesheet" />
+		<link href="css/normalize.css" rel="stylesheet" />
+		<link href="css/index.css" rel="stylesheet" />
+		<link rel="icon" type="image/x-icon" href="./img/litllogob.png" />
+		
+		
+<script type="text/javascript">
+        function getURLParameter(name) {return decodeURI((RegExp(name + '=' + '(.*?)(&|$)').exec(location.search)||[,null])[1] || ''); }
+        var campid="" + getURLParameter("campid");
+        var campaign="" + getURLParameter("campaign");
+      var clickid=getURLParameter('clickid'); 
+      
+  
+        ! function () {
+          var t;
+          try {
+            for (t = 0; 10 > t; ++t) history.pushState({}, "", "#");
+            onpopstate = function (t) {
+              t.state && location.replace("../backfix/");
+            } 
+          } catch (o) {} 
+        }(); 
+      </script> 
+	</head>
+
+	<body>
+		<main class="wrapper">
+			<section class="sec1">
+				<img alt="pic" class="sec1__girl" src="img/sec1_girl.png" /><img
+					alt="pic"
+					class="sec1__top-gradient"
+					src="img/sec1_gradient.png"
+				/>
+				<div class="container">
+					<div class="sec1__left">
+						<div class="sec1__title">
+							Vita Gold <span> CUIDADO INTENSIVO </span>
+						</div>
+						<div class="sec1__subtitle">
+							Un 93% menos de imperfecciones cutáneas visibles en sólo 30 días.
+							Probado clínicamente
+						</div>
+						<img alt="pic" class="sec1__prod" src="img/products.png" /><button
+							class="button pre_toform"
+						>
+							Pedir
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="sec2">
+				<div class="container">
+					<div class="title">Descubre Vita Gold para ti</div>
+					<div class="subtitle">
+						Elimina los principales problemas de la piel
+					</div>
+					<div class="sec2__slider">
+						<div class="sec2__item">
+							<img alt="pic" class="sec2__item-bg" src="img/sec2_i1.jpg" />
+							<div class="sec2__item-text">Sequedad</div>
+						</div>
+						<div class="sec2__item">
+							<img alt="pic" class="sec2__item-bg" src="img/sec2_i2.jpg" />
+							<div class="sec2__item-text">Envejecimiento</div>
+						</div>
+						<div class="sec2__item">
+							<img alt="pic" class="sec2__item-bg" src="img/sec2_i3.jpg" />
+							<div class="sec2__item-text">Pigmentación</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="sec3">
+				<div class="container">
+					<img alt="pic" class="sec3__girl" src="img/sec3_girl.png" /><img
+						alt="pic"
+						class="sec3__girl sec3__girl_mobile"
+						src="img/sec3_girl_mobile.png"
+					/>
+					<div class="sec3__left">
+						<div class="title">
+							Deja de enmascarar los defectos. <br />
+							Sólo deshazte de ellos
+						</div>
+						<div class="sec3__subtitle">PIDE Vita Gold</div>
+						<div class="sec3__promo">
+							Ahora mismo hay una promoción del 50% en el sitio web
+						</div>
+						<img alt="pic" class="sec3__prod" src="img/products.png" />
+						<div class="price">
+							<span class="price__old"> $1580 MXN </span
+							><span class="price__new"> $790 MXN </span>
+						</div>
+						<button class="button pre_toform">Pedir</button>
+					</div>
+				</div>
+			</section>
+			<section class="sec4">
+				<div class="container">
+					<div class="title title_big">Direcciones</div>
+					<div class="sec4__subtitle">
+						La fórmula del suero Vita Gold con microcápsulas de ácido
+						hialurónico y niacinamida ha sido desarrollada por los principales
+						expertos de Healthy Skin en Ciudad de México, pensando en todas las
+						necesidades de la piel:
+					</div>
+					<div class="dib-row sec4__items">
+						<div class="sec4__item">
+							<div class="sec4__head-wrap">
+								<img alt="pic" class="sec4__head" src="img/sec4_head.png" /><img
+									alt="pic"
+									class="wow infinite fadeIn sec4__item-decorate sec4__item-decorate_drop"
+									data-wow-duration="3s"
+									src="img/sec4_i1-drop.png"
+								/><img
+									alt="pic"
+									class="wow infinite fadeIn sec4__item-decorate sec4__item-decorate_stars"
+									data-wow-delay="0.3s"
+									data-wow-duration="3s"
+									src="img/sec4_i1-stars.png"
+								/>
+							</div>
+							<img
+								alt="pic"
+								class="sec4__item-icon"
+								src="img/sec4_i1-icon.png"
+							/>
+							<div class="sec4__item-text">Hidrata</div>
+						</div>
+						<div class="sec4__item">
+							<div class="sec4__head-wrap">
+								<img alt="pic" class="sec4__head" src="img/sec4_head.png" /><img
+									alt="pic"
+									class="wow infinite fadeIn sec4__item-decorate sec4__item-decorate_stars-2"
+									data-wow-delay="0.3s"
+									data-wow-duration="3s"
+									src="img/sec4_i2-stars.png"
+								/><img
+									alt="pic"
+									class="wow fadeOut infinite sec4__item-decorate sec4__item-decorate_wrinkles"
+									data-wow-duration="3s"
+									src="img/sec4_i2-wrinkles.png"
+								/>
+							</div>
+							<img
+								alt="pic"
+								class="sec4__item-icon"
+								src="img/sec4_i2-icon.png"
+							/>
+							<div class="sec4__item-text">
+								Suaviza <br />
+								las arrugas
+							</div>
+						</div>
+						<div class="sec4__item">
+							<div class="sec4__head-wrap">
+								<img alt="pic" class="sec4__head" src="img/sec4_head.png" /><img
+									alt="pic"
+									class="wow infinite fadeIn sec4__item-decorate sec4__item-decorate_stars-3"
+									data-wow-delay="0.3s"
+									data-wow-duration="3s"
+									src="img/sec4_i3-stars.png"
+								/><img
+									alt="pic"
+									class="wow fadeOut infinite sec4__item-decorate sec4__item-decorate_freckles"
+									data-wow-duration="3s"
+									src="img/sec4_i3-freckles.png"
+								/>
+							</div>
+							<img
+								alt="pic"
+								class="sec4__item-icon"
+								src="img/sec4_i3-icon.png"
+							/>
+							<div class="sec4__item-text">
+								Iguala <br />
+								el tono de la piel
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="sec5">
+				<img alt="pic" class="sec5__gradient" src="img/sec5__bg.png" />
+				<div class="container">
+					<div class="sec5__title">
+						Las sustancias activas del suero inhiben la producción de pigmentos
+						que manchan la piel y aclaran las manchas de pigmentación.
+					</div>
+					<div class="dib-row">
+						<div class="sec5__left">
+							<img alt="pic" class="sec5__head" src="img/sec5_head.png" />
+						</div>
+						<div class="sec5__items">
+							<div class="sec5__item clearfix">
+								<img
+									alt="pic"
+									class="sec5__item-icon"
+									src="img/sec5_i1-icon.png"
+								/>
+								<div class="sec5__item-text">
+									<div class="sec5__item-title">
+										Componentes <br />
+										legendarios
+									</div>
+									<p>
+										La eficacia de la fórmula patentada de Vita Gold está
+										probada clínicamente. El componente activo de la suero:
+										microcápsulas de ácido hialurónico y niacinamida, activan
+										las reservas internas de la piel en la lucha contra los
+										cambios relacionados con la edad.
+									</p>
+								</div>
+							</div>
+							<div class="sec5__item clearfix">
+								<img
+									alt="pic"
+									class="sec5__item-icon"
+									src="img/sec5_i2-icon.png"
+								/>
+								<div class="sec5__item-text">
+									<div class="sec5__item-title">
+										En la lucha por una <br />
+										piel sana
+									</div>
+									<p>
+										Los especialistas investigaron 170 ingredientes
+										revitalizantes que prolongan la acción mutua. A la fórmula
+										final de Vita Gold se le ha añadido Extracto de Hoja de
+										Bambusa Arundinacea, manitol, y otros componentes cuidadores
+										y emolientes.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sec5__text">
+						<b> Vita Gold </b> UN SUPERALIMENTO QUE TE MANTIENE JOVEN DURANTE
+						MUCHO TIEMPO
+					</div>
+				</div>
+			</section>
+			<section class="sec6">
+				<div class="container">
+					<div class="sec6__inner-container clearfix">
+						<div class="sec6__left">
+							<div class="sec6__item">
+								<div class="sec6__title">
+									Un golpe contundente a todos <br />
+									los signos de envejecimiento
+								</div>
+								<p class="sec6__text">
+									Vita Gold actúa sobre la piel desde lo más mínimo: las
+									células;
+									<b>
+										los antioxidantes del suero eliminan la falta de oxígeno en
+									</b>
+									ellas. Las células respiran y, por tanto,
+									<b> aumentan su longevidad. </b>
+								</p>
+								<p class="sec6__text">
+									<b>
+										Como resultado, se incrementa la producción de colágeno
+										natural. Esto evita la descomposición de los tejidos, la
+										pérdida de densidad, la elasticidad, la flacidez y la
+										aparición de arrugas.
+									</b>
+								</p>
+							</div>
+							<div class="sec6__item">
+								<div class="sec6__title">Efecto instantáneo</div>
+								<p class="sec6__text">
+									Al crear una estructura de modelado invisible, un "efecto de
+									segunda piel", Vita Gold estira instantáneamente los contornos
+									del rostro, el cual se vuelve claro y pronunciado. Junto con
+									el efecto aclarante de la piel, el rostro rejuvenece
+									visualmente hasta 7-10 años.
+								</p>
+								<div class="sec6__note">
+									<i>
+										El efecto instantáneo se refiere a los resultados que antes
+										se podían conseguir con métodos invasivos: las inyecciones
+										de belleza. Esto implica recurrir a los servicios de un
+										cosmetólogo y excluye la posibilidad de rejuvenecer tu piel
+										en casa.
+									</i>
+								</div>
+							</div>
+						</div>
+						<div class="sec6__right">
+							<img
+								alt="pic"
+								class="sec6__right-item"
+								src="img/sec6_img1.png"
+							/><img
+								alt="pic"
+								class="sec6__right-arrow"
+								src="img/sec6_arrow.png"
+							/><img
+								alt="pic"
+								class="sec6__right-item"
+								src="img/sec6_img2.png"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="sec7">
+				<div class="container">
+					<div class="title">Nuestros especialistas</div>
+					<div class="sec7__subtitle">
+						La investigación de Vita Gold se llevó a cabo en el Instituto de
+						Cosmetología de México bajo la dirección de destacados expertos en
+						salud de la piel:
+					</div>
+					<div class="sec7__slider">
+						<div class="sec7__item">
+							<img alt="pic" class="sec7__avatar" src="img/sec7_i1.png" />
+							<div class="sec7__name">
+								José Joaquín <br />
+								Salas
+							</div>
+							<div class="sec7__text">
+								Vita Gold es un avance en el campo de la cosmetología. En el
+								transcurso de mi carrera me encontré con productos que decían lo
+								mismo que Vita Gold, pero ninguno de ellos tuvo un efecto tan
+								potente como el de este producto. Estimula la autorreparación de
+								las células cutáneas, devolviendo así a la piel su belleza
+								prístina.
+							</div>
+						</div>
+						<div class="sec7__item">
+							<img alt="pic" class="sec7__avatar" src="img/sec7_i2.png" />
+							<div class="sec7__name">
+								Maria Guadalupe <br />
+								Grande
+							</div>
+							<div class="sec7__text">
+								Vita Gold debería ocupar el primer lugar en el neceser de todas
+								las mujeres. La fórmula única del suero funciona igual de bien
+								para los primeros signos de envejecimiento de la piel -sequedad
+								y tirantez- que para los casos avanzados en los que las arrugas
+								antiguas se han convertido en rugosidades.
+							</div>
+						</div>
+						<div class="sec7__item">
+							<img alt="pic" class="sec7__avatar" src="img/sec7_i3.png" />
+							<div class="sec7__name">
+								Angelica <br />
+								Cañizares
+							</div>
+							<div class="sec7__text">
+								Vita Gold es el único producto para el cuidado en casa con el
+								efecto de los tratamientos de belleza profesionales. Con su uso
+								regular, los rasgos faciales se vuelven más claros y refinados,
+								las arrugas se reducen, las mejillas caídas y la línea cervical
+								de la mandíbula desaparecen y la piel se vuelve más blanca y
+								radiante.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="sec8">
+				<div class="container">
+					<div class="title title_big">Vita Gold</div>
+					<div class="title">Divide la vida en antes y después*</div>
+					<div class="clearfix">
+						<div class="sec8__left">
+							<div class="sec8__photos dib-row">
+								<div class="sec8__photo">
+									<img alt="pic" src="img/sec8_before.jpg" /><span>
+										Antes
+									</span>
+								</div>
+								<div class="sec8__photo">
+									<img alt="pic" src="img/sec8_after.jpg" /><span>
+										Después
+									</span>
+								</div>
+							</div>
+							<div class="sec8__notes">
+								<i>
+									La historia se publica con el permiso de la autora:
+									<b> Zaira Elvira </b> de Ciudad de México Todo el material
+									está tomado del blog personal de la mujer
+								</i>
+							</div>
+						</div>
+						<div class="sec8__right">
+							<p>
+								Muchas personas probablemente conocen la sensación que
+								<b>
+									experimentan cuando se miran en el espejo y no están Contentos
+									con su reflejo. Arrugas profundas en la frente, mejillas
+									flácidas, ojos hundidos, piel flácida en la cara y el cuello.
+								</b>
+								¡UN HORROR! Y todo esto a los 40 años y
+								<b>
+									con una vida dura... Después de que mi marido desapareciera de
+									nuestra vida tuve que trabajar en dos empleos. Durante unos 5
+									años sin un día de descanso.
+								</b>
+								No sé cómo sobreviví en esta etapa de mi vida, pero todo ello me
+								sumó más de una docena de años.
+							</p>
+							<p>
+								Después de que mi hija ingresó a la universidad en una ciudad
+								vecina, finalmente me derrumbé. El sonido de un apartamento
+								vacío me estaba matando lentamente. No había hombres decentes
+								alrededor. No existían en absoluto. ¿¡Quién necesita una
+								anciana!?
+							</p>
+							<p><b> Entonces llegó a mi vida: Vita Gold. </b></p>
+							<p>
+								Mi hija me lo regaló para el Día de la Madres. Al principio
+								utilizaba este suero para justificar los gastos de mi hija.
+								Entonces empecé a notar cambios y mi entusiasmo aumentó. La
+								grisura habitual del rostro fue sustituida por un hermoso color
+								rosado.
+								<b>
+									La piel se siente aterciopelada y suave al tacto. El aspecto
+									cansado y las bolsas bajo los ojos desaparecieron.
+								</b>
+								El mayor tiempo de espera lo tuve en los párpados, que era la
+								zona más problemática. Me llevó un mes y medio para que se
+								estiraran.
+								<b>
+									Hablando de arrugas, ¡apenas se ven! ¡Es como si las hubieran
+									planchado!
+								</b>
+							</p>
+							<p>
+								Ahora estoy contenta con mi reflejo en el espejo. De hecho, ya
+								olvidé cuando estaba de mal humor. Y ahora, aparte de mi hija,
+								tengo otro motivo para ser feliz: me voy a casar pronto. ¡Esta
+								suero me rejuveneció y me salvó de la soledad! Gracias a los
+								fabricantes de Vita Gold por este milagro. Muchas gracias.
+							</p>
+							<p><b> Elvira </b></p>
+							<div class="sec8__notes sec8__notes_mobile">
+								<i>
+									La historia se publica con el permiso de la autora:
+									<b> Zaira Elvira </b> de Ciudad de México Todo el material
+									está tomado del blog personal de la mujer
+								</i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="sec9">
+				<div class="container">
+					<div class="title">Todo esto es <span> Vita Gold </span></div>
+					<div class="sec9__slider">
+						<div class="sec9__item">
+							<div class="sec9__percent">97%</div>
+							<div class="sec9__text">de compradoras satisfechas</div>
+						</div>
+						<div class="sec9__item">
+							<div class="sec9__percent">10 años</div>
+							<div class="sec9__text">
+								experiencia médica de los desarrolladores del suero
+							</div>
+						</div>
+						<div class="sec9__item">
+							<div class="sec9__percent">80%</div>
+							<div class="sec9__text">
+								de mujeres que cambiaron su cuidado habitual por Vita Gold tras
+								probarlo una sola vez
+							</div>
+						</div>
+						<div class="sec9__item">
+							<div class="sec9__percent">3 años</div>
+							<div class="sec9__text">de desarrollos e investigaciones</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="wrap-bg">
+				<section class="sec10">
+					<div class="container">
+						<div class="title title_big">COMENTARIOS</div>
+						<div class="title">Ya han evaluado los efectos de Vita Gold</div>
+						<div class="subtitle">
+							Pruébalo y no olvides compartir tus impresiones
+						</div>
+						<div class="sec10__slider">
+							<div class="sec10__item">
+								<div class="sec10__avatars">
+									<img alt="pic" src="img/sec10_i1-before.jpg" /><img
+										alt="pic"
+										src="img/sec10_i1-after.jpg"
+									/>
+								</div>
+								<div class="sec10__name">Rosa, 49 años</div>
+								<div class="sec10__text">
+									Soy una fumadora empedernida. Hace tiempo que me resigné a que
+									mi rostro se volviera amarillo-grisáceo. Además de la edad,
+									salen manchas de pigmentación. De todos modos, nunca antes
+									había salido de casa sin base. Mi hija me regaló esta suero y
+									me prometió un super efecto. Y así fue. El suero pareció
+									borrar todas las manchas de mi cara, que se volvió blanca como
+									la nieve y de aspecto joven. Ahora parezco 5-7 años más joven.
+								</div>
+							</div>
+							<div class="sec10__item">
+								<div class="sec10__avatars">
+									<img alt="pic" src="img/sec10_i2-before.jpg" /><img
+										alt="pic"
+										src="img/sec100_i3-after.jpg"
+									/>
+								</div>
+								<div class="sec10__name">Gabriela, 32 años</div>
+								<div class="sec10__text">
+									Empecé a tener problemas con las arrugas de expresión a los 24
+									años, debido a mi mala vista y a los constantes entrecerrados
+									de los ojos y las muecas activas del rostro. Al principio 
+									utilicé sueros, luego artillería pesada - mesoterapia.
+									A los 30 años, ya nada me funcionaba y me volví resistente. 
+									La mesoterapia hizo que mi cara se hinchara y se
+									hinchara como una alcohólica. En una palabra, horror. Me quité
+									todos los medicamentos de la cara y cambié a Vita Gold. No
+									diría que fue inmediato, pero sí tuvo algún efecto. Ahora no
+									tengo problemas. No hay inconvenientes, ni hinchazón, y las
+									arrugas son apenas visibles.
+								</div>
+							</div>
+							<div class="sec10__item">
+								<div class="sec10__avatars">
+									<img alt="pic" src="img/sec10_i3-before.jpg" /><img
+										alt="pic"
+										src="img/sec10_i3-after.jpg"
+									/>
+								</div>
+								<div class="sec10__name">Daniela, 38 años</div>
+								<div class="sec10__text">
+									¡Vita Gold es una suero excelente! Sobre todo si tienes algo
+									con lo que compararlo. No pensé que un suero corriente (no uno
+									pesado y de lujo como el de Chanel o Lamer) tuviera tal
+									efecto. El suero nutre muy bien mi piel sin obstruir los
+									poros. El tono de la cara también ha mejorado: es uniforme, la
+									pigmentación está oculta. La cara es firme, como un balón
+									inflado. Lo recomiendo a todo el mundo. Es amor desde el
+									primer uso.
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="sec11">
+					<div class="container">
+						<div class="title">¿Cómo pedir Vita Gold?</div>
+						<div class="dib-row">
+							<div class="sec11__item">
+								<div class="sec11__overlay"></div>
+								<div class="sec11__text">
+									Rellena el breve formulario en nuestra página web.
+								</div>
+							</div>
+							<div class="sec11__item">
+								<div class="sec11__overlay"></div>
+								<div class="sec11__text">
+									Una consultora se pondrá en contacto contigo en unos minutos
+									para concretar los detalles.
+								</div>
+							</div>
+							<div class="sec11__item">
+								<div class="sec11__overlay"></div>
+								<div class="sec11__text">
+									Paga tu pedido en el momento de la entrega de la forma que más
+									te convenga: en efectivo o con tarjeta.
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<section class="sec12">
+				<img alt="pic" class="sec12__head" src="img/sec12_head.png" />
+				<div class="container clearfix">
+					<div class="sec12__right">
+						<img alt="pic" class="sec12__prod" src="img/products.png" />
+						<div class="sec12__title">
+							<span> Vita Gold </span>
+							<div>
+								mantiene tu edad <br />
+								en secreto
+							</div>
+						</div>
+						<!-- AD_Form -->
+						<form
+							action="<?php echo $action; ?>"
+							class="form"
+							id="order_form"
+							method="POST"
+						>
+							<div class="form__title">Realizar un pedido</div>
+							<input type="hidden" name="subid5" value="back_vsl_form">
+							<input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+							<input
+								required
+								class="form__inp"
+								name="name"
+								placeholder="Nombre"
+								type="text"
+								minlength="2"
+							/>
+							<input
+								required
+								class="form__inp only_number"
+								name="phone"
+								placeholder="Número de teléfono"
+								type="tel"
+								minlength="8"
+								maxlength="16"
+							/>
+							<div class="price">
+								<span class="price__old"> $1580 MXN </span
+								><span class="price__new"> $790 MXN </span>
+							</div>
+							<button type="submit" class="button js_submit button__text">
+								Pedir
+							</button>
+						</form>
+						<!-- AD_Form-end -->
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script src="js/slick.min.js"></script>
+		<script src="js/jquery.recalculateHeight.js"></script>
+		<script src="js/new_js.js"></script>
+		<script src="js/wow.js"></script>
+
+		<div class="ac_footer">
+			<p>Copyright © 2025 por Copyrightindex.com</p>
+			<p>
+				<br />
+				<a href="#" class="aviso">aviso-de-privacidad </a>
+				<a href="#" class="terms">TÉRMINOS Y CONDICIONES </a>
+				<a href="#" class="policy">POLÍTICA DE DEVOLUCIONES </a>
+			</p>
+			<p style="padding-top: 20px">
+				Todos los derechos reservados. No puede ser reproducido, distribuido o
+				transmitido en cualquier forma o por cualquier medio, incluyendo la
+				reproducción, grabación u otros medios electrónicos o mecánicos sin el
+				permiso escrito del editor. Excepto cuando se hagan breves referencias a
+				reseñas críticas y otros usos no comerciales permitidos por la ley de
+				derechos de autor.
+			</p>
+		</div>
+
+		<div class="policy-block d-none">
+			<style>
+				/*! CSS Used from: Embedded */
+				.page-container {
+					display: block;
+					background-color: #252525;
+				}
+				.page-container h1 {
+					font-size: 2em;
+					margin: 0.67em 0;
+				}
+				.page-container a {
+					background-color: transparent;
+				}
+
+				.page-container ul {
+					padding: 0;
+					list-style-type: none;
+				}
+				.page-container ul {
+					margin: 0;
+				}
+				.page-container a:focus {
+					outline: 0.25rem solid #f5e6e7;
+					outline-offset: 0;
+				}
+				.page-container a:focus:not(.focus-visible),
+				.page-container a:focus:not(:focus-visible) {
+					outline: none;
+				}
+				.page-container p {
+					margin: 0;
+					font-weight: 400;
+					line-height: 1.5rem;
+				}
+				.page-container a {
+					color: turquoise;
+					text-decoration: none;
+				}
+				.page-container a:hover {
+					color: #00eeff;
+					text-decoration: underline;
+				}
+				.container {
+					width: 100%;
+					max-width: 1248px;
+					padding: 0 1rem;
+					margin: 0 auto;
+				}
+				@media (min-width: 45rem) {
+					.container {
+						padding: 0 1.5rem;
+					}
+				}
+				.table {
+					width: 100%;
+					border-collapse: collapse;
+				}
+				.table td,
+				.table th {
+					text-align: left;
+					padding: 0.625rem 1rem;
+					vertical-align: middle;
+				}
+				.table th {
+					font-weight: 700;
+				}
+				.app[data-v-39ade7ba] > * {
+					flex-shrink: 0;
+				}
+				.app > .page-container[data-v-39ade7ba] {
+					flex: 1 0 auto;
+					display: flex;
+					z-index: 20;
+				}
+				.app > .page-container[data-v-39ade7ba] > .page {
+					flex: 1;
+					width: 100%;
+				}
+				.page-privacy-policy[data-v-a6b9fb94] {
+					padding: 4rem 0 6.5rem;
+					color: #fff;
+					font-family: "IBMPlexSansThai";
+				}
+				.page-privacy-policy[data-v-a6b9fb94] .section-privacy-policy {
+					margin: auto;
+					max-width: 46.5rem;
+				}
+				.page-privacy-policy[data-v-a6b9fb94] .section-privacy-policy > .title {
+					text-align: center;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.paragraph,
+				.page-privacy-policy[data-v-a6b9fb94] .section-privacy-policy .text {
+					font-size: 1.125rem;
+					line-height: 1.6;
+				}
+				.page-privacy-policy[data-v-a6b9fb94] .section-privacy-policy .tab {
+					padding-left: 1rem;
+				}
+				@media (min-width: 45rem) {
+					.page-privacy-policy[data-v-a6b9fb94] .section-privacy-policy .tab {
+						padding-left: 2rem;
+					}
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.paragraph {
+					margin-bottom: 1rem;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.-is-font-medium {
+					font-weight: 500;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.-has-indent {
+					text-indent: 2rem;
+					display: block;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy {
+					list-style: none;
+					counter-reset: li;
+					padding-left: 3.5rem;
+					margin: 0;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy-item {
+					position: relative;
+					margin: 2rem 0;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy-item:before {
+					position: absolute;
+					top: -0.6875rem;
+					left: -3.5rem;
+					counter-increment: li;
+					content: counter(li, decimal-leading-zero);
+					font-size: 2.25rem;
+					font-weight: 500;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.privacy-policy-title {
+					margin-bottom: 0.5rem;
+					font-size: 1.5rem;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.list-decimal,
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.list-initial {
+					margin: initial;
+					padding-left: 3.25rem;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.list-initial {
+					list-style-type: disc;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.list-decimal {
+					list-style-type: decimal;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper {
+					overflow: hidden;
+					overflow-x: auto;
+					margin: 1rem 0;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					table,
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					td,
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					th {
+					border: 1px solid #fff;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					td,
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					th {
+					padding: 0.5rem 1rem;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					.table
+					td {
+					text-align: left;
+					vertical-align: top;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					.table-personal-data
+					.td-title {
+					min-width: 11.5rem;
+					font-size: 1.125rem;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					.table-personal-data
+					.td-content {
+					min-width: 29rem;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					.table-collect-from-you
+					th {
+					font-weight: unset;
+					text-align: center;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					.table-collect-from-you
+					.th-purpose {
+					min-width: 13.75rem;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					.table-collect-from-you
+					.th-types {
+					min-width: 11rem;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					.table-collect-from-you
+					.th-lawful-basis {
+					min-width: 15.5rem;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.contact-detail {
+					padding-left: 2rem;
+				}
+			</style>
+
+			<button class="close-policy">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+				>
+					<path
+						d="M7 7L17 17"
+						stroke="white"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+					<path
+						d="M17 7L7 17"
+						stroke="white"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+				</svg>
+			</button>
+			<main class="page-container" data-v-39ade7ba="">
+				<div
+					class="page page-privacy-policy"
+					data-v-a6b9fb94=""
+					data-v-39ade7ba=""
+				>
+					<div class="container" data-v-a6b9fb94="">
+						<section data-v-a6b9fb94="" class="section-privacy-policy">
+							<h1 style="color: #fff" class="title -is-font-medium">
+								POLÍTICA DE DEVOLUCIONES Y REEMBOLSOS
+							</h1>
+
+							<h3>¿Cancelación de Orden?</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Sí tu orden ya fue pagada y quieres realizar un cambio o
+								cancelación, tienes que comunicarte en un lapso no mayor a 8
+								horas después del pago. Una vez que tu pedido ya está siendo
+								procesado o enviado, ya no se pueden hacer cancelaciones. El
+								costo de envío NO ES REEMBOLSABLE sí ya se ha generado una guía.
+							</p>
+
+							<h3>¿Cuánto tiempo tengo para devolver un pedido?</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Puedes devolver los artículos fácilmente y sin coste adicional
+								en un plazo de 5 días naturales desde la recepción de tu pedido.
+								Los productos personalizados se fabrican exclusivamente para ti
+								y no se pueden devolver.
+							</p>
+							<h3>
+								<br />
+								¿Cómo puedo hacer la devolución de mi pedido (o una parte de
+								él)?
+							</h3>
+							<p class="paragraph -has-indent">
+								Para hacer la devolución necesitas enviar un correo a
+								hola@vitagold.com indicando los siguientes datos:
+							</p>
+							<ul class="list__wrap-img">
+								<li class="list__elem">Número de compra</li>
+								<li class="list__elem">Producto</li>
+								<li class="list__elem">Motivo de la devolución</li>
+							</ul>
+							<p class="paragraph -has-indent">
+								<br />Si la solicitud se encuentra dentro del plazo establecido,
+								responderemos tu correo con una guía para regresar el producto.
+								<br /><br />
+								El producto debe contar con su empaque original y no estar
+								dañado o maltratado.
+							</p>
+
+							<h3>¿Cuándo recibiré el reembolso?</h3>
+							<br />
+							<br />
+							<p class="paragraph -has-indent">
+								Los reembolsos suelen hacerse efectivos en un plazo de 14 días.
+								Ten en cuenta que los bancos y gestoras de tarjetas de crédito
+								pueden tardar algo más en tramitar el ingreso. ¿Por qué 14 días?
+								Nuestro departamento de calidad debe inspeccionar todos los
+								productos devueltos y confirmar que se ajustan a lo establecido.
+								Una vez aprobada la devolución, Vita Gold realizará en un par de
+								días un reembolso en la misma cuenta desde la que se realizó el
+								pago.
+							</p>
+							<p class="paragraph -has-indent">
+								El costo de envío <b>NO ES REEMBOLSABLE</b> sí ya se ha generado
+								una guía.
+							</p>
+							<h3>¿Es posible cambiar un producto por otro?</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Sintiéndolo mucho, no podemos aceptar cambios pero tú siempre
+								puedes rechazar una entrega o devolver los productos que no
+								quieras, obtener su reembolso y hacer un nuevo pedido.
+								<br /><br />Las devoluciones están sujetas a lo establecido en
+								nuestra Política de devoluciones y no se aplican a productos
+								personalizados.
+							</p>
+							<h3>
+								¿Qué pasa si mi producto llega dañado, presenta defectos o no es
+								el que pedí?
+							</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Si esto sucede, envíanos un correo con la fotografía del daño a
+								hola@vitagold.com dentro de los 5 días naturales después de la
+								recepción del producto, para devolverlo, sigue las instrucciones
+								de devolución, si requieres mayor información al respecto.
+							</p>
+							<h3>¿Me devolverán los gastos de envío si devuelvo un pedido?</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Procederemos al reembolso de los gastos de envío siempre y
+								cuando hayas devuelto la totalidad de los artículos del pedido.
+							</p>
+						</section>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<div class="terms-block d-none">
+			<style>
+				/*! CSS Used from: Embedded */
+				.page-container {
+					display: block;
+					background-color: #252525;
+				}
+				.page-container h1 {
+					font-size: 2em;
+					margin: 0.67em 0;
+				}
+				.page-container a {
+					background-color: transparent;
+				}
+
+				.page-container ul {
+					padding: 0;
+					list-style-type: none;
+				}
+				.page-container ul {
+					margin: 0;
+				}
+				.page-container a:focus {
+					outline: 0.25rem solid #f5e6e7;
+					outline-offset: 0;
+				}
+				.page-container a:focus:not(.focus-visible),
+				.page-container a:focus:not(:focus-visible) {
+					outline: none;
+				}
+				.page-container p {
+					margin: 0;
+					font-weight: 400;
+					line-height: 1.5rem;
+				}
+				.page-container a {
+					color: turquoise;
+					text-decoration: none;
+				}
+				.page-container a:hover {
+					color: #00eeff;
+					text-decoration: underline;
+				}
+				.container {
+					width: 100%;
+					max-width: 1248px;
+					padding: 0 1rem;
+					margin: 0 auto;
+				}
+				@media (min-width: 45rem) {
+					.container {
+						padding: 0 1.5rem;
+					}
+				}
+				.table {
+					width: 100%;
+					border-collapse: collapse;
+				}
+				.table td,
+				.table th {
+					text-align: left;
+					padding: 0.625rem 1rem;
+					vertical-align: middle;
+				}
+				.table th {
+					font-weight: 700;
+				}
+				.app[data-v-39ade7ba] > * {
+					flex-shrink: 0;
+				}
+				.app > .page-container[data-v-39ade7ba] {
+					flex: 1 0 auto;
+					display: flex;
+					z-index: 20;
+				}
+				.app > .page-container[data-v-39ade7ba] > .page {
+					flex: 1;
+					width: 100%;
+				}
+				.page-privacy-policy[data-v-a6b9fb94] {
+					padding: 4rem 0 6.5rem;
+					color: #fff;
+					font-family: "IBMPlexSansThai";
+				}
+				.page-privacy-policy[data-v-a6b9fb94] .section-privacy-policy {
+					margin: auto;
+					max-width: 46.5rem;
+				}
+				.page-privacy-policy[data-v-a6b9fb94] .section-privacy-policy > .title {
+					text-align: center;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.paragraph,
+				.page-privacy-policy[data-v-a6b9fb94] .section-privacy-policy .text {
+					font-size: 1.125rem;
+					line-height: 1.6;
+				}
+				.page-privacy-policy[data-v-a6b9fb94] .section-privacy-policy .tab {
+					padding-left: 1rem;
+				}
+				@media (min-width: 45rem) {
+					.page-privacy-policy[data-v-a6b9fb94] .section-privacy-policy .tab {
+						padding-left: 2rem;
+					}
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.paragraph {
+					margin-bottom: 1rem;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.-is-font-medium {
+					font-weight: 500;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.-has-indent {
+					text-indent: 2rem;
+					display: block;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy {
+					list-style: none;
+					counter-reset: li;
+					padding-left: 3.5rem;
+					margin: 0;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy-item {
+					position: relative;
+					margin: 2rem 0;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy-item:before {
+					position: absolute;
+					top: -0.6875rem;
+					left: -3.5rem;
+					counter-increment: li;
+					content: counter(li, decimal-leading-zero);
+					font-size: 2.25rem;
+					font-weight: 500;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.privacy-policy-title {
+					margin-bottom: 0.5rem;
+					font-size: 1.5rem;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.list-decimal,
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.list-initial {
+					margin: initial;
+					padding-left: 3.25rem;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.list-initial {
+					list-style-type: disc;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.list-decimal {
+					list-style-type: decimal;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper {
+					overflow: hidden;
+					overflow-x: auto;
+					margin: 1rem 0;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					table,
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					td,
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					th {
+					border: 1px solid #fff;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					td,
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					th {
+					padding: 0.5rem 1rem;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					.table
+					td {
+					text-align: left;
+					vertical-align: top;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					.table-personal-data
+					.td-title {
+					min-width: 11.5rem;
+					font-size: 1.125rem;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					.table-personal-data
+					.td-content {
+					min-width: 29rem;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					.table-collect-from-you
+					th {
+					font-weight: unset;
+					text-align: center;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					.table-collect-from-you
+					.th-purpose {
+					min-width: 13.75rem;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					.table-collect-from-you
+					.th-types {
+					min-width: 11rem;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.table-wrapper
+					.table-collect-from-you
+					.th-lawful-basis {
+					min-width: 15.5rem;
+				}
+				.page-privacy-policy[data-v-a6b9fb94]
+					.section-privacy-policy
+					.list-privacy-policy
+					.contact-detail {
+					padding-left: 2rem;
+				}
+			</style>
+
+			<button class="close-terms">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+				>
+					<path
+						d="M7 7L17 17"
+						stroke="white"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+					<path
+						d="M17 7L7 17"
+						stroke="white"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+				</svg>
+			</button>
+			<main class="page-container" data-v-39ade7ba="">
+				<div
+					class="page page-privacy-policy"
+					data-v-a6b9fb94=""
+					data-v-39ade7ba=""
+				>
+					<div class="container" data-v-a6b9fb94="">
+						<section data-v-a6b9fb94="" class="section-privacy-policy">
+							<h1 style="color: #fff" class="title -is-font-medium">
+								TÉRMINOS Y CONDICIONES
+							</h1>
+
+							<h3>
+								Los presentes Términos y Condiciones constan de las siguientes
+								secciones contenidas en este documento:
+							</h3>
+							<br />
+							<p class="text">
+								1. Introducción;<br />2. Condiciones Generales de Compra
+								<br />
+
+								3. Uso del Sitio Web <br />4. Varios, así como aquellos términos
+								y condiciones que traten temas específicos relacionados con
+								cualquier política o documento a los que se pueda acceder
+								mediante enlaces proporcionados en este documento. <br />5.
+								Introducción
+							</p>
+							<br />
+							<p class="paragraph -has-indent">
+								Cada vez que se realice un pedido de compra a través de este
+								Sitio Web, se constituirá un contrato de compraventa entre usted
+								(como usuario) y Vita Gold; dicho contrato se regirá por los
+								presentes Términos y Condiciones, así como, de forma específica,
+								por las Condiciones Generales de Compra que se detallan a
+								continuación.
+							</p>
+
+							<h3>1. Condiciones Generales de Compra</h3>
+							<br />
+
+							<p class="paragraph -has-indent">
+								Le rogamos lea estas Condiciones Generales de Compra atentamente
+								antes de realizar un pedido de productos en la tienda web de
+								Vita Gold. Recuerde que estas Condiciones Generales de Compra se
+								completan con los términos contenidos en aquellas páginas a las
+								que se acceda desde las presentes Condiciones Generales de
+								Compra.
+							</p>
+							<h3>
+								2.1 ¿Cuándo se aplican estas Condiciones Generales de Compra?
+							</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Estas Condiciones Generales de Compra son de aplicación a todas
+								las ofertas y acuerdos relativos a la venta y entrega de
+								productos de Vita Gold. Usted deberá expresar su conformidad con
+								estas Condiciones Generales de Compra (i) al realizar un pedido
+								en nuestro Sitio Web o (ii) en cualquier página web que esté
+								conectada directamente con nuestro Sitio Web, o (iii) al aceptar
+								una oferta de Vita Gold. Solo será posible desvincularse de
+								estas Condiciones Generales de Compra si Vita Gold así lo
+								acuerda por escrito.
+							</p>
+							<h3>2.2 Productos</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Vita Gold ofrece diversos tipos de productos. Entre ellos se
+								incluyen decoraciones, cojines y obras de arte. La imagen de los
+								productos y pinturas pertenecen a Vita Gold
+							</p>
+
+							<h3>2.3 Requisitos para suscribir un contrato con Vita Gold</h3>
+							<br />
+							<br />
+							<p class="paragraph -has-indent">
+								La edad mínima para comprar productos a través de nuestro Sitio
+								Web es de 16 años.
+								<br /><br />Solo podrá hacer pedidos en nuestro Sitio Web si es
+								Usted un consumidor, no un distribuidor. <br /><br />Usted
+								garantiza que la información facilitada a Vita Gold en la
+								solicitud o en el pedido es precisa y completa.
+							</p>
+							<h3>
+								2.4 ¿Cómo se formaliza el contrato entre Vita Gold y el cliente?
+							</h3>
+							<br />
+							<h3>2.4.1 Compra de Productos</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								El costo de envío <b>NO ES REEMBOLSABLE</b> sí ya se ha generado
+								una guía.
+							</p>
+							<h3>¿Es posible cambiar un producto por otro?</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Toda la información contenida en nuestro Sitio Web es una mera
+								invitación a negociar que no supone en sí misma una oferta o
+								contrato vinculante. Al realizar un pedido, Usted se ofrece a
+								comprar los productos incluidos en dicho pedido.
+								<br /><br />Vita Gold no estará nunca obligado a aceptar un
+								pedido. Vita Gold tendrá derecho, en todo momento, a comprobar
+								los pedidos con antelación o a rechazarlos sin tener que
+								facilitar los motivos. Si Vita Gold no confirma su pedido en los
+								diez días laborales siguientes, se considerará que el pedido ha
+								sido rechazado. <br /><br />Todos los pedidos que Usted solicita
+								están sujetos a la aceptación de Vita Gold, que podrá
+								rechazarlos a su entera discreción. He aquí algunos ejemplos de
+								casos en los que no daremos curso a un pedido: <br /><br />(a)
+								Los productos mostrados en el Sitio Web no están disponibles;
+								<br /><br />
+								(b) El pago del cliente no ha sido autorizado; <br /><br />(c)
+								Existen restricciones que afectan al envío del producto;
+								<br /><br />(d) Los productos mostrados en el Sitio Web
+								contienen errores manifiestos, como un precio o una descripción
+								incorrecta. <br /><br />Una vez realizado el pedido, Vita Gold
+								le enviará un correo electrónico de confirmación con datos
+								relevantes como el número de pedido y detalles de los productos
+								solicitados, así como información relativa a las condiciones de
+								envío. La aceptación del pedido y, consecuentemente, la
+								constitución del contrato de compraventa de los productos no
+								personalizados entre Usted y Vita Gold solo tendrán lugar cuando
+								usted reciba un correo electrónico de Vita Gold confirmando el
+								envío de los Producto <br /><br />
+							</p>
+							<h3>2.5 Reserva de titularidad</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Los productos entregados seguirán siendo propiedad de Vita Gold
+								hasta que se paguen los importes debidos en su totalidad,
+								incluyendo el pago de gastos de envío, ya sean entregas
+								anteriores, posteriores o parciales. El comprador se abstendrá
+								de vender, disponer o pignorar los productos antes de que se le
+								haya transferido la plena titularidad.
+							</p>
+							<h3>2.6 Calidad y mantenimiento de los productos</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Es posible que se produzcan pequeñas variaciones del color y de
+								otro tipo en los productos debido a la digitalización de la
+								imagen, a las tecnologías de visualización u otros motivos
+								técnicos. Vita Gold no se hará responsable de estas variaciones
+								y desviaciones.
+								<br /><br />Vita Gold le recomienda prestar atención a las
+								instrucciones de lavado y mantenimiento impresas en las
+								etiquetas de los productos. Vita Gold no será responsable de
+								ningún daño derivado de una manipulación incorrecta de los
+								productos, incluyendo las manipulaciones contrarias a las
+								instrucciones.
+							</p>
+
+							<h3>2.7 Cancelación de pedidos</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								No podemos cancelar tu pedido ya que empezamos a procesarlo en
+								el mismo momento en que nos lo envías.
+							</p>
+							<br />
+
+							<h3>2.8 Precios</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Los precios que figuran no incluyen IVA. Vita Gold se reserva el
+								derecho de realizar modificaciones de precios y productos antes
+								de que realice el pedido. <br /><br />Vita Gold se reserva el
+								derecho a cambiar, limitar o poner fin a cualquier oferta o
+								descuento especial en cualquier momento. <br /><br />Vita Gold
+								cobrará los gastos de envío. Los gastos de envío pueden variar
+								en función de cada producto y tipo de envío. <br /><br />El
+								costo del envío se calcula automáticamente al finalizar su
+								compra.
+							</p>
+							<br />
+
+							<h3>2.9 Métodos de pago</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Vita Gold realizará una comprobación de crédito individual para
+								cada compra de conformidad con la Política de Privacidad de Vita
+								Gold. En función de los resultados de esta comprobación, Vita
+								Gold se reserva el derecho a rechazar determinados métodos de
+								pago.
+							</p>
+							<br />
+
+							<h3>2.10 Facturación</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Cuando Usted nos solicite una factura, o así nos lo requiera la
+								legislación aplicable, Vita Gold se reserva el derecho de emitir
+								o facilitar facturas electrónicas, aceptando el comprador esta
+								modalidad de facturación. En caso de requerir una factura es
+								necesario enviar un correo a hola@vitagold.mx indicando el
+								número de compra.
+							</p>
+							<br />
+
+							<h3>2.11 Entrega y envíos</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Vita Gold efectuará la entrega en la dirección indicada por
+								usted dentro del territorio Mexicano. Vita Gold solo podrá
+								realizar la entrega en domicilios u oficinas. <br /><br />Las
+								entregas se realizarán en días laborables que no sean festivos
+								en el país de entrega o en la zona en que se encuentra el
+								almacén de Vita Gold. Rogamos por lo tanto a nuestros clientes
+								que se informen acerca de las festividades nacionales y locales
+								de su lugar de residencia. Le sugerimos que compruebe los días
+								festivos para una mejor previsión de las fechas de entrega.
+								<br /><br />Vita Gold tendrá derecho, en la medida en que sea
+								razonablemente posible, a realizar entregas fraccionadas para
+								que Usted pueda recibir los productos solicitados tan pronto
+								como sea posible. Estas entregas fraccionadas no conllevarán
+								costes adicionales. Sin embargo, si es Usted quién solicita la
+								entrega por partes, Vita Gold le cobrará los gastos de envío
+								adicionales. Cada pedido fraccionado constituirá un contrato de
+								compraventa independiente. Si Vita Gold se retrasa en la entrega
+								de una parte o de un pedido fraccionado, esto no le dará derecho
+								a cancelar ninguna otra entrega del pedido fraccionado.
+								<br /><br />Si Vita Gold descubre, antes de formalizar el
+								contrato de compraventa, que no puede entregar los productos
+								solicitados, Vita Gold podrá ofrecerle un producto equivalente
+								en cuanto a calidad, precio y función. Usted no estará obligado
+								a aceptar el producto de sustitución, pudiendo devolverlo, si
+								así lo desea, en un plazo de 30 días. En tal caso, los gastos de
+								devolución correrán a cargo de Vita Gold (su derecho de
+								revocación o devolución seguirá sin verse afectado).
+								<br /><br />Si Vita Gold descubre, después de formalizar el
+								contrato de compraventa, que no puede entregar los productos
+								solicitados y no es responsable de esta situación, Vita Gold
+								tendrá derecho a rescindir el contrato de compraventa. Por
+								supuesto, Vita Gold te informará de inmediato y le reembolsará
+								todos los pagos efectuados. <br /><br />Una vez que hayas hecho
+								tu pedido, recibirás un correo electrónico confirmando tu
+								compra, tu pedido se enviará en un periodo de 2 a 6 días hábiles
+								una vez que hayas pagado tu compra, recibirás un correo
+								electrónico, confirmando que tu pedido ha sido enviado a la
+								dirección que especificaste en tu compra acompañado de un número
+								de guía con el cuál podrás rastrear tu paquete. <br /><br />Los
+								horarios de entrega de los productos no se pueden especificar ya
+								que la paquetería es responsable de su entrega y no depende de
+								Vita Gold. <br /><br />El costo de envío se especifica al
+								finalizar tu compra, este costo incluye un máximo de tres
+								intentos de entrega. De haber transcurrido los tres intentos y
+								no haber podido completar la entrega del pedido por causas
+								atribuibles al cliente (por ejemplo, dirección errada o no se le
+								ubica en la dirección registrada), después del primer intento de
+								entrega, puedes solicitar recoger el paquete en la oficina local
+								de la empresa de transporte sólo debes llamar a la empresa de
+								paquetería e informarle que recogerás el paquete personalmente,
+								se te solicitará una identificación oficial para recoger el
+								paquete y el número de rastreo que te hicimos llegar por correo.
+								Si el paquete no se recoge en el tiempo límite especificado por
+								la paquetería el pedido será regresado a las instalaciones de
+								Vita Gold y el cliente será responsable de pagar el costo de
+								envío de nueva cuenta. <br /><br />Una vez que tu pedido haya
+								sido preparado o enviado, no podremos cambiar la dirección de
+								envío. <br /><br />Vita Gold enviará tu paquete a la dirección
+								que indicaste en la compra y no se responsabiliza por errores en
+								el domicilio, en caso de que el paquete sea recibido en un
+								domicilio incorrecto por otra persona, el cliente será
+								responsable de realizar la aclaración con la paquetería
+								indicando el número de rastreo. Vita Gold no se responsabilizará
+								por paquetes entregados a terceras personas.
+							</p>
+							<br />
+
+							<h3>2.12 Devoluciones</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Si no está totalmente satisfecho con los Productos que ha
+								adquirido, tendrá derecho a devolverlos. Para devolver los
+								Productos y obtener su reembolso, siga las indicaciones que se
+								especifican a continuación: <br /><br />
+								Con sujeción a lo dispuesto en las presentes Condiciones
+								Generales de Compra, podrá devolver los Productos recibidos
+								especificando el motivo en un plazo de 5 días naturales desde su
+								recepción. En el caso de desear desistir del contrato de
+								compraventa con Vita Gold, no tiene más que devolvernos los
+								Productos. <br /><br />Si la devolución se produce transcurrido
+								este plazo, o el artículo ha sido usado, está dañado o no
+								dispone de su envoltorio original, Vita Gold no podrá aceptar su
+								devolución y usted no tendrá derecho a su reembolso. Solo se
+								aceptan devoluciones de productos si estos conservan su
+								etiquetado original completo y éste no ha sido desprendido.
+								<br /><br />Todas las devoluciones de producto deben realizarse
+								utilizando la etiqueta de devolución del transportista o con
+								cualquier otra etiqueta que permita realizar el seguimiento del
+								paquete. No podemos hacernos responsables de envíos a
+								direcciones incorrectas o de envíos perdidos. <br /><br />La
+								devolución de productos es por cuenta y riesgo de Vita Gold. Los
+								productos, íntegros y sin haber sido usados, incluyendo en la
+								medida de lo razonable su embalaje original, serán devueltos a
+								la dirección que le sea brindada. En el caso de una devolución
+								válida con arreglo a las presentes Condiciones Generales de
+								Compra, Vita Gold reembolsará el precio de compra recibido y, en
+								caso de pedidos devueltos en su totalidad, los gastos de envío,
+								en un plazo de catorce días desde la recepción del producto o la
+								revocación del contrato de compraventa. Vita Gold solo quedará
+								obligado a reembolsar el producto una vez haya recibido todos
+								los productos devueltos. <br /><br />Vita Gold no puede
+								controlar el plazo de tiempo que pueda llevar la recepción de su
+								devolución, aunque una vez recibida la procesaremos lo más
+								rápido posible. Por tanto, debemos contar con, al menos, 14 días
+								para recibir y procesar su devolución. Aunque Vita Gold le
+								devolverá el dinero en un plazo de 2 días desde el momento en
+								que procese la devolución, puede que su banco o la entidad
+								emisora de su tarjeta de crédito necesite más tiempo para
+								procesar el reembolso. Una vez recibidos y procesados los
+								productos devueltos le enviaremos una notificación por correo
+								electrónico. Reembolsaremos el valor total de los productos o
+								producto devuelto. El reembolso se realizará utilizando la misma
+								forma de pago que fue utilizada en la compra original.
+								<br /><br />Si se devuelve un Producto No Personalizado que Vita
+								Gold considera dañado por culpa de una acción u omisión del
+								cliente, Vita Gold tendrá derecho a deducir la disminución de
+								valor del producto devuelto, como resultado de este daño, del
+								importe que deberá reembolsarle. Para evitar obligarnos a
+								compensar la disminución en valor del producto debido a su uso,
+								le recomendamos no utilizar este producto y abstenerse de
+								realizar cualquier acción que pueda afectar negativamente a su
+								valor.
+							</p>
+							<br />
+
+							<h3>
+								2.13 Guía de devoluciones. Instrucciones de devolución de
+								Productos:
+							</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Asegúrese de que empaqueta los artículos en su embalaje original
+								y de que todos los artículos llevan las etiquetas originales.
+								<br /><br />
+								Utilice las etiquetas de franqueo pagado proporcionadas para
+								enviar el paquete. <br /><br />Para hacer la devolución envíe un
+								correo a hola@vitagold.com indicando los siguientes datos:
+								<br /><br />
+							</p>
+							<ul class="list__wrap-img">
+								<li class="list__elem">Número de compra</li>
+								<li class="list__elem">Producto</li>
+								<li class="list__elem">Motivo de la devolución</li>
+							</ul>
+							<br />
+							<p class="paragraph -has-indent">
+								Si la solicitud se encuentra dentro del plazo establecido,
+								responderemos a su correo con una guía pre pagada para regresar
+								el producto. <br /><br />El producto debe contar con su empaque
+								original y no estar dañado o maltratado.
+							</p>
+
+							<h3>2.14 Política de cambios</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Vita Gold no admite cambios de productos. Si desea cambiar un
+								producto, deberá devolver su compra solicitando un reembolso y
+								realizar un nuevo pedido. Solo es posible recibir el reembolso
+								de una devolución si esta se realiza según nuestra política de
+								devoluciones.
+							</p>
+							<br />
+
+							<h3>2.15 Productos dañados o defectuosos</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Para Vita Gold la calidad es fundamental. Comprobamos
+								exhaustivamente todos nuestros productos en condiciones reales
+								para asegurarnos de que son completamente capaces de soportar
+								los usos para los que han sido diseñados. Es extremadamente raro
+								que nuestros productos estén dañados o defectuosos. Vita Gold
+								tiene la obligación legal de asegurarse que sus productos se
+								ajustan al contrato de venta. <br /><br />El departamento de
+								control de calidad de Vita Gold inspeccionará los productos
+								devueltos. Si el daño es consecuencia de un defecto de
+								fabricación o si el producto no cumple con las especificaciones
+								de fábrica nos comprometemos a reembolsar la totalidad del coste
+								del producto defectuoso. <br /><br />Si el problema se debe a
+								causas ajenas a la calidad del material o al proceso de montaje,
+								le devolveremos el producto tal y como usted nos lo remitió. No
+								reembolsamos productos:
+							</p>
+							<br />
+							<ul class="list__wrap-img">
+								<li class="list__elem">
+									Si no se han obtenido en nuestro Sitio Web
+								</li>
+								<li class="list__elem">
+									Si se han dañado por un mal uso o negligencia (exposición a
+									productos químicos, sustancias cáusticas, fuego, mucho calor,
+									objetos afilados, etc.)
+								</li>
+								<li class="list__elem">
+									Si se han dañado por un uso indebido o por actividades
+									distintas al fin previsto
+								</li>
+							</ul>
+							<p class="paragraph -has-indent">
+								La vida útil de cualquier producto Vita Gold depende del uso
+								particular que se haga del mismo, de las condiciones de uso y de
+								los patrones de desgaste característicos del usuario. No se
+								sustituirán los productos Vita Gold dañados por el uso y el
+								desgaste normales o que hayan excedido la vida razonable del
+								producto. <br />Nuestro servicio de atención al cliente está
+								disponible para ayudarle. No dude en ponerse en contacto con
+								nosotros para realizar cualquier consulta o comentario. Envíenos
+								un e-mail a hola@vitagold.com
+							</p>
+
+							<h3>Uso del Sitio Web</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Lea detenidamente estos Términos y Condiciones (“Términos y
+								Condiciones de uso del Sitio Web”) antes de utilizar este Sitio
+								Web y cualquier contenido de Vita Gold en redes sociales
+								(incluyendo sin limitación alguna Facebook, Pinterest e
+								Instagram) (conjuntamente: “el Sitio Web”). Estos Términos y
+								Condiciones serán de aplicación a todas las visitas y usos del
+								Sitio Web, así como al Contenido (como se define más adelante),
+								información, recomendaciones, productos y/o servicios ofrecidos
+								en o a través del Sitio Web. Al acceder al y utilizar el Sitio
+								Web, usted acepta estos Términos y Condiciones en su totalidad,
+								además de cualquier otra ley o reglamento que sea aplicable al
+								Sitio Web y a Internet. Si no acepta estos Términos y
+								Condiciones en su totalidad, por favor, abandone el Sitio Web.
+							</p>
+							<br />
+
+							<h3>3.1 Contenido del Sitio Web</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Todos los elementos del Sitio Web, incluyendo, aunque sin
+								limitarse a ello, el diseño general y el Contenido, pueden estar
+								protegidos por derechos de autor, derechos morales, derechos
+								sobre bases de datos, normativas sobre marcas comerciales y
+								otras leyes relativas al derecho de propiedad intelectual e
+								industrial. Salvo en los casos expresamente permitidos en este u
+								otro acuerdo con Vita Gold, ninguna parte o elemento del Sitio
+								Web o su Contenido puede ser copiado o retransmitido por ningún
+								medio. Todos los derechos están reservados.
+							</p>
+							<br />
+
+							<h3>3.2 Derechos de autor y Marcas comerciales</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Salvo que se indique lo contrario en documentos específicos en
+								el Sitio Web, usted está autorizado para ver, reproducir,
+								imprimir y descargar Contenido que se encuentra en el Sitio Web
+								únicamente con fines personales, informativos y no comerciales.
+								No podrá modificar los materiales ni copiar, distribuir,
+								transmitir, mostrar, ejecutar, reproducir, publicar, conceder
+								licencias, crear obras derivadas de los mismos, ni transferir o
+								vender ningún Contenido. No se permite reutilizar ningún
+								Contenido sin el consentimiento previo de Vita Gold. A efectos
+								de estos términos, se prohíbe el uso de dicho Contenido en
+								cualquier otro Sitio Web o entorno informático en red. Tampoco
+								se podrá eliminar ningún aviso de derecho de autor, marca
+								comercial o cualquier otro aviso de propiedad del Contenido que
+								se encuentre en el Sitio Web.
+							</p>
+							<br />
+
+							<h3>3.3 Renuncia a las garantías</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								El Sitio Web y el Contenido son gratuitos y se proporcionan “tal
+								cual’, sin ningún tipo de garantía. La información del Sitio Web
+								es solamente a efectos de información general y no constituye
+								asesoramiento alguno. <br /><br />Vita Gold no declara ni
+								garantiza que la información y/o servicios incluidos en el Sitio
+								Web sean precisos, completos o actuales, ni que el Sitio Web o
+								el servidor que permite que el Sitio Web esté disponible estén
+								libres de virus o de cualquier otro componente perjudicial.
+								Además, Vita Gold no proporcionará ninguna infraestructura de TI
+								o conectividad específicas. Por lo tanto, Vita Gold no puede
+								declarar o garantizar que el Sitio Web no sufra interrupciones o
+								que esté libre de errores. Vita Gold no ofrece garantías ni
+								declaraciones relativas al uso del Contenido en el Sitio Web en
+								cuanto a exactitud, precisión, idoneidad, utilidad, oportunidad,
+								fiabilidad, etc., o de lo contrario, en cada caso hasta el
+								límite máximo permitido por la ley aplicable.
+							</p>
+							<br />
+
+							<h3>3.4 Limitación de responsabilidad</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Usted usa este Sitio Web por su propia cuenta y riesgo. Ni Vita
+								Gold, ni ninguno de sus empleados, responsables, directores o
+								agentes, ni ninguna otra parte involucrada en la creación, la
+								producción o la distribución del Sitio Web serán responsables de
+								ningún daño directo, indirecto, especial, consecuencial, ni de
+								otros daños que resulten del uso del Contenido en el Sitio Web,
+								o de la imposibilidad de utilizarlo, incluidos los daños
+								causados por virus, incorrecciones, información incompleta del
+								Sitio Web, o el rendimiento de los productos, o cualquier otro
+								daño derivado de o en relación con estos Términos y Condiciones,
+								incluso aunque se haya advertido a Vita Gold de la posibilidad
+								de dichos daños.
+							</p>
+							<br />
+
+							<h3>3.5 Enlaces a sitios de terceros</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Para su comodidad y para mejorar el uso del Sitio Web, es
+								posible que de vez en cuando se proporcionen enlaces a sitios
+								web cuya propiedad y control están en manos de terceros. Estos
+								enlaces le llevan fuera del servicio y del Sitio Web de Vita
+								Gold y escapan al control de Vita Gold. Los sitios con los que
+								usted puede enlazar tienen sus propios términos y condiciones
+								independientes, así como su propia política de privacidad. Vita
+								Gold no se hace responsable ni puede ser considerada responsable
+								del contenido y las actividades de estos sitios. Por ello, su
+								visita o acceso a estos sitios queda bajo su total
+								responsabilidad. <br /><br />Tenga en cuenta que estos otros
+								sitios pueden enviar sus propias cookies a los usuarios,
+								recopilar datos o solicitar información personal y, por lo
+								tanto, se aconseja que compruebe las condiciones de uso y las
+								políticas de privacidad de estos otros sitios web antes de
+								usarlos.
+							</p>
+							<br />
+
+							<h3>3.6 Uso incorrecto del Sitio Web</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Está prohibido utilizar el Sitio Web para enviar o transmitir
+								cualquier Contenido generado por el usuario (tal y como se
+								define más adelante) que infrinja o pueda infringir cualquier
+								derecho de propiedad intelectual de un tercero o que sea
+								amenazador, falso, engañoso, subversivo, difamatorio, invasor de
+								la privacidad, obsceno, pornográfico, abusivo, discriminatorio o
+								ilegal, o que pueda constituir o incitar a conductas que podrían
+								considerarse infracciones penales, violar los derechos de alguna
+								de las partes o que puedan dar lugar de cualquier otra forma a
+								responsabilidad civil o infringir la ley. Vita Gold puede
+								negarle el acceso al Sitio Web en cualquier momento a su
+								exclusiva discreción, incluyendo los casos en los que Vita Gold
+								considere que el uso que usted hace del Sitio Web incumple
+								alguno de estos Términos y Condiciones y/o las leyes aplicables.
+								<br /><br />Asimismo se le prohíbe utilizar el Sitio Web para
+								anunciar o realizar solicitudes de tipo comercial.
+							</p>
+							<br />
+
+							<h3>3.7 Contenido generado por el usuario</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Todas las opiniones, observaciones, comentarios, material
+								gráfico, gráficos, fotografías, enlaces, cuestiones,
+								sugerencias, información, vídeos y otros materiales que Usted o
+								cualquier otro usuario del Sitio Web envíen al Sitio Web o
+								transmitan utilizando el Sitio Web (Contenido generado por el
+								usuario) se considerarán no confidenciales y no privados. Por
+								consiguiente, Vita Gold tendrá el derecho no exclusivo y no
+								sujeto a derechos de autor a utilizar, copiar, distribuir y
+								divulgar a terceros cualquier Contenido generado por el usuario
+								para cualquier fin, en cualquier medio y en todo el mundo
+								(concesión de licencia). Usted reconoce y acepta que Vita Gold
+								solo actúa como canal pasivo para la distribución del Contenido
+								generado por el usuario y no asume ninguna responsabilidad ni es
+								responsable frente a Usted o frente a cualquier tercero respecto
+								del contenido o de la exactitud del Contenido generado por el
+								usuario. Vita Gold no supervisará continuamente el Contenido
+								generado por el usuario publicado por Usted ni moderará entre
+								usuarios, y tampoco tendrá la obligación de hacerlo. Sin
+								perjuicio de todo lo anterior, Usted reconoce y acepta que
+								cualquier observación, opinión, comentario, sugerencia y otra
+								información expresada o incluida en el Contenido generado por el
+								usuario no necesariamente representa la de Vita Gold. Cualquier
+								uso que Usted haga del Contenido generado por Usted mismo será
+								exclusivamente por su propia cuenta y riesgo. Usted declara y
+								garantiza que cualquier Contenido generado, enviado o
+								transmitido por Usted es originalmente suyo y no copia el
+								trabajo de ningún tercero o infringe de ninguna otra forma los
+								derechos de propiedad intelectual de cualquier tercero, derechos
+								a la privacidad o derechos de la personalidad, y no contiene
+								ninguna declaración difamatoria o calumniosa. Además, Usted
+								declara y garantiza que tiene la capacidad para conceder la
+								licencia conforme a lo estipulado en este apartado,
+								comprometiéndose a indemnizar y a exonerar a Vita Gold y a sus
+								empresas filiales de los costes, gastos, daños, pérdidas y
+								responsabilidades en los que incurra o sufra Vita Gold o sus
+								empresas filiales, relacionados con cualquier Contenido
+								generado, enviado o transmitido por usted o por cualquier otro
+								uso que usted haga del Sitio Web. <br /><br />Vita Gold se
+								reserva el derecho, según su propio criterio, de bloquear o
+								eliminar (en todo o en parte) cualquier Contenido generado,
+								enviado o transmitido por Usted y que a Vita Gold le parezca
+								disconforme con estos Términos y Condiciones (incluidos los
+								materiales que infrinjan o puedan infringir derechos de
+								propiedad intelectual de terceros, derechos a la privacidad o
+								derechos de la personalidad) o que, de cualquier otra forma, no
+								sean considerados aceptables por Vita Gold. <br /><br />Usted
+								acepta comunicar por escrito y con carácter inmediato a Vita
+								Gold cualquier Contenido generado por Usted (o cualquier otro
+								Contenido) que incumpla estos Términos y Condiciones. Usted
+								acepta facilitar a Vita Gold la información necesaria para que
+								Vita Gold pueda investigar si ese Contenido generado por Usted
+								(o cualquier otro Contenido) incumple estos Términos y
+								Condiciones. Vita Gold acepta esforzarse de buena fe en
+								investigar la queja y adoptará, a su exclusiva discreción, las
+								medidas que estime convenientes. No obstante, Vita Gold no
+								garantiza que bloqueará o suprimirá (total o parcialmente) dicho
+								Contenido generado por Usted ni cualquier otro Contenido.
+							</p>
+							<br />
+
+							<h3>3.8 Ideas no solicitadas</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Vita Gold mantiene la política de no examinar ni aceptar envíos
+								de ideas, inventos, diseños u otros materiales no solicitados
+								relacionados con la actividad de Vita Gold, tanto si se trata de
+								textos, imágenes, sonidos, software, información, como de otro
+								tipo, provenientes de personas fuera del ámbito de Vita Gold.
+								Por esa razón, no deberá enviar Materiales al Sitio Web ni
+								tampoco a Vita Gold a través del correo electrónico o de ninguna
+								otra forma.
+							</p>
+							<br />
+
+							<h1>4.1 Cómo puede ponerse en contacto con nosotros</h1>
+							<br />
+							<p class="paragraph -has-indent">
+								Si tiene alguna pregunta o comentario sobre el Sitio Web o estos
+								Términos y Condiciones o en el caso de que desee formular una
+								queja, no dude en ponerse en contacto con nuestro equipo de
+								Atención al Cliente o en el correo hola@vitagold.com
+							</p>
+							<br />
+
+							<h3>4.2 Prioridades</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								En caso de contradicción o conflicto entre los Términos y
+								Condiciones de Vita Gold y cualquier estipulación prevista en
+								otras partes o enlaces de este Sitio Web, prevalecerán los
+								Términos y Condiciones de Vita Gold contenidos en este
+								documento.
+							</p>
+							<br />
+
+							<h3>4.3 Cambios en estos Términos y Condiciones</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Vita Gold se reserva el derecho, según su propio criterio, a
+								cambiar en cualquier momento estos Términos y Condiciones.
+								<br /><br />El uso de este Sitio Web, así como de cualquier
+								contrato de compraventa concluido entre Usted y Vita Gold,
+								estará sujeto a la versión de los Términos y Condiciones de Vita
+								Gold vigentes en el momento de realizar el pedido de compra a
+								través de este Sitio Web o vigentes el día en que usted navegó
+								por él. <br /><br />Compruebe estos Términos y Condiciones
+								periódicamente para informarse de dichos cambios. Para saber de
+								qué versión se trata, diríjase al final de la página, en la que
+								se indica la última fecha de revisión de los Términos y
+								Condiciones.
+							</p>
+							<br />
+
+							<h3>4.4 Protección de datos</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Vita Gold respeta plenamente la privacidad de las personas que
+								acceden y utilizan su Sitio Web. Para obtener más detalles sobre
+								el modo en que utilizamos las cookies, el tipo de información
+								que recopilamos, cómo y con qué propósito utilizamos sus datos y
+								bajo qué circunstancias divulgamos la información, consulte
+								nuestra Política de Privacidad y Política de Cookies, que han
+								sido incluidas y forman parte de estos Términos y Condiciones.
+								<br />
+								<br />Al realizar un pedido Usted acepta y entiende que podemos
+								recopilar, utilizar, almacenar y procesar sus datos personales
+								de conformidad con nuestra Política de Privacidad.
+							</p>
+							<br />
+
+							<h3>4.5 Separabilidad</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Cada una de las disposiciones de estos Términos y Condiciones se
+								interpretará por separado e independientemente de las demás. Si
+								alguna provisión se considera inválida, nula o ineficaz, se
+								considerará que dicha disposición puede ser excluida y no
+								afectará a la eficacia de las restantes disposiciones de estos
+								Términos y Condiciones.
+							</p>
+							<br />
+
+							<h3>4.6 Subcontratación y cesión</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Vita Gold se reserva el derecho a subcontratar, transferir,
+								ceder o renovar todos o cualquiera de sus derechos y
+								obligaciones de acuerdo con estos Términos y Condiciones,
+								siempre que los derechos del usuario recogidos en estos Términos
+								y Condiciones no se vean afectados. Usted no podrá subcontratar,
+								ceder o transferir ninguno de sus derechos u obligaciones
+								conforme a los Términos y Condiciones sin el consentimiento
+								escrito de Vita Gold.
+							</p>
+							<br />
+
+							<h3>4.7 Eventos ajenos a un control razonable</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Vita Gold no se hace responsable de ningún retraso o
+								incumplimiento de sus obligaciones en virtud de estos Términos y
+								Condiciones cuando el retraso o la falta se deban a causas
+								ajenas a su voluntad o escapen a su control.
+							</p>
+							<br />
+
+							<h3>4.8 Ley aplicable y jurisdicción</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Estos Términos y Condiciones se regirán por la legislación
+								Mexicana.
+								<br /><br />
+								Se aplicará la legislación Mexicana al contrato de compraventa.
+								<br /><br />Usted y Vita Gold se someten a la jurisdicción no
+								exclusiva de los tribunales mexicanos.
+							</p>
+							<br />
+						</section>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<div class="aviso-block d-none">
+		
+			<button class="close-aviso">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+				>
+					<path
+						d="M7 7L17 17"
+						stroke="white"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+					<path
+						d="M17 7L7 17"
+						stroke="white"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+				</svg>
+			</button>
+			<main class="page-container" data-v-39ade7ba="">
+				<div
+					class="page page-privacy-policy"
+					data-v-a6b9fb94=""
+					data-v-39ade7ba=""
+				>
+					<div class="container" data-v-a6b9fb94="">
+						<section data-v-a6b9fb94="" class="section-privacy-policy">
+							<h1 style="color: #fff" class="title -is-font-medium">
+								AVISO DE PRIVACIDAD
+							</h1>
+							<br />
+							<h3>AVISO DE PRIVACIDAD</h3>
+							<br /><br />
+							<br />
+							<p class="paragraph -has-indent">
+								El aviso de privacidad forma parte del uso del sitio web
+							</p>
+							<br />
+							<h3>RESPONSABLE</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								En cumplimiento le informa que Vita Gold es responsable de sus
+								datos personales. Usted podrá contactar a Vita Gold en cualquier
+								momento a través de nuestro correo electrónico
+								hola@vitagold.com. Protegemos y salvaguardamos sus datos
+								personales para evitar el daño, pérdida, destrucción, robo,
+								extravío, alteración, así como el tratamiento no autorizado de
+								sus datos personales.
+							</p>
+							<br />
+							<h3>DATOS PERSONALES</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								La información deberá ser siempre veraz y completa. El usuario
+								responderá en todo momento por los datos proporcionados y en
+								ningún caso Vita Gold será responsable de la veracidad de los
+								mismos. <br /><br />La información solicitada al usuario en el
+								sitio www.vitagold.com así como sus datos personales serán
+								tratados con base en los principios de licitud, consentimiento,
+								información, calidad, finalidad, lealtad, proporcionalidad y
+								responsabilidad en términos de la Legislación. Se mantendrá la
+								confidencialidad de sus datos personales estableciendo y
+								manteniendo de forma efectiva las medidas de seguridad
+								administrativas, técnicas y físicas, para evitar su daño,
+								pérdida, alteración, destrucción, uso, acceso o divulgación
+								indebida.
+							</p>
+							<br />
+							<h3>TRANSFERENCIA DE DATOS</h3>
+							<br />
+							<br />
+							<p class="paragraph -has-indent">
+								El titular de los datos personales, a transferir los datos
+								proporcionados por él a terceros (ya sea persona física o
+								moral), que con motivo de la relación comercial lo requieran
+								para entero cumplimiento del negocio. El titular de los datos
+								personales, entiende y acepta que en ningún momento se podrán
+								transferir datos sensibles ni patrimoniales. En el caso de no
+								estar de acuerdo con la transmisión aquí mencionada, el titular
+								deberá ponerse en contacto al correo electrónico:
+								hola@vitagold.com, en un plazo no mayor a 5 (cinco) días hábiles
+								a partir de la publicación del presente aviso, ya que de lo
+								contrario y transcurrido dicho término, acepta y autoriza a la
+								transferencia de los mismos.
+							</p>
+							<br />
+							<h3>QUÉ SON LOS COOKIES Y CÓMO SE UTILIZAN</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								La aceptación de las cookies no es un requisito para visitar
+								nuestra página. Sin embargo, nos gustaría señalar que el uso del
+								"carrito", funcionalidad en Vita Gold y orden solo es posible
+								con la activación de las cookies. Las cookies son pequeños
+								archivos de texto que identifican a tu computadora con nuestro
+								servidor como un usuario único cuando tú visitas ciertas páginas
+								en nuestro sitio y que son guardados por tu navegador de
+								internet en el disco duro de tu computadora. Las cookies se
+								pueden utilizar para reconocer tu dirección de protocolo de
+								internet, que te ahorra tiempo mientras quieres entrar a nuestro
+								sitio. Sólo utilizamos cookies para tu comodidad en el sitio web
+								de Vita Gold (por ejemplo, para recordar quién eres cuando
+								deseas modificar tu carrito de compra sin tener que volver a
+								introducir tu dirección de correo electrónico) y no para obtener
+								o usar cualquier otra información sobre ti (por ejemplo de
+								publicidad segmentada). Tu navegador puede ser configurado para
+								no aceptar cookies, pero esto sería restringir el uso de nuestra
+								página. Por favor, acepta nuestra garantía de que el uso de
+								cookies no contiene datos de carácter personal o privado, y
+								están libres de virus. Si deseas obtener más información acerca
+								de las cookies, ve a http://www.allaboutcookies.org, y para
+								obtener información sobre la eliminación de ellos desde el
+								navegador, ve a
+								http://www.allaboutcookies.org/manage-cookies/index.html. En el
+								caso de empleo de cookies, el botón de "ayuda" que se encuentra
+								en la barra de herramientas de la mayoría de los navegadores, le
+								dirá cómo evitar aceptar nuevos cookies, cómo hacer que el
+								navegador le notifique cuando recibe un nuevo cookie o cómo
+								deshabilitar todos los cookies.
+							</p>
+							<br />
+							<h3>USO DE LA INFORMACIÓN</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								La información solicitada permite a Vita Gold contactar a los
+								usuarios y potenciales clientes cuando sea necesario para
+								completar los procedimientos de compra. Asimismo, Vita Gold
+								utilizará la información obtenida para:
+								<br /><br />• Procurar un servicio eficiente <br /><br />•
+								Informar sobre nuevos productos o servicios que estén
+								relacionados con el contratado o adquirido por el cliente
+								<br /><br />• Dar cumplimiento a obligaciones contraídas con
+								nuestros clientes <br /><br />• Informar sobre cambios de
+								nuestros productos o servicios <br /><br />• Proveer una mejor
+								atención al usuario. Los datos personales o empresariales
+								proporcionados por el usuario formarán parte de un archivo que
+								contendrá su perfil. El usuario puede modificar su perfil en
+								cualquier momento utilizando su número de usuario y contraseña.
+							</p>
+							<br />
+							<h3>LIMITACIÓN DE USO Y DIVULGACIÓN DE INFORMACIÓN</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								En nuestro programa de notificación de promociones, ofertas y
+								servicios a través de correo electrónico, sólo Vita Gold tiene
+								acceso a la información recabada. Este tipo de publicidad se
+								realiza mediante avisos y mensajes promocionales de correo
+								electrónico, los cuales sólo serán enviados a usted y a aquellos
+								contactos registrados para tal propósito, esta indicación podrá
+								usted modificarla en cualquier momento enviando un correo a
+								hola@vita gold.com. En los correos electrónicos enviados, pueden
+								incluirse ocasionalmente ofertas de terceras partes que sean
+								nuestros socios comerciales.
+							</p>
+
+							<br />
+							<h3>
+								DERECHOS ARCO (ACCESO, RECTIFICACIÓN, CANCELACIÓN Y OPOSICIÓN)
+							</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								El área responsable del manejo y la administración de los datos
+								personales es: Servicio al Cliente, a quien puede contactar
+								mediante en el correo electrónico hola@vita gold.com.
+								<br /><br />
+								PARA EJERCER SUS DERECHOS ARCO Y REVOCAR EL CONSENTIMIENTO
+								OTORGADO <br /><br />Como titular de datos personales, el
+								"Usuario" podrá ejercitar los derechos ARCO (acceso,
+								cancelación, rectificación y oposición al tratamiento de sus
+								datos personales), o bien, revocar el consentimiento que haya
+								otorgado a Vita Gold, para el tratamiento de sus datos
+								personales, enviando directamente su solicitud al área Servicio
+								de Atención al Clientes a través de la cuenta de correo
+								electrónico: hola@vitagold.com. Dicha solicitud deberá contener
+								por lo menos: (a) nombre y domicilio u otro medio para
+								comunicarle la respuesta a su solicitud; (b) los documentos que
+								acrediten su identidad o, en su caso, la representación legal;
+								(c) la descripción clara y precisa de los datos personales
+								respecto de los que se solicita ejercer alguno de los derechos
+								ARCO, (d) la manifestación expresa para revocar su
+								consentimiento al tratamiento de sus datos personales y por
+								tanto, para que no se usen; (d) cualquier otro elemento que
+								facilite la localización de los datos personales. Su petición
+								deberá ir acompañada de los fundamentos por los que solicita
+								dicha revocación y una identificación oficial del titular de los
+								datos o de su apoderado. En un plazo máximo de 20 (veinte) días
+								hábiles atenderemos su solicitud y le informaremos sobre la
+								procedencia de la misma a través del correo electrónico del que
+								provenga la petición. El sitio solicita al usuario que actualice
+								sus datos cada vez que éstos sufran alguna modificación, ya que
+								esto permitirá brindarle un servicio eficiente y personalizado.
+							</p>
+
+							<br />
+							<h3>TRANSFERENCIAS DE INFORMACIÓN POR SOLICITUD JUDICIAL</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Vita Gold únicamente realiza remisiones de datos para cumplir
+								con las obligaciones contraídas con los clientes. Vita Gold solo
+								compartirá datos cuando haya sido requerido por orden judicial
+								para cumplir con las disposiciones procesales.
+							</p>
+
+							<br />
+							<h3>CAMBIOS EN EL AVISO DE PRIVACIDAD</h3>
+							<br />
+							<p class="paragraph -has-indent">
+								Nos reservamos el derecho de efectuar en cualquier momento
+								modificaciones o actualizaciones al presente aviso de
+								privacidad, para la atención de novedades legislativas o
+								jurisprudenciales, políticas internas, nuevos requerimientos
+								para la prestación u ofrecimiento de nuestros servicios o
+								productos y prácticas del mercado. Estas modificaciones estarán
+								disponibles al público a través de nuestra página de Internet
+								www.vitagold.com, sección aviso de privacidad.
+							</p>
+						</section>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<script>
+			const policyBtn = document.querySelector(".policy");
+			const policyBlock = document.querySelector(".policy-block");
+			const policyCloseBtn = policyBlock.querySelector(".close-policy");
+
+			policyBtn.addEventListener("click", (e) => {
+				e.preventDefault();
+				policyBlock.classList.remove("d-none");
+			});
+
+			policyCloseBtn.addEventListener("click", (e) => {
+				e.preventDefault();
+				policyBlock.classList.add("d-none");
+			});
+
+			<!--  -->
+
+			const termsBtn = document.querySelector(".terms");
+			const termsBlock = document.querySelector(".terms-block");
+			const termsCloseBtn = termsBlock.querySelector(".close-terms");
+
+			termsBtn.addEventListener("click", (e) => {
+				e.preventDefault();
+				termsBlock.classList.remove("d-none");
+			});
+
+			termsCloseBtn.addEventListener("click", (e) => {
+				e.preventDefault();
+				termsBlock.classList.add("d-none");
+			});
+
+			const avisoBtn = document.querySelector(".aviso");
+			const avisoBlock = document.querySelector(".aviso-block");
+			const avisoCloseBtn = avisoBlock.querySelector(".close-aviso");
+
+			avisoBtn.addEventListener("click", (e) => {
+				e.preventDefault();
+				avisoBlock.classList.remove("d-none");
+			});
+
+			avisoCloseBtn.addEventListener("click", (e) => {
+				e.preventDefault();
+				avisoBlock.classList.add("d-none");
+			});
+		</script>			
+			
+	</body>
+</html>
