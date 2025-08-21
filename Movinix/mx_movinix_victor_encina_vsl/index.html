@@ -1,0 +1,924 @@
+<?php include("../q.php"); ?>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>¡Vas a tirar el Diclofenaco a la basura después de ver este video! ¡Este poderoso caldo elimina el dolor en las
+    articulaciones en 7 horas!</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./images/product.png" type="image/x-icon">
+  <script src="./js/back.js"></script>
+  <script src="./js/dateMx.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      window.vitBack(window.location.href, true);
+    });
+  </script>
+</head>
+
+<body>
+
+
+  <h1 class="main_title">
+    ¡Vas a tirar el Diclofenaco a la basura después de ver este video!
+    <span class="highlight">
+      ¡Este poderoso caldo elimina el dolor en las
+      articulaciones en 7 horas! </span>
+  </h1>
+  <div id="container_video">
+    <div id="play" onclick="playVideo()">
+      <div>
+        <h4>El video ya ha comenzado</h4>
+        <h4>¡Haga clic para escuchar!</h4>
+      </div>
+    </div>
+    <div class="spinner-container">
+      <div class="spinner-sub-container">
+        <div class="spinner"></div>
+      </div>
+    </div>
+    <video id="video" autoplay="autoplay" muted="" playsinline="" webkit-playsinline="" poster="./images/poster.png">
+      <source src="https://pub-e23e91439aab49b998f4f59314f785fe.r2.dev/13xi/7804.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div id="progress-container" style="width: 100%; background-color: white; height: 10px; margin-top: 20px;">
+    <div id="progress-bar" style="width: 0%; height: 100%; background-color: red;"></div>
+  </div>
+
+  <p class="sound"><img height="20" src="./images/sound.png" alt=""> (Asegúrate de tener el sonido activado. Este video
+    puede tardar 10 segundos en cargarse.)</p>
+  <div id="order">
+    <div class="terbatas">
+      <p>¡Apresúrate, la oferta es limitada!</p>
+      <img src="./images/BlPE.gif" alt="">
+    </div>
+    <div class="diet-section">
+      <form class="diet-container" action="<?php getRoutelink(); ?>" method="post">
+
+        <img src="./images/product.png" class="product" alt="">
+        <h2 class="form_title text-center">¡TERMINA PRONTO! Sólo <del>$2,360 MXN</del> <span class="green-text">$590
+            MXN</span>
+        </h2>
+        <a class="main-btn" rel="nofollow">
+          Obtén un 75% de descuento
+
+          <span>¡Sí, quiero tener articulaciones saludables!</span>
+          <img src="./images/small-days.png" alt="">
+        </a>
+        <div class="clearfix hide">
+          <input type="hidden" name="subid5" value="main_vsl_form">
+          <input type="hidden" id="clickId" name="click_id" value="<?php print $_SESSION['binom_click_id']; ?>">
+          <span class="label">Ingresar tu nombre: </span>
+
+          <input name="name" type="text" required minlength="2" placeholder="Ingresar tu nombre" class="input">
+
+          <span class="label">Ingresar tu número de teléfono </span>
+          <input name="phone" type="tel" required minlength="8" maxlength="16"
+            placeholder="Ingresar tu número de teléfono" class="input">
+
+          <button type="submit" class="btn_form">
+            ¡Ordenar ahora!
+          </button>
+        </div>
+        <div class="diet-text">
+          <h5>DISPONIBLE EN TODO MÉXICO</h5>
+          <div class="box-img">
+            <div class="box">
+              <img src="./images/1.png" alt="">
+            </div>
+            <div class="box">
+
+              <img src="./images/2.png" alt="">
+            </div>
+            <div class="box">
+
+              <img src="./images/3.png" alt="">
+            </div>
+            <div class="box">
+              <img src="./images/4.png" alt="">
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="block_tv">
+    <p>COMO SE PRESENTA EN</p>
+    <div class="tv_icons">
+      <img src="./images/img1.png" alt="" />
+      <img src="./images/img2.png" alt="" />
+      <img src="./images/img3.png" alt="" />
+    </div>
+  </div>
+
+  <div class="comments" id="comment-component-text">
+    <div id="comment_num" class="">DISCUSIÓN:</div>
+    <div class="comment">
+      <img class="comment__image" src="./images/1.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">María</h2>
+        <div class="comment__text">
+          ¡Muy informativo! Siempre estuve buscando un método natural para la regeneración de las articulaciones, y este
+          video
+          finalmente respondió a todas mis preguntas.
+  
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">12</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/2.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Sofía</h2>
+        <div class="comment__text">
+          ¡Cada hombre y mujer debería ver este video! Nunca imaginé que se pudieran obtener resultados así sin cirugía.
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">15</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/3.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">David</h2>
+        <div class="comment__text">
+          ¡Gracias por este video tan útil! Estoy lista para actuar ahora mismo y recuperar la movilidad de mis
+          articulaciones.
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">13</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/4.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Guadalupe</h2>
+        <div class="comment__text">
+          Era escéptica, pero las historias de las personas me impresionaron. Este video es un verdadero descubrimiento
+          para
+          todos.
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">5</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/5.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Luz</h2>
+        <div class="comment__text">
+          ¡Increíble cuánta información útil aprendí sobre el cuidado de las articulaciones! Debo mostrarle este video a
+          mi amigo
+          de inmediato.
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">5</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/6.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Carla</h2>
+        <div class="comment__text">
+          Es la primera vez que escucho sobre este método. Este video es una salvación para quienes quieren mantener la
+          movilidad
+          en sus articulaciones.
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">5</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/7.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Ana</h2>
+        <div class="comment__text">
+          Gracias por contarnos la verdad que nos han ocultado. Ahora sé exactamente lo que necesito para regenerar mis
+          articulaciones.
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">10</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/8.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Rosa</h2>
+        <div class="comment__text">
+          Ahora entiendo por qué los tratamientos comunes no me funcionaban. Este video cambió completamente mi enfoque
+          sobre el
+          cuidado de las articulaciones.
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">12</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/9.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Ricardo</h2>
+        <div class="comment__text">
+          ¡Información muy valiosa! Ahora estoy segura de que puedo lograr resultados sin procedimientos costosos.
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">16</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/10.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Elena</h2>
+        <div class="comment__text">
+          Después de ver este video, me di cuenta de que estaba equivocada al confiar en cremas químicas. ¡El método
+          natural es la
+          solución!
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">16</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/11.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">José</h2>
+        <div class="comment__text">
+          ¡<span class="link">Movinix</span> cambió mi vida! Mis articulaciones se volvieron más fuertes y flexibles
+          después de solo una semana de uso.
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">16</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/12.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Lucía</h2>
+        <div class="comment__text">
+          ¡Este producto hace maravillas! Llevo usando <span class="link">Movinix</span> un mes y mis articulaciones se
+          sienten 10 años más jóvenes.
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">6</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/13.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Andrea</h2>
+        <div class="comment__text">
+          He probado muchos suplementos, pero ninguno me ayudó como <span class="link">Movinix</span>. El dolor
+          desapareció y mis movimientos se volvieron
+          más fluidos.
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">6</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/14.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Carlos</h2>
+        <div class="comment__text">
+          ¡<span class="link">Movinix</span> me devolvió la juventud! Los resultados son visibles después de solo unos
+          días. ¡Estoy encantada!
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">16</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/15.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Verónica</h2>
+        <div class="comment__text">
+          ¡Producto sorprendente! Mis articulaciones están más suaves y hasta mis compañeros de trabajo me preguntan qué
+          estoy
+          haciendo.
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">17</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/16.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Adriana</h2>
+        <div class="comment__text">
+          <span class="link">Movinix</span> es lo mejor que he probado. Mis articulaciones se volvieron más fuertes y el
+          dolor desapareció.
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">17</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/17.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Cecilia</h2>
+        <div class="comment__text">
+          Mi papá usó <span class="link">Movinix</span> y el resultado fue impresionante. Sus articulaciones mejoraron en
+          muy poco tiempo.
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">17</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/18.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Miguel Ángel</h2>
+        <div class="comment__text">
+          Este suplemento es un verdadero tesoro. Mis articulaciones están más jóvenes y saludables, ¡me siento 20 años
+          más joven!
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">17</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/19.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Gabriela</h2>
+        <div class="comment__text">
+          ¡No esperaba que un suplemento fuera tan efectivo! <span class="link">Movinix</span> es pura magia.
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">17</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/20.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Isabel</h2>
+        <div class="comment__text">
+          Después de usar <span class="link">Movinix</span>, literalmente no reconozco mis articulaciones. El dolor
+          desapareció y ahora me siento fresca y
+          renovada.
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">17</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/21.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Andrea</h2>
+        <div class="comment__text">
+          ¡Este suplemento hace que mis articulaciones brillen! Son tan flexibles y sin dolor, ¡y me siento 10 años más
+          joven! Me
+          encanta tomarlo todos los días.
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">17</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/22.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Francisco</h2>
+        <div class="comment__text">
+          ¡Simplemente me encanta! Mis articulaciones se sienten suaves y el dolor desapareció. Mi familia me ha dado
+          muchos
+          halagos. ¡Gracias por el mejor producto!
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">17</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/23.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Araceli</h2>
+        <div class="comment__text">
+          Estoy feliz de ver cómo mis articulaciones responden a <span class="link">Movinix</span>. Tengo 70 años y tengo
+          articulaciones fuertes y
+          saludables.
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">17</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/24.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">Karen</h2>
+        <div class="comment__text">
+          Mis articulaciones no se habían sentido así de sanas en mucho tiempo. Hasta mi esposo me dijo que me veo muy
+          bien
+          últimamente. Cancelé de inmediato mis suscripciones a otros productos para las articulaciones.
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">17</span>
+            Me gusta
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            No me gusta
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />Comentario
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("mx", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+  
+  
+  
+  </div>
+
+
+  <div class="literarure">
+    <div class="literarure-box">
+      <img src="./images/image16.png" alt="">
+      <img src="./images/image20.png" alt="">
+      <img src="./images/image23.png" alt="">
+    </div>
+  <ol>
+    <li><a href="https://www.health.harvard.edu" target="_blank"><b>Harvard Health Publishing.</b> <em>"Understanding
+          Osteoarthritis: Causes, Symptoms, and Treatments." Harvard Medical School.</em></a> </li>
+    <li><a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/osteoarthritis" target="_blank"><b>Johns
+          Hopkins Medicine.</b> <em>"Advancements in Joint Replacement Surgery." Johns Hopkins
+          University.</em></a></li>
+    <li><a
+        href="https://stanfordhealthcare.org/medical-conditions/bones-joints-and-muscles/articular-periarticular-fractures.html"
+        target="_blank"><b>Stanford Health Care.</b> <em>"Innovations in Rheumatoid Arthritis Treatment." Stanford
+          University School of Medicine.</em></a></li>
+    <li><a href="https://www.niams.nih.gov/health-topics/arthritis" target="_blank"><b>National Institute of Arthritis
+          and Musculoskeletal and Skin Diseases (NIAMS).</b> <em>"Arthritis Information." National Institutes of
+          Health (NIH).</em></a></li>
+    <li><a href="https://www.who.int/news-room/fact-sheets/detail/musculoskeletal-conditions" target="_blank"><b>World
+          Health Organization (WHO).</b> <em>"Musculoskeletal Conditions."</em></a></li>
+  </ol>
+  </div>
+
+  <footer>
+    <div class="footer-box">
+
+      <p>Copyright © 2025 por Copyrightindex.com</p>
+
+      <p>Todos los derechos reservados. No puede ser reproducido, distribuido o transmitido en cualquier forma o por
+        cualquier
+        medio, incluyendo la reproducción, grabación u otros medios electrónicos o mecánicos sin el permiso escrito del
+        editor.
+        Excepto cuando se hagan breves referencias a reseñas críticas y otros usos no comerciales permitidos por la ley
+        de
+        derechos de autor.</p>
+    </div>
+
+  </footer>
+  <script src="./js/video.js"></script>
+  <script src="./js/coments.js"></script>
+</body>
+
+</html>

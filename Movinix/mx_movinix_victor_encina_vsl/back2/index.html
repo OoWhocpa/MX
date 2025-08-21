@@ -1,0 +1,382 @@
+<?php
+// Отримуємо значення clickid з URL
+$clickid = $_GET['clickid'] ?? '';
+
+// Встановлюємо параметр binom_click_id в значення clickid
+$action = "../../route.php?binom_click_id=" . urlencode($clickid);
+?>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+        <title>Movinix</title>
+        <link href="./images/favicon.ico" rel="Shortcut Icon" type="image/x-icon" />
+        <link href="./css/slick.css" rel="stylesheet" />
+        <link href="./css/style.css" rel="stylesheet" />
+        <script src="./js/jQuery.js"></script>
+
+    </head>
+
+    <body>
+        
+        <div class="main_wrap">
+            <div class="block_1">
+                <div class="block_1-overlay">
+                    <div class="container">
+                        <div class="header">
+                            <div class="logo">Movinix</div>
+                            <ul class="menu">
+                                <li><a class="menu_scroll for_scroll" href="#"> Acerca del producto </a></li>
+                                <li><a class="menu_scroll for_scroll" href="#"> Problemas </a></li>
+                                <li><a class="menu_scroll for_scroll" href="#"> Composición </a></li>
+                                <li><a class="menu_scroll for_scroll" href="#"> Opinión del especialista </a></li>
+                                <li><a class="menu_scroll for_scroll" href="#"> Comentarios </a></li>
+                            </ul>
+                            <a class="header_btn for_scroll" href="#"> Pedir </a>
+                            <div class="burger"></div>
+                        </div>
+                        <div class="block_1-content">
+                            <h1 class="block_1-title">¡Deshazte del dolor en 1 curso!</h1>
+                            <p class="block_1-text">
+                                Movinix elimina los síntomas de las enfermedades articulares, revitaliza las
+                                articulaciones y las devuelve a la vida activa tras el un curso.
+                            </p>
+                            <a class="btn block_1-btn for_scroll" href="#"> Pedir </a>
+                        </div>
+                        <img alt="" class="block_1-woman" src="./images/block_1-woman.png" /><img
+                            alt=""
+                            class="block_1-rounds"
+                            src="./images/rounds.png"
+                        />
+                    </div>
+                    <div class="block_1-bottom"></div>
+                </div>
+            </div>
+            <div class="block_2">
+                <div class="container">
+                    <h2 class="title">Olvídate de las farmacias y del dolor</h2>
+                    <p class="subtitle">
+                        A diferencia de otros productos Movinix elimina no sólo las molestias, sino también la causa
+                        del dolor, evitando una recaída en el futuro.
+                    </p>
+                    <div class="block_2-content">
+                        <ul class="block_2-list">
+                            <li>
+                                <div class="list_text">
+                                    Movinix se ha desarrollado a partir de las investigaciones de los principales
+                                    cirujanos ortopédicos de la Academia de Columbia de Salud. El producto fue sometido
+                                    a todas las etapas de prueba necesarias, como lo confirman las patentes y los
+                                    certificados de las asociaciones internacionales de garantía de calidad.
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list_text">
+                                    <b>
+                                        En <span class="ryear"></span>, Movinix fue reconocido como el único remedio
+                                        local para eliminar diversas enfermedades de las articulaciones.
+                                    </b>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list_text">
+                                    Aplicación del producto Movinix detiene la destrucción del tejido cartilaginoso y
+                                    estimula el crecimiento natural del cartílago en las zonas erosionadas. Esto
+                                    restaura la integridad de la articulación y evita que la enfermedad reaparezca.
+                                    Antes, esto solo era posible con métodos invasivos y quirúrgicos.
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list_text">
+                                    En la producción de Movinix no se utilizan componentes sintéticos, que tienen un
+                                    efecto agresivo y provocan reacciones alérgicas.
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="block_2-bottom">
+                            <a class="btn for_scroll" href="#"> Pedir </a>
+                            <div class="block_2-note"><b> 100% </b> Natural</div>
+                            <div class="block_2-note"><b> 0% </b> Esteroides</div>
+                            <div class="block_2-note"><b> 0% </b> Hormonas</div>
+                        </div>
+                    </div>
+                    <img alt="" class="block_2-img" src="./images/block_2-img.png" />
+                </div>
+            </div>
+            <div class="block_3">
+                <div class="container">
+                    <h2 class="title">Comprueba tu estado y el de tus seres queridos</h2>
+                    <p class="subtitle">
+                        Familiarízate con los síntomas que pueden indicar trastornos y enfermedades musculoesqueléticas:
+                    </p>
+                    <div class="symptoms_wrap">
+                        <div class="cards_counter">
+                            Paso <span class="counter"> 1 </span> / <span class="total_count"> 6 </span>
+                        </div>
+                        <img alt="" class="cards_prod" src="./images/movinix.png" />
+                        <div class="symptoms_cards-wrap">
+                            <div class="symptoms_card active">
+                                <img alt="01" src="./images/card_1.jpg" />
+                                <p>Dolor y crujido en las articulaciones al moverte</p>
+                            </div>
+                            <div class="symptoms_card">
+                                <img alt="01" src="./images/card_2.jpg" />
+                                <p>Rigidez y movilidad limitada</p>
+                            </div>
+                            <div class="symptoms_card">
+                                <img alt="01" src="./images/card_3.jpg" />
+                                <p>Deterioro de la motricidad fina de las manos</p>
+                            </div>
+                            <div class="symptoms_card">
+                                <img alt="01" src="./images/card_4.jpg" />
+                                <p>Calambres frecuentes en las extremidades</p>
+                            </div>
+                            <div class="symptoms_card">
+                                <img alt="01" src="./images/card_5.jpg" />
+                                <p>Sensibilidad del organismo a las inclemencias del tiempo</p>
+                            </div>
+                            <div class="symptoms_card">
+                                <img alt="01" src="./images/card_6.jpg" />
+                                <p>Deformación ósea y cartilaginosa</p>
+                            </div>
+                        </div>
+                        <div class="cards_buttons-wrap">
+                            <div class="btn card_btn card_btn-yes">Sí</div>
+                            <div class="btn card_btn card_btn-no">No</div>
+                            <a class="btn card_btn-buy for_scroll" href="#"> Pedir </a>
+                        </div>
+                        <p class="cards_note">
+                            Si encuentras un solo síntoma, existe un 99% de posibilidades de que corras el riesgo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="block_4">
+                <div class="block_4-inner">
+                    <div class="container">
+                        <h2 class="title">Composición del Movinix</h2>
+                        <div class="circle_wrap">
+                            <div class="circle">
+                                <div class="circle_inner">
+                                    <img alt="" class="circle_prod" src="./images/movinix.png" />
+                                </div>
+                            </div>
+                            <div class="circle_text circle_text-1">
+                                <div class="circle_text-inner">
+                                    <b> CARDO MARIANO </b>
+                                    <p>Fortalece las articulaciones y recupera tu flexibilidad y movilidad</p>
+                                </div>
+                            </div>
+                            <div class="circle_text circle_text-2">
+                                <div class="circle_text-inner">
+                                    <b> MORINGA </b>
+                                    <p>
+                                        Previenen la inflamación de las articulaciones, refuerzan el tejido
+                                        cartilaginoso
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="circle_text circle_text-3">
+                                <div class="circle_text-inner">
+                                    <b> CÚRCUMA </b>
+                                    <p>
+                                        Nutren las articulaciones con las vitaminas y minerales necesarios y mejoran la
+                                        circulación sanguínea
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="circle_text circle_text-4">
+                                <div class="circle_text-inner">
+                                    <b> TOMILLO </b>
+                                    <p>
+                                        Prolongan la vida del sistema musculoesquelético, alivian el dolor en las
+                                        articulaciones y los músculos
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="circle_text circle_text-5">
+                                <div class="circle_text-inner">
+                                    <b> ROMERO </b>
+                                    <p>
+                                        Protegen las células de las articulaciones del estrés oxidativo y eliminan las
+                                        sales y toxinas nocivas
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="circle_text circle_text-6">
+                                <div class="circle_text-inner">
+                                    <b> CALABAZA </b>
+                                    <p>
+                                        Fortalecen los tejidos conjuntivos de las articulaciones, contienen
+                                        antioxidantes que protegen contra los daños causados por los radicales libres
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="circle_text circle_text-7">
+                                <div class="circle_text-inner">
+                                    <b> ACEITUNA </b>
+                                    <p>
+                                        Estimulan la regeneración del tejido cartilaginoso, nutren y fortalecen el
+                                        tejido cartilaginoso
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block_5">
+                <div class="container">
+                    <h2 class="title">Opinión de un especialista sobre Movinix</h2>
+                    <img alt="" class="doc" src="./images/doc.png" />
+                    <div class="block_5-content">
+                        <p class="red">
+                            Tomar analgésicos durante un ataque de dolor articular es un gran error. Solo crean la
+                            ilusión de recuperación al bloquear temporalmente el dolor. El proceso de destrucción de la
+                            articulación continúa y el dolor reaparece.
+                        </p>
+                        <p>
+                            «Yo recomiendo Movinix a mis pacientes para la prevención y deshacerse del problema. Aunque
+                            es muy importante iniciar una terapia temprana cuando se trata de enfermedades de las
+                            articulaciones, Movinix tiene efecto incluso en fases avanzadas.
+                        </p>
+                        <p class="bottom_text">
+                            Los componentes activos de Movinix penetran directamente en la cavidad de la cápsula de la
+                            articulación, bloquean la inflamación y estimulan la regeneración del cartílago dañado desde
+                            su interior. Se puede observar una dinámica positiva desde los primeros días de uso: se
+                            reducen la inflamación y el dolor durante el movimiento. Debes tomar 20 gotas 3 veces al
+                            día. Al finalizar el cursoo, la articulación degenerativa vuelve a estar sana y recupera su
+                            movilidad natural. Y todo ello sin inyecciones, cirugías ni otros métodos dudosos».
+                        </p>
+                        <div class="doc_title">
+                            <div>José Joaquín Rodríguez</div>
+                            Ortopeda experto
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block_6">
+                <div class="container">
+                    <h2 class="title">Ellos ya valoraron el efecto de Movinix ¡Pruébalo tú también!</h2>
+                    <div class="slider_wrap">
+                        <ul class="slider_av">
+                            <li><img alt="" src="./images/ava_1.jpg" /></li>
+                            <li><img alt="" src="./images/ava_2.jpg" /></li>
+                            <li><img alt="" src="./images/ava_3.jpg" /></li>
+                        </ul>
+                        <ul class="slider_main">
+                            <li>
+                                <div class="slide_name">Rosa, 49 años</div>
+                                <p class="slide_text">
+                                    Llevo unos 3 años tomando pastillas y remedios populares. Alterné entre pastillas y
+                                    diferentes compresas. Llegué al punto de tener que pedirle a mi hijo que me ayudara
+                                    a salir de la cama. El médico me recetó unas costosas inyecciones en las
+                                    articulaciones. Era un procedimiento extremadamente desagradable y había que
+                                    repetirlo regularmente. Cogí todo el dinero de la casa para ir al hospital y sólo
+                                    entonces vi información en internet sobre <b> Movinix </b> . Lo pedí casi con mi
+                                    último dinero. Después de todo, mi última esperanza se cumplió. Al segundo día, la
+                                    hinchazón de las piernas y la pesadez desaparecieron. Una semana más tarde ya podía
+                                    levantarme de la cama yo sola. Después del curso después ya estaba corriendo con mi
+                                    nieta en el parque infantil. Así que aconsejo a todo el mundo. ¡Es un verdadero
+                                    milagro!
+                                </p>
+                            </li>
+                            <li>
+                                <div class="slide_name">Elisa, 42 años</div>
+                                <p class="slide_text">
+                                    Llevo 2 años sufriendo dolor en las rodillas. Trabajo como peluquera y paso 10 horas
+                                    de pie cada día. Probé diferentes remedios, pero el dolor volvía una y otra vez. Y
+                                    junto con él, lágrimas, insomnio, depresión.... En el hospital me dijeron que la
+                                    situación estaba desatendida y que solo la operación de rodilla ayudaría. En aquel
+                                    momento, no teníamos ahorros para pagar la operación y mi marido y yo decidimos
+                                    vender el automóvil. Mi marido ya había encontrado un comprador. Se llamaba Antonio.
+                                    Mi marido le contó sinceramente por qué había decidido vender el automóvil y Antonio
+                                    le preguntó: "¿Acaso <b> Movinix </b> no ayudó a tu mujer?". Así que pedimos este
+                                    producto. ¡Y con razón! No me duelen las rodillas, no vendimos el carro y además
+                                    encontramos un amigo.
+                                </p>
+                            </li>
+                            <li>
+                                <div class="slide_name">Gabriel, 54 años</div>
+                                <p class="slide_text">
+                                    Cuando era joven, me dedicaba al atletismo y no me cuidaba en absoluto, no pensaba
+                                    en las consecuencias. En principio, también lo hicieron todos los jóvenes. Cuando me
+                                    hice mayor, me arrepentí: mis articulaciones se estropearon y luego tuve una
+                                    bursitis en la rodilla. El médico me dijo que no había nada que hacer: el chichón no
+                                    se podía extraer. Mi mujer me ponía inyecciones y pastillas cuando tenía fuertes
+                                    dolores. Hace seis meses tuvimos un accidente. La culpa fue mía. Un calambre se
+                                    apoderó de mi pierna derecha, mi tobillo se atascó y junto con él, el acelerador.
+                                    Gracias a Dios todos sobrevivieron. Pero me hizo ir a los médicos de nuevo. Encontré
+                                    un nuevo ortopédico y me recetó <b> Movinix </b> . Me sentí mejor de inmediato,
+                                    como si fuera una inyección, y al finalizar el curso el chichón se había disuelto
+                                    por completo.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="block_8">
+                <div class="container">
+                    <img alt="" class="block_8-img" src="./images/block_8-img.png" /><img
+                        alt=""
+                        class="block_8-prod"
+                        src="./images/movinix.png"
+                    /><img alt="" class="block_8-rounds" src="./images/rounds.png" />
+                    <h2 class="title">Descubre Movinix</h2>
+                    <div class="form_wrap">
+                        <!-- AD_Form -->
+                        <form action="<?php echo $action; ?>" class="main_form" id="order_form" method="POST" >
+                            <input type="hidden" name="subid5" value="back_vsl_form">
+                            <input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+                            <div class="form_title"><b> Pídelo ahora </b> y obtén un 75% de descuento</div>
+                            <div class="form_prices">
+                                <div class="old_price-item">
+                                    <div>Precio antiguo:</div>
+                                    <div><span class="old_price">$2360</span><span class="currency_price"> MXN</span></div>
+                                </div>
+                                <div class="new_price-item">
+                                    <div>Precio nuevo:</div>
+                                    <div>
+                                        <span>
+                                            <span class="new_price">590</span><span class="currency_price">MXN</span>*
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <input class="inp" name="name" placeholder="Tu nombre" type="text" required minlength="3"/>
+                            <input
+                                class="inp only_number phone-black"
+                                name="phone"
+                                placeholder="Tu número de teléfono"
+                                type="tel"
+                                required
+                                minlength="9"
+                                maxlength="14"
+                            />
+                            <button class="btn js_submit button__text" type="submit">Pedir</button>
+                            <p style="text-align: center">*al ordenar un curso</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/slick.min.js"></script>
+        <script src="./js/main.js"></script>
+
+        <div class="ac_footer">
+            <br />
+            <div class="foot_en_center" style="text-align: center; margin: 0px auto; padding: 0px 30px 30px 30px; font-size: 15px">
+
+                <p>Copyright ©<script>
+                    document.write(new Date().getFullYear());
+                </script> por Copyrightindex.com</p>
+                <p>
+                    Todos los derechos reservados. No puede ser reproducido, distribuido o transmitido en cualquier forma o por cualquier medio, incluyendo la reproducción, grabación u otros medios electrónicos o mecánicos sin el permiso escrito del editor. Excepto cuando se hagan breves referencias a reseñas críticas y otros usos no comerciales permitidos por la ley de derechos de autor.</p>
+            </div>
+        </div>
+
+
+    </body>
+</html>
